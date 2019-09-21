@@ -19,14 +19,18 @@ header {
     background: #4e5340;
     line-height: 3em;
     text-align: center;
+    border-radius: 5em;
 }
 
 #logo {
     float: right;
     margin-top: 2em;
-    margin-right 4em;
-    border: solid thick #db7f67;
+    margin-right: 3em;
+}
 
+#logo img {
+    border: solid thick #db7f67;
+    border-radius: 1em;
 }
 
 .dkgreen {
