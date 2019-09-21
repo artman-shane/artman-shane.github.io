@@ -15,7 +15,6 @@
 */
 
 body {
-    font-family: 'Open Sans', 'georgia', sans-serif;
     margin: 5em;
     color: #4e5340;
     font-weight: bold;
@@ -26,6 +25,7 @@ main {
 }
 
 header,footer {
+    font-family: 'Open Sans', 'georgia', sans-serif;
     background: #1d263b;
     text-align: center;
     border-radius: .75em;
