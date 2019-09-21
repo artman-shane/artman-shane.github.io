@@ -24,7 +24,9 @@ header {
 #logo {
     float: right;
     margin-top: 2em;
+    margin-right 4em;
     border: solid thick #db7f67;
+
 }
 
 .dkgreen {
