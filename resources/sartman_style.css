@@ -27,11 +27,14 @@ main {
 
 header,footer {
     background: #1d263b;
-    line-height: 3em;
     text-align: center;
     border-radius: .75em;
 }
 
+footer {
+    clear: both;
+
+}
 li a {
     color: #a7a2a9;
 }
@@ -46,6 +49,7 @@ li a:hover {
     float: right;
     margin-top: 2em;
     margin-right: 3em;
+    margin-bottom: 1em;
     max-width: 25%;
     max-height: auto;
 }
@@ -62,9 +66,19 @@ li a:hover {
 }
 
 #title h1 {
-    padding: .6em;
+    padding: .4em;
     font-size: 3em;
     font-weight: bold;
+}
+
+#footer {
+    padding: 1em;
+    font-size: 1.25em;
+    color: #db7f67;
+}
+
+#lastupdate {
+    color: #f1dac4;
 }
 
 /* All Class related styles */
