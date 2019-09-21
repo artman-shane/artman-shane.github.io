@@ -51,13 +51,13 @@ li a:hover {
     margin-right: 3em;
     margin-bottom: 1em;
     max-width: 25%;
+    box-shadow: .75em 1em 4em .1em #1d263b;
 }
 
 #logo img {
     border: solid thick #db7f67;
     border-radius: .25em;
     max-width: 100%;
-    box-shadow: 5px 5px 5px 5px #4e5340;
 }
 
 #title {
