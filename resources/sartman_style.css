@@ -15,16 +15,32 @@
 */
 
 body {
+    font-family: 'Open Sans', 'georgia', sans-serif;
     margin: 5em;
+    color: #4e5340;
+    font-weight: bold;
 }
 
-header {
-    font-family: 'Open Sans', 'georgia', sans-serif;
-    background: #4e5340;
+main {
+    padding: 1em;
+}
+
+header,footer {
+    background: #1d263b;
     line-height: 3em;
     text-align: center;
     border-radius: .75em;
 }
+
+li a {
+    color: #a7a2a9;
+}
+
+li a:hover {
+    color: #db7f67;
+}
+
+/* All ID related styles */
 
 #logo {
     float: right;
@@ -41,18 +57,20 @@ header {
     max-height: auto;
 }
 
-nav {
+#title {
     height: 7em;
 }
 
-nav h1 {
+#title h1 {
     padding: .6em;
     font-size: 3em;
     font-weight: bold;
 }
 
-.dkgreen {
-    color: #4e5340;
+/* All Class related styles */
+
+.dkblue {
+    color: #1d263b;
 }
 
 .salmon {
@@ -60,13 +78,13 @@ nav h1 {
 }
 
 .tan {
-    color: #dbbea1;
+    color: #f1dac4;
 }
 
-.brown {
-    color: #a37b73;
+.dkgreen {
+    color: #4e5340;
 }
 
-.ltblue {
-    color: #a7bed3;
+.silver {
+    color: #a7a2a9;
 }
