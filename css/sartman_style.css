@@ -16,13 +16,15 @@
 
 body {
     font-family: 'Mansalva', 'Comic Sans', cursive;
-    margin: 5em;
+    margin: auto;
     color: #4e5340;
     font-weight: bold;
+    max-width: 1000px;
 }
 
 main {
     padding: 1em;
+    max-width: 600px;
 }
 
 header,footer {
