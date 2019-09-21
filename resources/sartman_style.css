@@ -14,23 +14,41 @@
     Others .salmon, .tan, .ltblue
 */
 
+body {
+    margin: 5em;
+}
 
 header {
+    font-family: 'Open Sans', 'georgia', sans-serif;
     background: #4e5340;
     line-height: 3em;
     text-align: center;
-    border-radius: 5em;
+    border-radius: .75em;
 }
 
 #logo {
     float: right;
     margin-top: 2em;
     margin-right: 3em;
+    max-width: 25%;
+    max-height: auto;
 }
 
 #logo img {
     border: solid thick #db7f67;
-    border-radius: 1em;
+    border-radius: .25em;
+    max-width: 100%;
+    max-height: auto;
+}
+
+nav {
+    height: 7em;
+}
+
+nav h1 {
+    padding: .6em;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .dkgreen {
