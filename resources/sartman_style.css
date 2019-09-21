@@ -1,0 +1,48 @@
+/* All styling should go here for the sartman assignment portal */
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap');
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+
+/* To use the fonts...
+
+    font-family: 'Open Sans', 'georgia', sans-serif;
+    font-family: 'Mansalva', 'Comic Sans', cursive;
+*/
+
+/* Colors:
+    Primary: .brown
+    Secondary .dkgreen
+    Others .salmon, .tan, .ltblue
+*/
+
+
+header {
+    background: #4e5340;
+    line-height: 3em;
+    text-align: center;
+}
+
+#logo {
+    float: right;
+    margin-top: 2em;
+    border: solid thick #db7f67;
+}
+
+.dkgreen {
+    color: #4e5340;
+}
+
+.salmon {
+    color: #db7f67;
+}
+
+.tan {
+    color: #dbbea1;
+}
+
+.brown {
+    color: #a37b73;
+}
+
+.ltblue {
+    color: #a7bed3;
+}
