@@ -18,7 +18,7 @@ body {
     margin: auto;
     color: #4e5340;
     max-width: 1000px;
-    font-size: .5em;
+    font-size: .75em;
 }
 
 main {
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 h2 {
@@ -62,6 +62,8 @@ h2 {
 #logo {
     max-width: 25%;
     min-width: 150px;
+    margin: auto;
+    padding-top: 1em;
 }
 
 #logo img {
@@ -70,18 +72,18 @@ h2 {
 }
 
 #title {
-    min-height: 7em;
+    min-height: 4em;
 }
 
 #title h1 {
     padding: .4em;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 #footer {
     padding: 1em;
-    font-size: 1.25em;
+    font-size: 1em;
     color: #db7f67;
 }
 

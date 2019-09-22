@@ -20,6 +20,18 @@
         font-size: 1.5em;
     }
     
+    #title {
+        min-height: 7em;
+    }
+    
+    #title h1 {
+        font-size: 3em;
+    }
+
+    #footer {
+        font-size: 1.25em;
+    }
+    
     #logo img {
         border: solid thick #db7f67;
         border-radius: .25em;
@@ -30,6 +42,7 @@
         margin-bottom: 1em;
         float: right;
         box-shadow: .75em 1em 4em .1em #1d263b;
+        padding: revert;
     }
     
 }
