@@ -18,17 +18,16 @@ body {
     margin: auto;
     color: #4e5340;
     max-width: 1000px;
+    font-size: .5em;
 }
 
 main {
     padding: 1em;
-    max-width: 600px;
 }
 
 header,footer {
     background: #1d263b;
     text-align: center;
-    border-radius: .75em;
 }
 
 footer {
@@ -36,7 +35,7 @@ footer {
 }
 
 li {
-    font-size: 1.5em;
+    font-size: .75em;
 }
 li a {
     color: #a7a2a9;
@@ -50,20 +49,23 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Open Sans', 'georgia', sans-serif;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
 /* All ID related styles */
 
 #logo {
-    float: right;
-    margin-top: 2em;
-    margin-right: 3em;
-    margin-bottom: 1em;
     max-width: 25%;
-    box-shadow: .75em 1em 4em .1em #1d263b;
+    min-width: 150px;
 }
 
 #logo img {
-    border: solid thick #db7f67;
-    border-radius: .25em;
+    border: solid thin #db7f67;
     max-width: 100%;
 }
 
