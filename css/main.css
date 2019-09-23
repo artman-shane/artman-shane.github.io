@@ -37,11 +37,11 @@ footer {
 li {
     font-size: .75em;
 }
-li a {
+li a, footer a:hover {
     color: #a7a2a9;
 }
 
-li a:hover {
+li a:hover, footer a {
     color: #db7f67;
 }
 
@@ -64,11 +64,7 @@ h2 {
     min-width: 150px;
     margin: auto;
     padding-top: 1em;
-}
-
-#logo img {
     border: solid thin #db7f67;
-    max-width: 100%;
 }
 
 #title {

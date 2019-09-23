@@ -32,10 +32,6 @@
         font-size: 1.25em;
     }
     
-    #logo img {
-        border: solid thick #db7f67;
-        border-radius: .25em;
-    }
     #logo {
         margin-top: 2em;
         margin-right: 3em;
@@ -43,6 +39,8 @@
         float: right;
         box-shadow: .75em 1em 4em .1em #1d263b;
         padding: revert;
+        border: solid thick #db7f67;
+        border-radius: .25em;
     }
     
 }
