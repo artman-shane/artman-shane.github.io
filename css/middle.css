@@ -5,11 +5,20 @@
         line-height: unset;
     }
 
+    nav {
+        font-size: 1.75em;
+        margin-left: 2em;
+    }
+
     header, footer {
         border-radius: .75em;
     }
 
     li {
+        font-size: 1.25em;
+    }
+
+    p {
         font-size: 1.5em;
     }
     
@@ -33,6 +42,10 @@
         font-size: 1.25em;
     }
     
+    #lessons li {
+        font-size: 1.5em;
+    }
+
     #logo {
         margin-top: 2em;
         margin-right: 3em;

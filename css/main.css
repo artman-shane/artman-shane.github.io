@@ -31,6 +31,19 @@ header,footer {
     text-align: center;
 }
 
+nav {
+    color: #db7f67;
+    margin-top: -1em;
+    margin-left: 1em;
+    text-align: left;
+    padding-bottom:.25em;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
 footer {
     clear: both;
 }
@@ -38,11 +51,16 @@ footer {
 li {
     font-size: .75em;
 }
-li a, footer a:hover {
+
+p {
+    font-size: 1em;
+}
+
+a, footer a:hover, nav a:hover {
     color: #a7a2a9;
 }
 
-li a:hover, footer a {
+a:hover, footer a, nav a {
     color: #db7f67;
 }
 
