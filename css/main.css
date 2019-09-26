@@ -1,6 +1,5 @@
 /* All styling should go here for the sartman assignment portal */
 @import url('https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap');
-@import url('https://www.w3schools.com/w3css/4/w3.css');
 
 /* To use the fonts...
 
@@ -17,7 +16,7 @@
 body {
     margin: auto;
     color: #4e5340;
-    max-width: 1000px;
+    max-width: 1200px;
     font-size: 1.25em;
     line-height: 2em;
 }
@@ -26,7 +25,8 @@ main {
     padding: 1em;
 }
 
-header,footer {
+header,
+footer {
     background: #1d263b;
     text-align: center;
 }
@@ -36,7 +36,7 @@ nav {
     margin-top: -1em;
     margin-left: 1em;
     text-align: left;
-    padding-bottom:.25em;
+    padding-bottom: .25em;
     font-size: 1em;
 }
 
@@ -56,15 +56,24 @@ p {
     font-size: 1em;
 }
 
-a, footer a:hover, nav a:hover {
+a,
+footer a:hover,
+nav a:hover {
     color: #a7a2a9;
 }
 
-a:hover, footer a, nav a {
+a:hover,
+footer a,
+nav a {
     color: #db7f67;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', 'georgia', sans-serif;
 }
 

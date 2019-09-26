@@ -1,27 +1,33 @@
 @import url("../../css/normalize.css");
 @import url("../../css/main.css");
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #db7f67;
 }
 
+#principles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#principles h1 {
+    text-align: center;
+    
+}
 #principles img {
-    min-width: 150px;
-    height: auto;
-    max-width: 30%
-}
-
-#visualhierarchy img, #fittslaw img{
-    float: right;
-    margin-left:1em;
-}
-
-#hickslaw img {
-    float: left;
-    margin-right: 1em;
+    width: 100%;
 }
 
 #principles div {
-    min-height: 18em;
-    margin-bottom: 3em;
+    max-width: 100%;
+    background: #f1dac4;
+    margin: .1em;
+    padding: .25em;
+    border-radius: .5em;
 }

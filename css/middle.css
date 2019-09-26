@@ -10,7 +10,8 @@
         margin-left: 2em;
     }
 
-    header, footer {
+    header,
+    footer {
         border-radius: .75em;
     }
 
@@ -21,7 +22,7 @@
     p {
         font-size: 1.5em;
     }
-    
+
     h1 {
         font-size: 2.5em;
     }
@@ -29,11 +30,11 @@
     h2 {
         font-size: 1.5em;
     }
-    
+
     #title {
         min-height: 7em;
     }
-    
+
     #title h1 {
         font-size: 3em;
     }
@@ -41,7 +42,7 @@
     #footer {
         font-size: 1.25em;
     }
-    
+
     #lessons li {
         font-size: 1.5em;
     }
@@ -56,5 +57,5 @@
         border: solid thick #db7f67;
         border-radius: .25em;
     }
-    
+
 }

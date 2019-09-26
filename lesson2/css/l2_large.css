@@ -1,0 +1,8 @@
+@media only screen and (min-width:50em) {
+
+    #principles div {
+        max-width: 31%;
+        margin: .2em;
+        padding: .5em;
+    }
+}
