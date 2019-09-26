@@ -53,7 +53,6 @@
         margin-bottom: 1em;
         float: right;
         box-shadow: .75em 1em 4em .1em #1d263b;
-        padding: revert;
         border: solid thick #db7f67;
         border-radius: .25em;
     }
