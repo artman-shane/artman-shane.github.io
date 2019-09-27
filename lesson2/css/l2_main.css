@@ -10,6 +10,18 @@ h6 {
     color: #db7f67;
 }
 
+.top-heading {
+    background: #4e5340;
+    color: #a7a2a9;
+    font-size: 2.25em;
+    border-radius: .25em .25em 0 0;
+    margin-bottom: 1em;
+    width: 100%;
+    text-indent: .3em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
 #principles {
     display: flex;
     flex-wrap: wrap;
@@ -18,16 +30,32 @@ h6 {
 
 #principles h1 {
     text-align: center;
-    
-}
-#principles img {
-    width: 100%;
+
 }
 
-#principles div {
+#principles p {
+    margin: .3em;
+}
+
+.section-image {
+    text-align: center;
+}
+
+.sections img {
+    width: 98%;
+}
+
+.sections {
     max-width: 100%;
     background: #f1dac4;
     margin: .1em;
-    padding: .25em;
     border-radius: .5em;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    min-height: 2.25em;
+    align-content: center;
 }

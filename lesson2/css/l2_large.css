@@ -1,8 +1,11 @@
 @media only screen and (min-width:50em) {
 
-    #principles div {
+    .sections {
         max-width: 31%;
         margin: .2em;
-        padding: .5em;
     }
+    #principles p {
+        margin: .5em;
+    }
+        
 }

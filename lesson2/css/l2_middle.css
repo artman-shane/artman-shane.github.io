@@ -1,10 +1,9 @@
 @import url("../../css/middle.css");
 
-@media only screen and (min-width:28em) {
+@media only screen and (min-width:33em) {
 
-    #principles div {
+    .sections {
         width: 45%;
         margin: .2em;
-        padding: .3em;
     }
 }
