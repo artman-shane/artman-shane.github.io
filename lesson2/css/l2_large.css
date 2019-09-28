@@ -1,11 +1,6 @@
 @media only screen and (min-width:50em) {
 
-    .sections {
-        max-width: 31%;
-        margin: .2em;
-    }
-    #principles p {
-        margin: .5em;
-    }
-        
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }    
 }

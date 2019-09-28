@@ -10,52 +10,41 @@ h6 {
     color: #db7f67;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+}
+
+.grid img {
+    width: 99%;
+    padding: .5%;
+}
+
 .top-heading {
     background: #4e5340;
     color: #a7a2a9;
     font-size: 2.25em;
     border-radius: .25em .25em 0 0;
-    margin-bottom: 1em;
-    width: 100%;
     text-indent: .3em;
     padding-top: .25em;
-    padding-bottom: .25em;
 }
 
-#principles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#principles h1 {
+.example-details {
+    background: #f1dac4;
     text-align: center;
-
-}
-
-#principles p {
-    margin: .3em;
-}
-
-.section-image {
-    text-align: center;
-}
-
-.sections img {
-    width: 98%;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    align-content: center;
 }
 
 .sections {
-    max-width: 100%;
     background: #f1dac4;
-    margin: .1em;
-    border-radius: .5em;
+    border-radius: .25em .25em 0 0;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
-    min-height: 2.25em;
-    align-content: center;
+.sections p {
+    padding: .5em;
 }
