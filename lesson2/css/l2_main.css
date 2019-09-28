@@ -15,11 +15,17 @@ h6 {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 1em;
+    align-content: 
+}
+
+.image {
+    text-align: center;
 }
 
 .grid img {
-    width: 99%;
-    padding: .5%;
+    width: 92%;
+    box-shadow: 0 0 15px #212220;
+    border: 1px solid #db7f67;
 }
 
 .top-heading {
