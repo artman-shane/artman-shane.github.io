@@ -16,7 +16,6 @@
 */
 
 header {
-    display: float;
     min-height: 4em;
 }
 
@@ -59,12 +58,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-    color: #f7c59f;
     padding: .4em;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+    text-align: center;
 }
-
 
 .image {
     max-width: 100%;
@@ -137,7 +135,13 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 50%;
         min-width: 100px;
     }
-    
+
+    .title {
+        font-size: 3em;
+        margin: .2em;
+        padding: 1em;
+    }
+
     .smallsize {
         display:none;
     }
