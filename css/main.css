@@ -8,14 +8,16 @@
 */
 
 /* Colors:
-    Primary: .brown
-    Secondary .dkgreen
-    Others .salmon, .tan, .ltblue
+    Body Font: purplenavy (#4c6085)
+    Heading and Link Font: darktangerine (#fca311)
+    Background: platinum (#e5e5e5)
+    Others: taupe (#463730), yankeesblue (#14213d)
 */
 
 body {
+    background: #e5e5e5;
     margin: auto;
-    color: #4e5340;
+    color: #4c6085;
     max-width: 1200px;
     font-size: 1.25em;
     line-height: 2em;
@@ -27,17 +29,27 @@ main {
 
 header,
 footer {
-    background: #1d263b;
+    background: #463730;
     text-align: center;
+    color: #fca311;
 }
 
 nav {
-    color: #db7f67;
+    color: #e5e5e5;
     margin-top: -1em;
     margin-left: 1em;
     text-align: left;
     padding-bottom: .25em;
     font-size: 1em;
+    padding-top:1em;
+}
+
+nav a {
+    border-bottom: 2px solid #fca311;    
+}
+
+nav a:hover {
+    border-bottom: 2px solid #4c6085;
 }
 
 a {
@@ -52,6 +64,17 @@ li {
     font-size: .75em;
 }
 
+ol>li {
+    font-size: 1em;
+}
+ol>li>ol {
+    list-style-type: lower-alpha;
+}
+
+ol>li>ol>li>ol {
+    list-style-type: upper-roman;
+}
+
 p {
     font-size: 1em;
 }
@@ -59,13 +82,13 @@ p {
 a,
 footer a:hover,
 nav a:hover {
-    color: #a7a2a9;
+    color: #fca311;
 }
 
 a:hover,
 footer a,
 nav a {
-    color: #db7f67;
+    color: #4c6085;
 }
 
 h1,
@@ -85,53 +108,56 @@ h2 {
     font-size: 1em;
 }
 
+h3 {
+    font-size: .9em;
+}
+
+h4 {
+    font-size: .85em;
+}
+
+h5 {
+    font-size: .8em;
+}
+
 /* All ID related styles */
 
 #logo {
     max-width: 25%;
     min-width: 150px;
     margin: auto;
-    border: solid thin #db7f67;
+    border: solid thin #fca311;
 }
 
 #title {
-    min-height: 4em;
+    text-align: center;
+    font-size: 1.5em; /* Needed */
 }
 
 #title h1 {
     padding: .4em;
-    font-size: 2em;
     font-weight: bold;
 }
 
 #footer {
     padding: 1em;
     font-size: 1em;
-    color: #db7f67;
+    color: #fca311;
 }
 
 #lastupdate {
-    color: #f1dac4;
+    color: #e5e5e5;
 }
 
 /* All Class related styles */
-
-.dkblue {
-    color: #1d263b;
+.pdtopdot1em { /* Only for this index.html */
+    padding-top: .1em;
 }
 
-.salmon {
-    color: #db7f67;
+.opensans {
+    font-family: 'Open Sans', 'georgia', sans-serif;
 }
 
-.tan {
-    color: #f1dac4;
-}
-
-.dkgreen {
-    color: #4e5340;
-}
-
-.silver {
-    color: #a7a2a9;
+.mansalva {
+    font-family: 'Mansalva', 'Comic Sans', cursive;
 }

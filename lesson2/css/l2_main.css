@@ -1,21 +1,11 @@
 @import url("../../css/normalize.css");
 @import url("../../css/main.css");
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #db7f67;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 1em;
-    align-content: 
 }
 
 .image {
@@ -24,13 +14,13 @@ h6 {
 
 .grid img {
     width: 92%;
-    box-shadow: 0 0 15px #212220;
-    border: 1px solid #db7f67;
+    box-shadow: 0 0 15px #463730;
+    border: 1px solid #463730;
 }
 
 .top-heading {
-    background: #4e5340;
-    color: #a7a2a9;
+    background: #463730;
+    color: #fca311;
     font-size: 2.25em;
     border-radius: .25em .25em 0 0;
     text-indent: .3em;
@@ -38,7 +28,7 @@ h6 {
 }
 
 .example-details {
-    background: #f1dac4;
+    background: #4c6085;
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 1em;
@@ -47,8 +37,13 @@ h6 {
 }
 
 .sections {
-    background: #f1dac4;
+    background: #4c6085;
     border-radius: .25em .25em 0 0;
+    color: #e5e5e5;
+}
+
+.sections a:hover {
+    color: #14213d;
 }
 
 .sections p {

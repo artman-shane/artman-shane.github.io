@@ -1,0 +1,159 @@
+@import url("../../css/normalize.css");
+@import url("../../css/main.css");
+@import url("../../css/middle.css");
+
+/* To use the fonts...
+
+    font-family: 'Open Sans', 'georgia', sans-serif;
+    font-family: 'Mansalva', 'Comic Sans', cursive;
+*/
+
+/* Colors:
+    Body Font: purplenavy (#4c6085)
+    Heading and Link Font: darktangerine (#fca311)
+    Background: platinum (#e5e5e5)
+    Others: taupe (#463730), yankeesblue (#14213d)
+*/
+
+header {
+    display: float;
+    min-height: 4em;
+}
+
+nav {
+    color: #f7c59f;
+}
+
+body {
+    font-size:1em;
+}
+table, th, td {
+    border: 2px solid #2a324b;
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+th {
+    background: #e1e5ee;
+}
+
+td {
+    padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.logo {
+    float: right;
+    padding-top: 1em;
+}
+
+.font-sample {
+    font-size: 1.5em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.title {
+    color: #f7c59f;
+    padding: .4em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.image {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid #767b91;
+}
+
+.center {
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    margin:auto;
+}
+
+
+.purplenavy-background {
+    background: #4c6085;
+    color:#e5e5e5;
+}
+
+.dktangerine-background {
+    background: #fca311;
+    color: #14213d;
+}
+
+.platinum-background {
+    background:#e5e5e5;
+    color: #4c6085;
+}
+
+.taupe-background {
+    background:#463730;
+    color: #fca311;
+}
+
+.yankeesblue-background {
+    background: #14213d;
+    color: #fca311;
+}
+
+.fullsize {
+    display: none;
+}
+
+.smallsize {
+    display:unset;
+}
+
+#logo {
+    border: none;
+    min-width: 100px;
+}
+
+#colorpalette {
+    width: 100%;
+}
+
+/* Tablet Size */
+@media only screen and (min-width:33em) {
+    header,
+    footer {
+        border-radius: .75em;
+    }
+
+    #logo {
+        max-width: 50%;
+        min-width: 100px;
+    }
+    
+    .smallsize {
+        display:none;
+    }
+    
+    .fullsize {
+        display: unset;
+    }
+
+    .font-sample {
+        font-size: 3em;
+    }
+    
+}
+
+
+/* Mobile Size */
+@media only screen and (min-width:50em) {
+
+}

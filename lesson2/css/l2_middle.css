@@ -2,6 +2,10 @@
 
 @media only screen and (min-width:33em) {
 
+    #title {
+        padding: .75em;
+    }
+    
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
