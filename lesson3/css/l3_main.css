@@ -21,11 +21,26 @@ header {
 
 nav {
     color: #f7c59f;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-evenly
+}
+
+nav a {
+    flex: 1 1 auto;
+    text-align: center;
+    border: none;
+}
+
+nav a:hover {
+    border: none;
 }
 
 body {
     font-size:1em;
 }
+
 table, th, td {
     border: 2px solid #2a324b;
     border-collapse: collapse;
@@ -42,11 +57,6 @@ td {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-}
-
-.logo {
-    float: right;
-    padding-top: 1em;
 }
 
 .font-sample {
@@ -68,6 +78,15 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     margin: auto;
     text-align: center;
+}
+
+.wmlogo {
+    max-width: 25%;
+    margin: auto;
+}
+
+.wmlogo img {
+    max-width: 100%
 }
 
 .border {
@@ -125,15 +144,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Tablet Size */
-@media only screen and (min-width:33em) {
+@media only screen and (min-width:43em) {
     header,
     footer {
         border-radius: .75em;
     }
 
-    #logo {
+    nav {
+        flex-direction: row;
         max-width: 50%;
-        min-width: 100px;
+    }
+
+    nav a {
+        border-bottom: 2px solid #fca311;
+        align-self: flex-end;
+        margin: 1em;
+    }
+    
+    nav a:hover {
+        border-bottom: 2px solid #4c6085;
+    }
+
+    .wmlogo {
+        float: right;
     }
 
     .title {
