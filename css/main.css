@@ -11,7 +11,7 @@
     Body Font: purplenavy (#4c6085)
     Heading and Link Font: darktangerine (#fca311)
     Background: platinum (#e5e5e5)
-    Others: taupe (#463730), yankeesblue (#14213d)
+    Others: taupe (#463730), yankeesblue (#14213d), shadowblue (#6f8faf)
 */
 
 body {
@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom: 2px solid #4c6085;
+    border-bottom: 2px solid #6f8faf;
 }
 
 a {
@@ -84,10 +84,13 @@ nav a:hover {
     color: #fca311;
 }
 
-a:hover,
+a:hover {
+    color: #4c6085;
+}
+
 footer a,
 nav a {
-    color: #4c6085;
+    color: #6f8faf;
 }
 
 h1,

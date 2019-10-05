@@ -1,6 +1,10 @@
 @import url("../../css/normalize.css");
 @import url("../../css/main.css");
 
+a:hover {
+    color: #6f8faf;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
