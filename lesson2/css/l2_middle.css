@@ -6,6 +6,10 @@
         padding: .75em;
     }
     
+    nav {
+        padding-bottom: 1em;
+    }
+
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
