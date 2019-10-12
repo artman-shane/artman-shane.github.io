@@ -141,6 +141,11 @@ section h1 {
     margin: 0;
 }
 
+main, footer {
+    /* This must occur prior to next margin-top for the footer to maintain spacing */
+    margin: auto;
+}
+
 footer {
     background: var(--header-background-color);
     margin-top: 2em;
