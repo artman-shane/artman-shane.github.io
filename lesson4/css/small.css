@@ -1,0 +1,160 @@
+/* All styling should go here for the sartman assignment portal */
+@import url("../../css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap');
+
+/* To use the fonts...
+    font-family: 'Open Sans', 'georgia', sans-serif;
+    font-family: 'Mansalva', 'Comic Sans', cursive;
+*/
+
+/* Colors:
+    Body Font: purplenavy (#4c6085)
+    Heading and Link Font: darktangerine (#fca311)
+    Background: platinum (#e5e5e5)
+    Others: taupe (#463730), yankeesblue (#14213d), shadowblue (#6f8faf)
+*/
+
+:root {
+    --purplenavy: #4c6085;
+    --darktangerine: #fca311;
+    --platinum: #e5e5e5;
+    --taupe: #463730;
+    --yankeesblue: #14213d;
+    --shadowblue: #6f8faf;
+
+    --nav-background-color: var(--purplenavy);
+    --nav-color: var(--darktangerine);
+    --header-background-color: var(--taupe);
+    --header-text-color: var(--shadowblue);
+    --border-color: var(--yankeesblue);
+    --body-link-color: var(--yankeesblue);
+    --body-link-hover-color: var(--darktangerine);
+    --header-link-color: var(--darktangerine);
+    --header-link-hover-color: var(--platinum);
+    --nav-seperator: var(--darktangerine);
+}
+
+body {
+    font-family: 'Open Sans', 'georgia', sans-serif;
+}
+
+header {
+    display: flex;
+    background: var(--header-background-color);
+    color: var(--header-text-color);
+    height: 6em;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoimage>img {
+    height: 75px;
+    margin: auto;
+}
+
+#title {
+    font-size: 1em;
+    padding-left: .25em;
+}
+
+#title>h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body a,
+body a:visited {
+    color: var(--body-link-color);
+}
+
+body a:hover {
+    color: var(--body-link-hover-color);
+}
+
+nav a,
+nav a:visited,
+footer a,
+footer a:visited {
+    color: var(--header-link-color);
+}
+
+nav a:hover,
+footer a:hover {
+    color: var(--header-link-hover-color);
+}
+
+nav {
+    background: var(--nav-background-color);
+    font-size: 1.5em;
+    padding: 1px;
+    color: var(--nav-color);
+}
+
+.nav-menu {
+    list-style: none;
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+.nav-menu li:first-child {
+    display: block;
+}
+
+.nav-menu li {
+    display: none;
+}
+
+.displayed li {
+    display: block;
+}
+
+.float-left {
+    float: left;
+}
+
+#wx-summary {
+    height: 100px;
+    width: 100px;
+    background: var(--shadowblue);
+}
+
+#hero-image {
+    width: 90%;
+    height: 110px;
+    background: red;
+}
+
+section {
+    background: var(--platinum);
+    height: 2em;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-left: .25em;
+    border-top: 1px dashed var(--border-color);
+    border-bottom: 1px dashed var(--border-color);
+}
+
+section h1 {
+    margin: 0;
+}
+
+footer {
+    background: var(--header-background-color);
+    margin-top: 2em;
+    color: var(--header-text-color);
+    text-align: center;
+    font-size: .75em;
+    line-height: 1.5em;
+    padding: 1em 0 1em 0;
+}
+
+#town-name {
+    text-align: center;
+}
+
+#menu.displayed {
+    display
+}
