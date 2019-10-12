@@ -1,0 +1,37 @@
+@media only screen and (min-width: 55em) {
+        
+    body {
+        min-width: 500px;
+        max-width: 1200px;
+        margin:auto;
+    }
+    header {
+        height: 11em;
+    }
+
+    #title {
+        font-size: 1.75em;
+    }
+    
+    #logoimage>img {
+        height: 170px;
+    }
+
+    nav {
+        font-size:1.75em;
+    }
+
+    .nav-menu li:first-child {
+        display: none;
+    }
+
+    .nav-menu li {
+        display: inline;
+        padding: 0px .5em 0px .5em;
+        border-right: 1px solid var(--nav-seperator);
+    }
+
+    .nav-menu li:last-child{
+        border: none;
+    }
+}
