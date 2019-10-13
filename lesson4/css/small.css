@@ -84,27 +84,39 @@ footer a:visited {
 nav a:hover,
 footer a:hover {
     color: var(--header-link-hover-color);
+    background: rgba(0,0,0,.2);
 }
 
 nav {
-    background: var(--nav-background-color);
-    font-size: 1.5em;
-    padding: 1px;
+    font-size: 1.6em;
     color: var(--nav-color);
+    background: var(--nav-background-color);
 }
 
-.nav-menu {
+nav ul {
+    padding:0;
+    margin:0;
     list-style: none;
     text-align: center;
-    margin: 10px auto 10px auto;
+    background: var(--nav-background-color);
 }
 
-.nav-menu li:first-child {
+nav ul li {
+    display: none;
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8em;
+}
+
+nav li:first-child {
     display: block;
 }
 
-.nav-menu li {
-    display: none;
+nav ul li .active {
+    background: rgba(255,255,255,.25);
 }
 
 .displayed li {
@@ -158,4 +170,10 @@ footer {
 
 #town-name {
     text-align: center;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
