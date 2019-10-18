@@ -1,5 +1,9 @@
 @media only screen and (min-width: 55em) {
 
+    .pagetitle {
+        font-size: 1.75em;
+    }
+
     main,
     footer {
         min-width: 500px;
@@ -40,12 +44,13 @@
         display: none;
     }
 
-    #title {
-        font-size: 1.75em;
+    header >img {
+        height: 170px;
     }
 
-    #logoimage>img {
-        height: 170px;
+    .summary-content {
+        font-size: 2em;
+        max-width: unset;
     }
 
 }

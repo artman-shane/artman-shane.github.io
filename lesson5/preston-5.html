@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Week 5 assignment for Shane Artman in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Winder Weather</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="special-news displayed">
+        <div>
+            Saturday = Preston Pancakes in the Park!
+            9:00 a.m. Saturday at the city park.
+        </div>
+    </div>
+    <header>
+        <div><img src="images/WindMill.png" alt="Windmill logo"></div>
+        <div class="pagetitle">
+            <h1>Winder Weather</h1>
+            Some Motto
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu clearfix">
+            <li><a href="#" onclick="toggleMenu()" id="nav-first-element">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="../index.html">Main Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="text-justify-ctr">
+            <h1>Preston Idaho</h1>
+        </div>
+        <section class="summary-container">
+            <div class="summary-image">
+                <img src="images/MountainFlowers.jpg" alt="Mountain Flowers">
+            </div>
+            <div class="summary-content">
+                <div class="header-row">
+                    <h2>Weather Summary</h2>
+                </div>
+                <div class="row1-col1 key">Currently:</div>
+                <div class="row1-col2 value">&lt;###&gt;</div>
+                <div class="row2-col1 key">High:</div>
+                <div class="row2-col2 value">&lt;###&gt;</div>
+                <div class="row3-col1 key">Wind Chill:</div>
+                <div class="row3-col2 value">&lt;###&gt;</div>
+                <div class="row4-col1 key">Humidity:</div>
+                <div class="row4-col2 value">&lt;###&gt;</div>
+                <div class="row5-col1 key">Wind Speed:</div>
+                <div class="row5-col2 value">&lt;###&gt;</div>
+            </div>
+        </section>
+        <section class="forecast">
+            <div class="title">
+                5-Day Forecast
+            </div>
+        </section>
+        <section class="article-container">
+            <div class="article-content">
+                <h2>Farming on the High Desert</h2>
+                <div class="author">by Shane Artman</div>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dolores autem quod deserunt enim
+                    quidem vero porro consequatur doloremque similique quam eaque veniam sint ipsum quasi labore impedit
+                    officia a, dolorem facere, eum tenetur voluptas. Maiores itaque pariatur quia reiciendis consequatur
+                    magni modi accusamus corporis explicabo?Perferendis consequuntur commodi necessitatibus, blanditiis,
+                    at expedita vel optio deleniti quo officiis porro animi, iste vitae repellendus facilis sunt tempora
+                    ipsa. Praesentium fugit fugiat excepturi, minus ullam iste architecto vitae. Autem, quo.
+                </p>
+                <div class="disp-full-artcile"><button onclick="toggleFullArticle()">read more...</button></div>
+                <div class="full-article">
+                    <p>
+                        Quam iste animi, est molestiae voluptatum repellat tempora aliquid odit unde beatae earum
+                        laudantium, quo placeat tempore voluptas modi aperiam hic accusantium explicabo consequatur
+                        porro
+                        vitae eveniet dignissimos! Accusamus unde corrupti expedita eaque perferendis, quisquam
+                        perspiciatis
+                        exercitationem doloribus, provident obcaecati aut consequatur magnam nesciunt quia? Qui quae,
+                        quasi
+                        natus corrupti cumque ipsum eos. Quod repudiandae eaque dignissimos esse quo magnam assumenda
+                        laudantium rem ullam eligendi porro, error saepe sapiente ea fugit autem beatae qui iusto in
+                        architecto voluptas quibusdam? Quaerat recusandae similique animi adipisci sit nemo. Quidem
+                        nesciunt
+                        autem reprehenderit, numquam rerum ullam consequuntur facilis illum aspernatur aliquid sunt
+                        deleniti
+                        tempore porro aliquam modi nemo quas similique commodi eos temporibus dolor rem unde. Aliquid
+                        adipisci veritatis est.
+                    </p>
+                    <p>
+                        Quos ipsum quia optio incidunt et tenetur amet ea veritatis sapiente! Ut velit cumque fugit
+                        aperiam
+                        ipsa ad nam, dolorem obcaecati quaerat impedit doloremque? Ratione ipsa odio in minus
+                        voluptatibus
+                        aut iure earum? Voluptas totam adipisci libero nobis, magni dolor consectetur possimus incidunt,
+                        cumque sit nihil facere. Error tempore nihil fuga aspernatur iusto illo obcaecati, consectetur
+                        rerum
+                        omnis fugiat corrupti repudiandae eligendi vitae praesentium dicta. Exercitationem temporibus
+                        excepturi quasi alias. Dolores beatae a ratione consequuntur veniam eaque doloribus enim eum
+                        recusandae, voluptates repellendus consectetur excepturi in.
+                    </p>
+                    <p>Recusandae illo repellat doloribus vel labore ipsam vero ducimus! Aut reiciendis, expedita
+                        incidunt
+                        quisquam quibusdam natus facilis dignissimos dolorum molestias dicta iure voluptas unde
+                        blanditiis
+                        cum vitae illo sed, ad, cupiditate repellendus necessitatibus quam fuga quis numquam vero.
+                        Reiciendis distinctio praesentium quia quasi, placeat harum atque facere eos sapiente blanditiis
+                        dicta iusto, pariatur sit maiores? Ex ducimus deleniti nostrum assumenda nisi aliquam
+                        perferendis
+                        molestias illo. Sequi at commodi vel beatae ipsa aut veritatis! Eligendi iusto quam consequuntur
+                        neque beatae recusandae voluptatibus velit impedit aperiam ad, natus voluptas animi nostrum
+                        pariatur
+                        dolores aliquid, atque ipsa enim voluptatum delectus hic? Quam, sequi similique ipsum quae
+                        adipisci
+                        corrupti. Tenetur beatae eos vitae eaque ipsa repellat ut natus recusandae adipisci distinctio
+                        iure
+                        temporibus aliquam consequatur, eius molestias neque nesciunt ab corrupti minima. Quisquam quo
+                        provident nulla sapiente similique illo, facilis facere assumenda repudiandae, illum ea fugiat
+                        ab?
+                    </p>
+                </div>
+            </div>
+            <div class="article-image">
+                <img src="images/OrangeSunsetTrees.jpg" alt="Sunset Over Farm with Trees">
+            </div>
+        </section>
+        <section class="contact-container">
+            <div class="contact-content">
+                <h2>Winder Weather</h2>
+                <div class="contact-info">
+                    <div class="contact-address-container">
+                        <div class="contact-address-icons">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9"><img src="images/005-pin.png" alt="Map Pin"></a>
+                        </div>
+                        <div class="contact-address">
+                                <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9">
+                                    1 North First St<br>
+                                    Preston, ID 83263
+                                </a>
+                        </div>
+                    </div>
+                    <div class="contact-phone comm-icons">
+                        <a href="tel:+17778889999">
+                            <img src="images/008-phone-1.png" alt="Phone Icon">
+                        </a>
+                        <a href="tel:+17778889999">
+                            777-888-9999
+                        </a>
+                    </div>
+                    <div class="contact-email comm-icons">
+                        <a href="mailto:winderweather@ww.com">
+                            <img src="images/007-mail.png" alt="eMail Icon">
+                        </a>
+                        <a href="mailto:winderweather@ww.com">
+                            winderweather@ww.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-icons">
+                    <img src="images/001-facebook.png" alt="Facebook Icon">
+                    <img src="images/002-twitter.png" alt="Twitter Icon">
+                    <img src="images/003-instagram.png" alt="Instagram Icon">
+                    <img src="images/004-pinterest.png" alt="Pinterest Icon">
+                    <div>Icons made by
+                        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel
+                            Buddha,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="fullyear"></span> | Shane A. Artman | Georgia | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a><br>
+        <div id="lastupdate"></div>
+        <div id="footer-msg"></div>
+    </footer>
+</body>
+
+</html>
