@@ -7,6 +7,7 @@ function toggleFullArticle() {
     document.getElementsByClassName("disp-full-artcile")[0].classList.toggle("hide");
 }
 
+
 // Date format: Wednesday, 24 July 2020
 var todayDate = new Date()
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -16,6 +17,12 @@ var months = ["January", "February", "March", "April", "May", "June", "July", "A
 var todayMonth = months[todayDate.getMonth()];
 var todayYear = todayDate.getFullYear();
 document.getElementById("footer-msg").innerHTML = todayDay + " ," + todayNumDay + " " + todayMonth + " " + todayYear;
+
+
+console.log("Today is: " + todayDay);
+if (todayDay == "Friday") {
+    document.getElementsByClassName("special-news")[0].classList.toggle("displayed");
+}
 
 var lastmod = "Last Updated: " + document.lastModified;
 document.getElementById("lastupdate").innerHTML=lastmod;
