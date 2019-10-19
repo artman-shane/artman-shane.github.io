@@ -20,6 +20,55 @@
         font-size: 1.25em;
     }
 
+    .forecast-container {
+        display: block;
+        width: 450px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 5px 5px 30px var(--yankeesblue);
+        margin-bottom: 2em;
+    }
+
+    .forecast-container h2 {
+        padding: .5em 0;
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .forecast-content {
+        font-family: 'Mansalva', 'Comic Sans', cursive;
+        background: var(--hovering-container-bg);
+        opacity: .85;
+        box-shadow: 5px 5px 30px var(--yankeesblue);
+        width: 100%;
+        height: 100px;
+        color: var(--hovering-container-color);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 33% auto;
+        grid-template-areas: 
+            "daynames daynames daynames daynames daynames"
+            "daily-forecast daily-forecast daily-forecast daily-forecast daily-forecast";
+        font-size: .75em;
+    }
+
+    .daynames {
+        margin: auto;
+        padding: .5em;
+        text-align: center;
+    }
+
+    .daily-forecast {
+        margin: auto;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .daily-forecast .icon img {
+        width: 43px;
+        margin: auto;
+    }
+
     .summary-content {
         font-size: 1.25em;
         max-width: unset;
@@ -33,4 +82,17 @@
     .summary-content > .header-row {
         line-height: unset;
     }
+    
+    .article-content h2 {
+        font-size: 2em;
+    }
+
+    .disp-full-artcile > button {
+        font-size: 1.5em;
+    }
+
+    .article-content p {
+        font-size: 1.5em;
+    }
+    
 }

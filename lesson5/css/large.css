@@ -27,15 +27,13 @@
 
     nav ul li {
         display: unset;
+        align-self: center;
     }
 
-    /* nav ul li a {
-        display: unset;
-        float: left;
-        border-right: 1px solid var(--nav-seperator);
-        padding: .8em 1em;
+    nav ul li a {
+        padding: .8em;
     }
- */
+
     nav ul li:last-child a {
         border: none;
     }
@@ -51,6 +49,24 @@
     .summary-content {
         font-size: 2em;
         max-width: unset;
+    }
+
+    .forecast-container {
+        width: 650px;
+    }
+
+    .forecast-container h2 {
+        font-size: 2em;
+    }
+
+    .forecast-content {
+        font-size: 1.25em;
+        height: 150px;
+    }
+
+    .daily-forecast .icon img {
+        width: 62px;
+        margin: auto;
     }
 
 }
