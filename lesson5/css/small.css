@@ -206,7 +206,7 @@ footer {
     box-shadow: 5px 5px 30px var(--yankeesblue);
     min-width: 150px;
     max-width: 25%;
-    max-height: auto;
+    min-height: 100px;
     color: var(--hovering-container-color);
     display: grid;
     grid-template-columns: 1.25fr .75fr;
