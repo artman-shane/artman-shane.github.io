@@ -322,9 +322,9 @@ footer {
     text-align: center;
 }
 
-.contact-icons>img {
-    padding: 1em 1em;
-    height: 43px;
+.contact-icons img {
+    padding: .25em;
+    height: 40px;
 }
 
 .comm-icons {
@@ -349,4 +349,14 @@ footer {
 
 .contact-address-icons img {
     height: 43px;
+}
+
+.credits {
+    width: 80%;
+    margin: auto;
+}
+
+.map-container {
+    display: none;
+    margin: auto;
 }

@@ -1,28 +1,72 @@
 @media only screen and (min-width: 32.5em) {
-    
+
     header {
         height: 9em;
+    }
+
+    header img {
+        height: 125px;
     }
 
     .pagetitle {
         font-size: 1.5em;
     }
-    
-    header img {
-        height: 125px;
+
+    /* ***** Navigation Menu Section ***** */
+    nav ul {
+        margin: auto;
+        display: flex;
+        max-width: 1200px;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    nav ul li {
+        /* Clear hidden view set in small.css */
+        display: unset;
+    }
+
+    nav ul li a {
+        padding: .9em .7em;
+    }
+
+    nav ul li:first-child {
+        display: none;
     }
 
     nav {
-        font-size:1.75em;
+        font-size: .9em;
     }
 
-    footer {
+    /* ***** End of Navigation Menu ***** */
+
+
+    /* ***** Summary Container ***** */
+
+    .summary-content {
         font-size: 1.25em;
+        max-width: unset;
     }
+
+    .summary-content h2 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .summary-content>.header-row {
+        line-height: unset;
+    }
+
+    /* ***** End of Summary Container ***** */
+
+
+    /* ***** Forecast Container ****** */
 
     .forecast-container {
         display: block;
-        width: 450px;
+        min-width: 400px;
+        max-width: 60%;
         margin: auto;
         text-align: center;
         box-shadow: 5px 5px 30px var(--yankeesblue);
@@ -46,53 +90,73 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 33% auto;
-        grid-template-areas: 
+        grid-template-areas:
             "daynames daynames daynames daynames daynames"
             "daily-forecast daily-forecast daily-forecast daily-forecast daily-forecast";
-        font-size: .75em;
+        padding-bottom: 1.2em;
     }
 
     .daynames {
-        margin: auto;
-        padding: .5em;
-        text-align: center;
-    }
-
-    .daily-forecast {
-        margin: auto;
-        vertical-align: middle;
-        text-align: center;
+        padding-top: .1em;
+        font-size: 1em;
     }
 
     .daily-forecast .icon img {
-        width: 43px;
-        margin: auto;
+        width: 60%;
     }
 
-    .summary-content {
-        font-size: 1.25em;
-        max-width: unset;
-    }
+    /* ***** End of Forecast Container ****** */
 
-    .summary-content h2 {
-        font-size: 1em;
-        margin: 0;
-    }
 
-    .summary-content > .header-row {
-        line-height: unset;
-    }
-    
+    /* ***** Article Container ****** */
+
     .article-content h2 {
-        font-size: 2em;
+        font-size: 1.25em;
     }
 
-    .disp-full-artcile > button {
-        font-size: 1.5em;
+    .disp-full-artcile>button {
+        font-size: 1em;
     }
 
     .article-content p {
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+
+    /* ***** End of Article Container ****** */
+
+    .contact-icons img {
+        height: 43px;
     }
     
+    .contact-content {
+        width: 50%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-address-icons {
+        display: none;
+    }
+
+
+    .map-container {
+        display: unset;
+    }
+
+    .map-container iframe {
+        width: 200px;
+    }
+
+    /* ***** Footer Container ****** */
+
+    footer {
+        font-size: .9em;
+    }
+
+
 }
