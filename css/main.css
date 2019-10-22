@@ -1,5 +1,5 @@
 /* All styling should go here for the sartman assignment portal */
-@import url('https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap'); */
 
 /* To use the fonts...
 
@@ -21,6 +21,7 @@ body {
     max-width: 1200px;
     font-size: 1.25em;
     line-height: 2em;
+    
 }
 
 main {

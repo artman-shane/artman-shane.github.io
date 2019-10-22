@@ -1,0 +1,376 @@
+/* All styling should go here for the sartman assignment portal */
+/* 10-22-19 Bro Odom suggested that this be in the HTML instead */
+/* @import url("../../css/normalize.css"); */
+
+/* 10-22-19 - Because we are now optimizing the fonts, this is no longer needed. Please see script in HTML body. */
+/* @import url('https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap'); */
+
+/* To use the fonts...
+    font-family: 'Open Sans', 'georgia', sans-serif;
+    font-family: 'Mansalva', 'Comic Sans', cursive;
+*/
+
+/* Colors:
+    Body Font: purplenavy (#4c6085)
+    Heading and Link Font: darktangerine (#fca311)
+    Background: platinum (#e5e5e5)
+    Others: taupe (#463730), yankeesblue (#14213d), shadowblue (#6f8faf)
+*/
+
+:root {
+    --purplenavy: #4c6085;
+    --darktangerine: #fca311;
+    --platinum: #e5e5e5;
+    --taupe: #463730;
+    --yankeesblue: #14213d;
+    --shadowblue: #6f8faf;
+
+    --nav-background-color: var(--purplenavy);
+    --nav-color: var(--darktangerine);
+    --header-background-color: var(--taupe);
+    --header-text-color: var(--shadowblue);
+    --border-color: var(--yankeesblue);
+    --body-link-color: var(--yankeesblue);
+    --body-link-hover-color: var(--darktangerine);
+    --header-link-color: var(--darktangerine);
+    --header-link-hover-color: var(--platinum);
+    --nav-seperator: var(--darktangerine);
+    --hovering-container-bg: var(--yankeesblue);
+    --hovering-container-color: var(--platinum);
+    --special-news-bg: var(--darktangerine);
+    --special-news-color: var(--yankeesblue);
+    --author-color: var(--taupe);
+}
+
+body {
+    font-family: 'Open Sans', 'georgia', sans-serif;
+    min-width: 240px;
+}
+
+header {
+    display: flex;
+    background: var(--header-background-color);
+    color: var(--header-text-color);
+    height: 6em;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 75px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body a,
+body a:visited {
+    color: var(--body-link-color);
+}
+
+body a:hover {
+    color: var(--body-link-hover-color);
+}
+
+nav a,
+nav a:visited,
+footer a,
+footer a:visited {
+    color: var(--header-link-color);
+}
+
+nav a:hover,
+footer a:hover {
+    color: var(--header-link-hover-color);
+    background: rgba(0,0,0,.2);
+}
+
+nav {
+    font-size: 1.6em;
+    color: var(--nav-color);
+    background: var(--nav-background-color);
+}
+
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-align: center;
+    background: var(--nav-background-color);
+}
+
+nav ul li {
+    display: none;
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8em;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav ul li .active {
+    background: rgba(255,255,255,.25);
+}
+
+main div h2 {
+    font-size: 2em;
+}
+section {
+    background: var(--platinum);
+    margin-top: 1em;
+}
+
+section h2 {
+    margin: 0;
+}
+
+main, footer {
+    margin: auto;
+}
+
+footer {
+    background: var(--header-background-color);
+    color: var(--header-text-color);
+    text-align: center;
+    font-size: .75em;
+    line-height: 1.5em;
+    padding: 1em 0 1em 0;
+}
+
+.special-news {
+    background: var(--special-news-bg);
+    color: var(--special-news-color);
+    display: none;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.special-news > div {
+    padding: 1em;
+}
+
+.special-news.displayed {
+    display: block;
+}
+
+.text-justify-ctr {
+    text-align: center;
+}
+
+.displayed li {
+    display: block;
+}
+
+.float-left {
+    float: left;
+}
+
+.pagetitle {
+    font-size: 1em;
+    padding-left: .25em;
+}
+
+.pagetitle h1 {
+    margin: 0;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.summary-container {
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    box-shadow: 5px 5px 30px var(--yankeesblue);
+    margin-bottom: 3em;
+}
+
+.summary-image > img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.summary-content {
+    background: var(--hovering-container-bg);
+    opacity: .85;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    box-shadow: 5px 5px 30px var(--yankeesblue);
+    min-width: 150px;
+    max-width: 25%;
+    min-height: 100px;
+    color: var(--hovering-container-color);
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header"
+        "key value";
+    padding: .5em;
+    font-size: .75em;
+}
+
+.summary-content h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.summary-content > .header-row {
+    grid-area: header;
+    border-bottom: 1px solid white;
+    margin: .3em 0;
+    line-height: .5em;
+}
+
+.summary-content > .header-row h3 {
+    margin: 0 0 5px 0;
+}
+
+.summary-content > .key {
+    /* margin: .2em 0; */
+    justify-self: right;
+}
+
+.summary-content > .value {
+    /* margin: .2em 0; */
+    justify-self: left;
+    margin-left: .3em;
+    color: var(--darktangerine);
+}
+
+.forecast-container {
+    display: none;
+}
+
+.article-container {
+    width: 95%;
+    margin:auto;
+    text-align: center;
+    position: relative;
+    box-shadow: 5px 2px 30px var(--yankeesblue);
+    margin-bottom: 3em;
+}
+
+.article-container h3 {
+    font-size: 1.5em;
+}
+
+.article-content {
+    padding-top: 1em;
+}
+
+.article-content p {
+    text-align: left;
+    margin-left: .5em;
+}
+
+.article-image > img {
+    width: 95%;
+    vertical-align: middle;
+    margin: 5% 0;
+    box-shadow: 5px 5px 10px var(--yankeesblue);
+}
+
+.article-content > h3 {
+    text-align: left;
+    padding-left: .2em;
+    margin:.25em;
+}
+
+.author {
+    color: var(--author-color);
+    font-style: italic;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.full-article {
+    display: none;
+}
+
+.full-article.displayed {
+    display: unset;
+}
+
+.disp-full-artcile.hide {
+    display: none;
+}
+
+.disp-full-artcile > button {
+    color: var(--yankeesblue);
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25em;
+}
+
+.disp-full-artcile>button:hover {
+    color: var(--darktangerine);
+}
+
+.contact-content {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.contact-content h2 {
+    font-size: 1.5em;
+    padding-bottom: .8em;
+}
+
+.contact-icons {
+    text-align: center;
+}
+
+.contact-icons img {
+    padding: .25em;
+    height: 40px;
+}
+
+.comm-icons {
+    font-size: 1.25em;
+    margin-bottom: .5em;
+}
+
+.comm-icons img {
+    height: 43px;
+}
+
+.comm-icons>a {
+    vertical-align: middle;
+}
+
+.contact-address-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.25em;
+}
+
+.contact-address-icons img {
+    height: 43px;
+}
+
+.credits {
+    width: 80%;
+    margin: auto;
+}
+
+.map-container {
+    display: none;
+    margin: auto;
+}
