@@ -198,6 +198,10 @@ footer {
     margin-bottom: 3em;
 }
 
+figure {
+    margin: 0;
+}
+
 .summary-image > img {
     width: 100%;
     vertical-align: middle;
