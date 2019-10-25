@@ -47,7 +47,7 @@
         </div>
         <section class="summary-container">
             <figure class="summary-image">
-                <img src="images/hero.jpeg" alt="Mountain Flowers" sizes="98vw"
+                <img src="images/hero.jpeg" alt="Temp Demo Image" sizes="98vw"
                 srcset="images/hero520.jpeg 520w,
                         images/hero861.jpeg 861w,
                         images/hero1176.jpeg 1176w">
@@ -58,15 +58,15 @@
                     <h3>Weather Summary</h3>
                 </div>
                 <div class="row1-col1 key">Currently:</div>
-                <div class="row1-col2 value">&lt;###&gt;</div>
+                <div class="row1-col2 value wx-current">&lt;###&gt;</div>
                 <div class="row2-col1 key">High:</div>
-                <div class="row2-col2 value">&lt;###&gt;</div>
+                <div class="row2-col2 value wx-high-temp">&lt;###&gt;</div>
                 <div class="row3-col1 key">Wind Chill:</div>
-                <div class="row3-col2 value">&lt;###&gt;</div>
+                <div class="row3-col2 value wx-wind-chill">&lt;###&gt;</div>
                 <div class="row4-col1 key">Humidity:</div>
-                <div class="row4-col2 value">&lt;###&gt;</div>
+                <div class="row4-col2 value wx-humidity">&lt;###&gt;</div>
                 <div class="row5-col1 key">Wind Speed:</div>
-                <div class="row5-col2 value">&lt;###&gt;</div>
+                <div class="row5-col2 value wx-wind-speed">&lt;###&gt;</div>
             </div>
         </section>
         <section class="forecast-container">
@@ -233,6 +233,8 @@
     <script src="js/today.js" defer></script>
     <script src="js/toggle-menu.js" defer></script>
     <script src="js/toggle-read-more.js" defer></script>
+    <script src="js/populate-wx.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <!-- 10.22.19 - webfont loading -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
