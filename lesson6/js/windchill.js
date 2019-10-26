@@ -2,7 +2,7 @@
 if (wxCurrentTemp <= 50 && wxWindSpeed > 3) {
     // Since we already have the necessary values defined in the populate-wx.js,
     // I can just use them to populate the formula..
-    var wxWindchill = Math.round((35.74 + (0.6215 * wxCurrentTemp) - (35.75 * Math.pow(wxWindSpeed, .16)) + (0.4275 * wxCurrentTemp * Math.pow(wxWindSpeed, .16))) * 10) / 10;
+    var wxWindchill = (35.74 + (0.6215 * wxCurrentTemp) - (35.75 * Math.pow(wxWindSpeed, .16)) + (0.4275 * wxCurrentTemp * Math.pow(wxWindSpeed, .16))).toFixed(2);
 } else {
     var wxWindchill = "N/A";
 }
