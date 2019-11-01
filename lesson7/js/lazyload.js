@@ -25,7 +25,7 @@ if ('IntersectionObserver' in window) {
                 observer.unobserve(item.target);
             }
         });
-    });
+    }, imageOptions);
     images.forEach((img) => {
         observer.observe(img);
     });
