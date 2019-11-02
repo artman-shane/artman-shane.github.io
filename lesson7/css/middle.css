@@ -128,7 +128,7 @@
     .contact-icons img {
         height: 43px;
     }
-    
+
     .contact-content {
         width: 50%;
     }
@@ -159,5 +159,7 @@
         font-size: .9em;
     }
 
-
+    .wx-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

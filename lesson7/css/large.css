@@ -100,12 +100,23 @@
         font-size: 1.5em;
         padding: .7em;
     }
+
     .contact-icons img {
         padding: 1em;
     }
-    
+
     .map-container iframe {
         width: 500px;
         height: 350px;
     }
+
+    .wx-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+     .wx-gallery div:hover {
+         box-shadow: 5px 5px 30px var(--yankeesblue);
+     }
+
+
 }

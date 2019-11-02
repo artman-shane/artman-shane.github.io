@@ -84,7 +84,7 @@ footer a:visited {
 nav a:hover,
 footer a:hover {
     color: var(--header-link-hover-color);
-    background: rgba(0,0,0,.2);
+    background: rgba(0, 0, 0, .2);
 }
 
 nav {
@@ -94,8 +94,8 @@ nav {
 }
 
 nav ul {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     list-style: none;
     text-align: center;
     background: var(--nav-background-color);
@@ -116,12 +116,17 @@ nav li:first-child {
 }
 
 nav ul li .active {
-    background: rgba(255,255,255,.25);
+    background: rgba(255, 255, 255, .25);
 }
 
 main div h2 {
     font-size: 2em;
 }
+
+main h1 {
+    margin-left: 2%;
+}
+
 section {
     background: var(--platinum);
     margin-top: 1em;
@@ -131,7 +136,8 @@ section h2 {
     margin: 0;
 }
 
-main, footer {
+main,
+footer {
     margin: auto;
 }
 
@@ -153,7 +159,7 @@ footer {
     font-weight: bold;
 }
 
-.special-news > div {
+.special-news>div {
     padding: 1em;
 }
 
@@ -202,7 +208,7 @@ figure {
     margin: 0;
 }
 
-.summary-image > img {
+.summary-image>img {
     width: 100%;
     vertical-align: middle;
 }
@@ -221,7 +227,7 @@ figure {
     display: grid;
     grid-template-columns: 1.25fr .75fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "key value";
     padding: .5em;
@@ -233,23 +239,23 @@ figure {
     margin: 0;
 }
 
-.summary-content > .header-row {
+.summary-content>.header-row {
     grid-area: header;
     border-bottom: 1px solid white;
     margin: .3em 0;
     line-height: .5em;
 }
 
-.summary-content > .header-row h3 {
+.summary-content>.header-row h3 {
     margin: 0 0 5px 0;
 }
 
-.summary-content > .key {
+.summary-content>.key {
     /* margin: .2em 0; */
     justify-self: right;
 }
 
-.summary-content > .value {
+.summary-content>.value {
     /* margin: .2em 0; */
     justify-self: left;
     margin-left: .3em;
@@ -262,7 +268,7 @@ figure {
 
 .article-container {
     width: 95%;
-    margin:auto;
+    margin: auto;
     text-align: center;
     position: relative;
     box-shadow: 5px 2px 30px var(--yankeesblue);
@@ -282,17 +288,17 @@ figure {
     margin-left: .5em;
 }
 
-.article-image > img {
+.article-image>img {
     width: 95%;
     vertical-align: middle;
     margin: 5% 0;
     box-shadow: 5px 5px 10px var(--yankeesblue);
 }
 
-.article-content > h3 {
+.article-content>h3 {
     text-align: left;
     padding-left: .2em;
-    margin:.25em;
+    margin: .25em;
 }
 
 .author {
@@ -314,7 +320,7 @@ figure {
     display: none;
 }
 
-.disp-full-artcile > button {
+.disp-full-artcile>button {
     color: var(--yankeesblue);
     background: transparent;
     border: none;
@@ -378,3 +384,37 @@ figure {
     display: none;
     margin: auto;
 }
+
+.wx-gallery {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    row-gap: .5em;
+    column-gap: .5em;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+.wx-gallery img {
+    width: 100%;
+     filter: blur(0em);
+     transition: filter .5s;
+ }
+ 
+ .wx-gallery img[data-src] {
+     filter: blur(0.2em);
+ }
+ .wx-gallery h2 {
+     font-size: 1em;
+     margin-left: .4em;
+ }
+
+ .wx-gallery div {
+     height: 100%;
+     box-shadow: 1px 1px 5px var(--yankeesblue);
+ }
+
+
