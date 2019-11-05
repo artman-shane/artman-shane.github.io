@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Week 7 assignment for Shane Artman in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="author" content="Shane Artman">
+    <title>Winder Weather</title>
+    <!-- 10.22.19 - Bro Odom suggested having the normalize in the HTML -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div class="special-news">
+        <div>
+            Saturday = Preston Pancakes in the Park!
+            9:00 a.m. Saturday at the city park.
+        </div>
+    </div>
+    <header>
+        <div><img src="images/WindMill.png" alt="Windmill logo"></div>
+        <div class="pagetitle">
+            <h1>Winder Weather</h1>
+            Some Motto
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu clearfix">
+            <li><a href="#" onclick="toggleMenu()" id="nav-first-element">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="text-justify-ctr">
+            <h2>Preston Idaho</h2>
+        </div>
+        <section class="summary-container">
+            <figure class="summary-image">
+                <img src="images/hero.jpeg" alt="Temp Demo Image" sizes="98vw"
+                srcset="images/hero520.jpeg 520w,
+                        images/hero861.jpeg 861w,
+                        images/hero1176.jpeg 1176w">
+                
+            </figure>
+            <div class="summary-content">
+                <div class="header-row">
+                    <h3>Weather Summary</h3>
+                </div>
+                <div class="row1-col1 key">Currently:</div>
+                <div class="row1-col2 value wx-current">&lt;###&gt;</div>
+                <div class="row2-col1 key">High:</div>
+                <div class="row2-col2 value wx-high-temp">&lt;###&gt;</div>
+                <div class="row3-col1 key">Wind Chill:</div>
+                <div class="row3-col2 value wx-wind-chill">&lt;###&gt;</div>
+                <div class="row4-col1 key">Humidity:</div>
+                <div class="row4-col2 value wx-humidity">&lt;###&gt;</div>
+                <div class="row5-col1 key">Wind Speed:</div>
+                <div class="row5-col2 value wx-wind-speed">&lt;###&gt;</div>
+            </div>
+        </section>
+        <section class="forecast-container">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-content">
+                <div class="row1-col1 daynames">Wednesday</div>
+                <div class="row1-col2 daynames">Thursday</div>
+                <div class="row1-col3 daynames">Friday</div>
+                <div class="row1-col4 daynames">Saturday</div>
+                <div class="row1-col5 daynames">Sunday</div>
+                <div class="row2-col1 daily-forecast">
+                    <div class="icon"><img src="images/sunny.png" alt="Sunny"></div>
+                    <div class="text">97&#8457;</div>
+                </div>
+                <div class="row2-col2 daily-forecast">
+                    <div class="icon"><img src="images/thunderstorm.png" alt="Thunderstorm"></div>
+                    <div class="text">97&#8457;</div>
+                </div>
+                <div class="row2-col3 daily-forecast">
+                    <div class="icon"><img src="images/cloudywithwind.png" alt="Cloudy with Wind"></div>
+                    <div class="text">97&#8457;</div>
+                </div>
+                <div class="row2-col4 daily-forecast">
+                    <div class="icon"><img src="images/hurricane.png" alt="Hurricane"></div>
+                    <div class="text">97&#8457;</div>
+                </div>
+                <div class="row2-col5 daily-forecast">
+                    <div class="icon"><img src="images/tornado.png" alt="tornado"></div>
+                    <div class="text">97&#8457;</div>
+                </div>
+            </div>
+        </section>
+        <section class="article-container">
+            <div class="article-content">
+                <h3>Farming on the High Desert</h3>
+                <div class="author">by Shane Artman</div>
+                <p>
+                    Farming on the high desert is a challenge; yet, there can be great rewards. Some of the
+                    challenges farmers are faced with include bugs, water, weather, and supply/demand. These all play
+                    into the ability of a farmer to be profitable enough to continue to survive.
+                </p>
+                <div class="disp-full-artcile"><button onclick="toggleFullArticle()">read more...</button></div>
+                <div class="full-article">
+                    <p>
+                        Bugs are some of the most destructive parts of farming. They can devour your effort and work
+                        in a few weeks and spread disease amonght the plants. Because the farm will typically produce
+                        similar plants in a consoslidated area, the bugs that thrive will plume to massive numbers quickly.
+                        This will provide destruction to the point of such a small harvest that the cost for the harvest
+                        can outweigh the revenue received.
+                    </p>
+                    <p>
+                        Weather and Water are critical to growning crops and the high desert does not provide enough water
+                        from rains over the land. When the weather does decide to provide rain, it can be unpredictable and
+                        generate winds that cause lodging of grains, damage to harvests that are drying, and more. If herbicides
+                        were used to control the bugs, the weather may still destroy any harvest you were hoping for.
+                    </p>
+                    <p>
+                        Supply and demand are another form of devestation on the farm. Because of other farms that have had
+                        similar successes and failures as a result of bugs, weather, and water will result in over-supply or
+                        lack-thereof. This can cause prices to fluctuate from one extreme or another.
+                    </p>
+                    <p>
+                        While farming is challenge and a difficult way of life, for many it is the only life they would choose.
+                        There is a gentleness that comes from farming that cannot be seen elsewhere. Farmers are a unique breed
+                        of people that provide this country the nourishment needed to survive. Thank you high desert farmers
+                        for your milk, grains, and way of life!
+                    </p>
+                </div>
+            </div>
+            <div class="article-image">
+                <img src="images/OrangeSunsetTrees.jpg" alt="Sunset Over Farm with Trees">
+            </div>
+        </section>
+        <section class="contact-container">
+            <div class="map-container"><iframe width="300" height="200" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+            <div class="contact-content">
+                <h2>Winder Weather</h2>
+                <div class="contact-info">
+                    <div class="contact-address-container">
+                        <div class="contact-address-icons">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9"><img src="images/005-pin.png"
+                                    alt="Map Pin"></a>
+                        </div>
+                        <div class="contact-address">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9">
+                                1 North First St<br>
+                                Preston, ID 83263
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-phone comm-icons">
+                        <a href="tel:+17778889999">
+                            <img src="images/008-phone-1.png" alt="Phone Icon">
+                        </a>
+                        <a href="tel:+17778889999">
+                            777-888-9999
+                        </a>
+                    </div>
+                    <div class="contact-email comm-icons">
+                        <a href="mailto:winderweather@ww.com">
+                            <img src="images/007-mail.png" alt="eMail Icon">
+                        </a>
+                        <a href="mailto:winderweather@ww.com">
+                            winderweather@ww.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-icons">
+                    <a href="#"><img src="images/001-facebook.png" alt="Facebook Icon"></a>
+                    <a href="#"><img src="images/002-twitter.png" alt="Twitter Icon"></a>
+                    <a href="#"><img src="images/003-instagram.png" alt="Instagram Icon"></a>
+                    <a href="#"><img src="images/004-pinterest.png" alt="Pinterest Icon"></a>
+                    <div class="credits">Icons made by
+                        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel
+                            Buddha,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="fullyear"></span> | Shane A. Artman | Georgia | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a><br>
+        <div id="lastupdate"></div>
+        <div id="footer-msg"></div>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/display-special-news.js" defer></script>
+    <script src="js/today.js" defer></script>
+    <script src="js/toggle-menu.js" defer></script>
+    <script src="js/toggle-read-more.js" defer></script>
+    <script src="js/populate-wx.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    <!-- 10.22.19 - webfont loading -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Mansalva', 'Open Sans']
+            }
+        });
+    </script>
+
+</body>
+
+</html>
