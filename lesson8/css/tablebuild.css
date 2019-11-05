@@ -6,9 +6,13 @@
     --even-row-color: #e7ffed;
 }
 
+div {
+    width: 271px;
+    box-shadow: 10px 10px 15px #628ca6;
+}
+
 table, caption {
     font-family: 'Ubuntu', sans-serif, serif;
-    box-shadow: 10px 10px 15px #628ca6;
 }
 
 table, th, td {
