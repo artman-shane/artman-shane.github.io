@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Storm Center</title>
+    <meta name='description' content='Storm Center Submission Form'>
+    <meta name='author' content='Shane Artman'>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div><img src="images/WindMill.png" alt="Windmill logo"></div>
+        <div class="pagetitle">
+            <h1>Winder Weather</h1>
+            Some Motto
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu clearfix">
+            <li><a href="#" onclick="toggleMenu()" id="nav-first-element">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#" class="active">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thanks.html" method="GET">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name
+                    <input type="text" name="name" id="name" class="name"
+                        pattern="^[a-zA-Z][a-zA-Z\.\,]{0,}([\ ][a-zA-Z\.\,0-9]{0,}){2,}$" required>
+                </label>
+                <label>eMail<input type="email" name="email" id="email" class="email" required></label>
+                <label>Phone Number<input type="tel" name="phone" id="phone" class="phone" required></label>
+                <label>Zip Code<input type="number" name="zip" id="zip" class="zip"
+                        patterm="[\d]{5}[\-]{0,1}([\d]{04}){0,1}" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Sotrm Information</legend>
+                <label>Storm Date<input type="date" name="stormdate" id="stormdate" class="stormdate" required></label>
+                <label>Storm Type<input list="stormtype-list" name="stormtype" id="stormtype" class="stormtype"></label>
+                <datalist id="stormtype-list">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <label>Storm Severity<input type="range" name="stormsev" id="stormsev" class="stormsev" min="1" max="10"></label>
+                <label>Region<select name="stormregion" id="stormregion" class="stormregion">
+                    <option value="" disabled selected hidden>Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Sugar City">Sugar City</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select></label>
+                <label>User in Danger
+                    Yes<input type="radio" name="danger" id="danger" class="danger" value="Yes">
+                    No<input type="radio" name="danger" id="danger" class="danger" value="No">
+                    Maybe<input type="radio" name="danger" id="danger" class="danger" value="Maybe">
+                </label>
+                <label>Additional Information<textarea name="addlinfo" id="addlinfo" cols="30" rows="10"></textarea></label>
+            </fieldset>
+                <input type="submit" value="Notify Weather Center">
+        </form>
+    </main>
+    <footer>
+        &copy;<span id="fullyear"></span> | Shane A. Artman | Georgia | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a><br>
+        <div id="lastupdate"></div>
+        <div id="footer-msg"></div>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/display-special-news.js" defer></script>
+    <script src="js/today.js" defer></script>
+    <script src="js/toggle-menu.js" defer></script>
+    <script src="js/toggle-read-more.js" defer></script>
+    <script src="js/populate-wx.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    <!-- 10.22.19 - webfont loading -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Mansalva', 'Open Sans']
+            }
+        });
+    </script>
+</body>
+
+</html>
