@@ -400,59 +400,94 @@ figure {
 
 .wx-gallery img {
     width: 100%;
-     filter: blur(0em);
-     transition: filter .5s;
- }
- 
- .wx-gallery img[data-src] {
-     filter: blur(0.2em);
- }
- .wx-gallery h2 {
-     font-size: 1em;
-     margin-left: .4em;
- }
+    filter: blur(0em);
+    transition: filter .5s;
+}
 
- .wx-gallery div {
-     height: 100%;
-     box-shadow: 1px 1px 5px var(--yankeesblue);
- }
+.wx-gallery img[data-src] {
+    filter: blur(0.2em);
+}
+
+.wx-gallery h2 {
+    font-size: 1em;
+    margin-left: .4em;
+}
+
+.wx-gallery div {
+    height: 100%;
+    box-shadow: 1px 1px 5px var(--yankeesblue);
+}
 
 
- /* Form Styling */
+/* Form Styling */
 
- form label.stacked {
-     display: block;
-     margin: .7em;
- }
+form {
+    margin: 0 2%;
+}
 
- form div, form label.sbs {
-     margin: 1em 0 0 .7em;
- }
+form fieldset {
+    min-width: 240px;
+}
 
- form label.sbs input {
-     margin: .3em .7em 0 0;
- }
+form label.stacked {
+    display: block;
+    margin: .7em;
+}
+
+form div,
+form label.sbs {
+    margin: 1em 0 0 .7em;
+}
+
+form label.sbs input {
+    margin: .3em .7em 0 0;
+}
 
 form label.addlinfo {
     margin-top: 2em;
 }
 
-form label.stacked input, form label.stacked textarea, form label.stacked select{
-    display: block;
-    margin: .2em 0 0 0;
+form input:required:invalid {
+    border-left: red solid 4px;
 }
 
- form fieldset {
-     padding: 1em;
-     margin: 1em 0;
-     border-radius: 5px;
- }
+form input:required:valid {
+    border-left: green solid 3px;
+}
 
- textarea {
-     width: 100%;
-     margin: auto;
- }
+form input.submitBtn {
+    border: none;
+    background: green;
+    color: white;
+    height: 3em;
+    width: 30%;
+    min-width: 120px;
+    text-align: center;
+    font-size: .8em;
+    border-radius: 6px;
+    margin: 0 0 1em 2%;
+}
 
+form label.stacked input,
+form label.stacked textarea,
+form label.stacked select {
+    display: block;
+    margin: .2em 0 0 0;
+    border-radius: 4px;
+}
 
+form label.stacked select {
+    border: black 1px solid;
+}
 
+form fieldset {
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+}
 
+textarea {
+    border: black 1px solid;
+    width: 100%;
+    margin: auto;
+}
