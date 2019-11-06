@@ -37,19 +37,22 @@
         <form action="thanks.html" method="GET">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label>First Name
+                <label class="stacked">First Name
                     <input type="text" name="name" id="name" class="name"
                         pattern="^[a-zA-Z][a-zA-Z\.\,]{0,}([\ ][a-zA-Z\.\,0-9]{0,}){2,}$" required>
                 </label>
-                <label>eMail<input type="email" name="email" id="email" class="email" required></label>
-                <label>Phone Number<input type="tel" name="phone" id="phone" class="phone" required></label>
-                <label>Zip Code<input type="number" name="zip" id="zip" class="zip"
+                <label class="stacked">eMail<input type="email" name="email" id="email" class="email" required></label>
+                <label class="stacked">Phone Number<input type="tel" name="phone" id="phone" class="phone"
+                        required></label>
+                <label class="stacked">Zip Code<input type="number" name="zip" id="zip" class="zip"
                         patterm="[\d]{5}[\-]{0,1}([\d]{04}){0,1}" required></label>
             </fieldset>
             <fieldset>
                 <legend>Sotrm Information</legend>
-                <label>Storm Date<input type="date" name="stormdate" id="stormdate" class="stormdate" required></label>
-                <label>Storm Type<input list="stormtype-list" name="stormtype" id="stormtype" class="stormtype"></label>
+                <label class="stacked">Storm Date<input type="date" name="stormdate" id="stormdate" class="stormdate"
+                        required></label>
+                <label class="stacked">Storm Type<input list="stormtype-list" name="stormtype" id="stormtype"
+                        class="stormtype" required></label>
                 <datalist id="stormtype-list">
                     <option value="Flash Flood">
                     <option value="Hail">
@@ -57,21 +60,24 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-                <label>Storm Severity<input type="range" name="stormsev" id="stormsev" class="stormsev" min="1" max="10"></label>
-                <label>Region<select name="stormregion" id="stormregion" class="stormregion">
-                    <option value="" disabled selected hidden>Select Region</option>
-                    <option value="Preston">Preston</option>
-                    <option value="Sugar City">Sugar City</option>
-                    <option value="Fish Haven">Fish Haven</option>
-                </select></label>
-                <label>User in Danger
-                    Yes<input type="radio" name="danger" id="danger" class="danger" value="Yes">
-                    No<input type="radio" name="danger" id="danger" class="danger" value="No">
-                    Maybe<input type="radio" name="danger" id="danger" class="danger" value="Maybe">
+                <label class="stacked">Storm Severity<input type="range" name="stormsev" id="stormsev" class="stormsev"
+                        min="1" max="10" value="1"></label>
+                <label class="stacked">Region<select name="stormregion" id="stormregion" class="stormregion" required>
+                        <option value="" disabled selected hidden>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Sugar City">Sugar City</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
                 </label>
-                <label>Additional Information<textarea name="addlinfo" id="addlinfo" cols="30" rows="10"></textarea></label>
+                <div>User in Danger</div>
+                <label class="sbs"><input type="radio" name="danger" id="danger" class="danger" value="Yes">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" id="danger" class="danger" value="No">No</label>
+                <label class="sbs"><input type="radio" name="danger" id="danger" class="danger"
+                        value="Maybe">Maybe</label>
+                <label class="stacked addlinfo">Additional Information<textarea name="addlinfo" id="addlinfo" cols="30"
+                        rows="10"></textarea></label>
             </fieldset>
-                <input type="submit" value="Notify Weather Center">
+            <input type="submit" value="Notify Weather Center">
         </form>
     </main>
     <footer>

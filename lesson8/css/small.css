@@ -418,3 +418,41 @@ figure {
  }
 
 
+ /* Form Styling */
+
+ form label.stacked {
+     display: block;
+     margin: .7em;
+ }
+
+ form div, form label.sbs {
+     margin: 1em 0 0 .7em;
+ }
+
+ form label.sbs input {
+     margin: .3em .7em 0 0;
+ }
+
+form label.addlinfo {
+    margin-top: 2em;
+}
+
+form label.stacked input, form label.stacked textarea, form label.stacked select{
+    display: block;
+    margin: .2em 0 0 0;
+}
+
+ form fieldset {
+     padding: 1em;
+     margin: 1em 0;
+     border-radius: 5px;
+ }
+
+ textarea {
+     width: 100%;
+     margin: auto;
+ }
+
+
+
+
