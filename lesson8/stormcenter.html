@@ -43,11 +43,10 @@
                 </label>
                 <label class="stacked">eMail<input type="email" name="email" id="email" class="email" required
                         placeholder="email@domain.net"></label>
-                <label class="stacked">Phone Number<input type="tel" name="phone" id="phone" class="phone" required
+                <label class="stacked">Phone Number<input type="tel" name="phone" id="phone" class="phone"
                         placeholder="+12005551212"></label>
                 <label class="stacked">Zip Code
-                    <input type="number" name="zip" id="zip" class="zip" pattern="^[\d]{5}[\-]{0,1}([\d]{04}){0,1}$"
-                        required>
+                    <input type="number" name="zip" id="zip" class="zip" pattern="^[\d]{5}[\-]{0,1}([\d]{04}){0,1}$">
                 </label>
             </fieldset>
             <fieldset>
@@ -72,15 +71,15 @@
                         <option value="Fish Haven">Fish Haven</option>
                     </select>
                 </label>
-                <div class="dangercontainer">
-                    <div>User in Danger</div>
+                <fieldset class="userindanger">
+                    <legend>Are you in Danger?</legend>
                     <label class="sbs"><input type="radio" name="danger" id="danger" class="danger"
                             value="Yes">Yes</label>
                     <label class="sbs"><input type="radio" name="danger" id="danger" class="danger"
                             value="No">No</label>
                     <label class="sbs"><input type="radio" name="danger" id="danger" class="danger"
                             value="Maybe">Maybe</label>
-                </div>
+                </fieldset>
                 <label class="stacked addlinfo">Additional Information<textarea name="addlinfo" id="addlinfo" cols="30"
                         rows="10"></textarea></label>
             </fieldset>

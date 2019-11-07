@@ -425,23 +425,24 @@ form {
     margin: 0 2%;
 }
 
-form fieldset {
-    min-width: 240px;
-}
 
 form label.stacked {
     display: block;
     margin: 1em .7em;
 }
 
-form div,
+form label.stacked input {
+    width: 98%;
+    max-width: 300px;
+}
+
 form label.sbs {
-    margin: .5em 0 0 .7em;
+    margin: 1.5em 0 0 .7em;
     font-size: 1em;
 }
 
 form label.sbs input {
-    margin: .7em .5em 0 .2em;
+    margin: 0 .5em 0 .2em;
     transform: scale(1.5);
 }
 
@@ -466,13 +467,13 @@ form input.submitBtn {
     border: none;
     background: green;
     color: white;
-    height: 3em;
-    width: 30%;
-    min-width: 120px;
+    height: 2em;
+    width: 25%;
+    min-width: 225px;
     text-align: center;
-    font-size: .8em;
+    font-size: 1.7em;
     border-radius: 6px;
-    margin: 0 0 1em 2%;
+    margin: 0 0 .5em 2%;
 }
 
 form label.stacked input,
@@ -489,7 +490,15 @@ form label.stacked select {
     border: black 1px solid;
 }
 
+fieldset.userindanger {
+    max-width: 220px;
+    min-width: unset;
+    margin: 1.5em 0 0 .7em;
+    font-size: 1em;
+}
+
 form fieldset {
+    min-width: 265px;
     padding: 1em;
     margin: 1em 0;
     border-radius: 5px;
@@ -498,6 +507,8 @@ form fieldset {
 form label.stacked textarea {
     border: black 1px solid;
     width: 100%;
+    max-width: 100%;
     margin: auto;
     min-height: 10em;
+
 }
