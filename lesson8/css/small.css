@@ -465,8 +465,7 @@ form input:required:valid {
 
 form input.submitBtn {
     border: none;
-    background: green;
-    color: white;
+    background: var(--darktangerine);
     height: 2em;
     width: 25%;
     min-width: 225px;
@@ -511,4 +510,18 @@ form label.stacked textarea {
     margin: auto;
     min-height: 10em;
 
+}
+
+#stormseverity {
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input.invalid {
+        border-left: red solid 4px;
+}
+
+input.valid {
+        border-left: green solid 3px;
 }
