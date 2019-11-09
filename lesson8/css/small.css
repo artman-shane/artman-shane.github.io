@@ -504,12 +504,15 @@ form label.stacked select {
 }
 
 fieldset.userindanger {
-    max-width: 220px;
-    min-width: unset;
+    max-width: 95%;
     margin: 1.5em 0 0 .7em;
     font-size: 1em;
+    text-align: left;
 }
 
+.userindanger label {
+    padding: .5em 0;
+}
 
 
 form label.stacked textarea {
