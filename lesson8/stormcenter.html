@@ -43,8 +43,9 @@
                 </label>
                 <label class="stacked">eMail<input type="email" name="email" id="email" class="email"
                         placeholder="email@domain.net"></label>
-                <label class="stacked">Phone Number<input type="tel" pattern="[\d\+][\d\(\)\- ]{6,}" 
-                    name="phone" id="phone" class="phone" placeholder="+1(200)555-1212 / 12005551212" required></label>
+                <label class="stacked">Phone Number
+                    <input type="tel" pattern="[\d\+][\d\(\)\- ]{6,}" name="phone" id="phone" class="phone"
+                        placeholder="+1(200)555-1212 / 12005551212" required></label>
                 <label class="stacked">Zip Code
                     <input type="number" name="zip" id="zip" class="zip" required>
                 </label>
@@ -62,9 +63,10 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-                <label class="stacked">Storm Severity: <span class="stormsevcursetting"><span id="stormseverity" class="red">5 - med</span></span>
-                    <input type="range" value="5" min="1" max="10" step="1"
-                    name="stormsev" id="stormsevsel" class="stormsev" list="listsettings" oninput="stormseverity()">
+                <label class="stacked">Storm Severity: <span class="stormsevcursetting"><span id="stormseverity"
+                            class="red">5 - med</span></span>
+                    <input type="range" value="5" min="1" max="10" step="1" name="stormsev" id="stormsevsel"
+                        class="stormsev" list="listsettings" oninput="stormseverity()">
                     <datalist id="listsettings">
                         <option>1</option>
                         <option>2</option>
@@ -78,7 +80,8 @@
                         <option>10</option>
                     </datalist>
                 </label>
-                <label class="stacked">Region<select name="stormregion" id="stormregion" class="stormregion red" required onchange="modified(stormentryform.stormregion)">
+                <label class="stacked">Region<select name="stormregion" id="stormregion" class="stormregion red"
+                        required onchange="modified(stormentryform.stormregion)">
                         <option value="" disabled selected hidden>Select Region</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
@@ -87,12 +90,11 @@
                 </label>
                 <fieldset class="userindanger">
                     <legend id="dangerlegend" class="red">Are you in Danger?</legend>
-                    <label class="sbs"><input type="radio" name="danger" class="danger"
-                            value="Yes" onchange="modifiedById(dangerlegend)" required>Yes</label>
-                    <label class="sbs"><input type="radio" name="danger" class="danger"
-                            value="No" required>No</label>
-                    <label class="sbs"><input type="radio" name="danger" class="danger"
-                            value="Maybe" required>Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" class="danger" value="Yes"
+                            onchange="modifiedById(dangerlegend)" required>Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" class="danger" value="No" required>No</label>
+                    <label class="sbs"><input type="radio" name="danger" class="danger" value="Maybe"
+                            required>Maybe</label>
                 </fieldset>
                 <label class="stacked addlinfo">Additional Information<textarea name="addlinfo" id="addlinfo" cols="30"
                         rows="10"></textarea></label>
