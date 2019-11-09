@@ -424,6 +424,7 @@ figure {
 form {
     margin: 0 auto;
     max-width: 400px;
+    text-align: center;
 }
 
 form fieldset {
@@ -467,6 +468,10 @@ form input:required:invalid {
     border-left: red solid 4px;
 }
 
+form input:required:valid.danger {
+    border-left: unset;
+}
+
 form input:required:valid {
     border-left: green solid 3px;
 }
@@ -480,7 +485,8 @@ form input.submitBtn {
     text-align: center;
     font-size: 1.7em;
     border-radius: 6px;
-    margin: 0 0 .5em 2%;
+    margin-bottom: 2em;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
 }
 
 form label.stacked input,
