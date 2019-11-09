@@ -422,9 +422,17 @@ figure {
 /* Form Styling */
 
 form {
-    margin: 0 2%;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
+form fieldset {
+    min-width: 265px;
+    padding: 1em;
+    margin: 2em 2%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+}
 
 form label.stacked {
     display: block;
@@ -443,7 +451,7 @@ form label.sbs {
 
 form label.sbs input {
     margin: 0 .5em 0 .2em;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 
 .dangercontainer {
@@ -496,12 +504,7 @@ fieldset.userindanger {
     font-size: 1em;
 }
 
-form fieldset {
-    min-width: 265px;
-    padding: 1em;
-    margin: 1em 0;
-    border-radius: 5px;
-}
+
 
 form label.stacked textarea {
     border: black 1px solid;
