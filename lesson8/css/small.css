@@ -513,7 +513,6 @@ form label.stacked textarea {
 }
 
 #stormseverity {
-    color: red;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -524,4 +523,8 @@ input.invalid {
 
 input.valid {
         border-left: green solid 3px;
+}
+
+.red {
+    color: red;
 }

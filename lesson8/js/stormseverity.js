@@ -27,4 +27,5 @@ function stormseverity() {
 
     
     document.getElementById("stormseverity").innerHTML = stormseverity;
+    document.getElementById("stormseverity").classList.remove("red");
 }
