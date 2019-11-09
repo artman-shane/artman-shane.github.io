@@ -421,6 +421,11 @@ figure {
 
 /* Form Styling */
 
+/* Red is used to indicated a required field. */
+.red {
+    color: red;
+}
+
 form {
     margin: 0 auto;
     max-width: 400px;
@@ -478,18 +483,6 @@ form input:required:valid {
     border-left: green solid 3px;
 }
 
-form input.submitBtn {
-    border: none;
-    background: var(--darktangerine);
-    height: 2em;
-    width: 25%;
-    min-width: 225px;
-    text-align: center;
-    font-size: 1.7em;
-    border-radius: 6px;
-    margin-bottom: 2em;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
-}
 
 form label.stacked input,
 form label.stacked textarea,
@@ -518,10 +511,12 @@ fieldset.userindanger {
 }
 
 
+.addlinfo {
+    text-align-last: center;
+}
 form label.stacked textarea {
     border: black 1px solid;
-    width: 100%;
-    max-width: 100%;
+    width: 95%;
     margin: auto;
     min-height: 10em;
 }
@@ -532,13 +527,23 @@ form label.stacked textarea {
 }
 
 input.invalid {
-        border-left: red solid 4px;
+    border-left: red solid 4px;
 }
 
 input.valid {
-        border-left: green solid 3px;
+    border-left: green solid 3px;
 }
 
-.red {
-    color: red;
+.submitBtn {
+    border: none;
+    background: var(--darktangerine);
+    height: 2em;
+    width: 25%;
+    min-width: 225px;
+    text-align: center;
+    font-size: 1.7em;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
 }
+
