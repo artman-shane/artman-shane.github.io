@@ -530,7 +530,7 @@ input.valid {
     border-left: green solid 3px;
 }
 
-.submitBtn {
+form input.submitBtn {
     border: none;
     background: var(--darktangerine);
     height: 2em;
