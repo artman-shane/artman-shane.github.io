@@ -534,8 +534,6 @@ form input.submitBtn {
     border: none;
     background: var(--darktangerine);
     height: 2em;
-    width: 25%;
-    min-width: 225px;
     text-align: center;
     font-size: 1.7em;
     border-radius: 6px;
