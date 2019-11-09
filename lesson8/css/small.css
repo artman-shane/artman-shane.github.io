@@ -467,10 +467,6 @@ form label.sbs input {
     margin: 0;
 }
 
-form label.addlinfo {
-    margin-top: 2em;
-}
-
 form input:required:invalid {
     border-left: red solid 4px;
 }
@@ -511,8 +507,8 @@ fieldset.userindanger {
 }
 
 
-.addlinfo {
-    text-align-last: center;
+form .stacked.addlinfo {
+    text-align: center;
 }
 form label.stacked textarea {
     border: black 1px solid;
