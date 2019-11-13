@@ -1,0 +1,52 @@
+/* Colors: #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 */
+:root {
+    --caption-color: #7fb9c2;
+    --heading-color: #628ca6;
+    --odd-row-color: #e7f0ed;
+    --even-row-color: #e7ffed;
+}
+
+table {
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 10px 10px 15px #628ca6;
+}
+
+table,
+th,
+td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+td,
+th {
+    padding: .5em;
+}
+
+tr th.caption {
+    background: var(--caption-color);
+    font-weight: bold;
+}
+
+th, .active {
+    background: var(--heading-color);
+    color: white;
+}
+
+tbody tr {
+    background: var(--even-row-color);
+}
+
+tbody tr:nth-child(odd) {
+    background: var(--odd-row-color);
+}
+
+tfoot {
+    background: var(--caption-color);
+}
