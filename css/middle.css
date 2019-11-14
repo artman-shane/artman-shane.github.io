@@ -18,6 +18,8 @@
 
     li {
         font-size: 1.25em;
+        line-height: 2em;
+        margin: .5em 0;
     }
 
     p {

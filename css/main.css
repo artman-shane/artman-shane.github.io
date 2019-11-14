@@ -62,6 +62,8 @@ footer {
 
 li {
     font-size: .75em;
+    line-height: 2.5em;
+    margin: 1em 0;
 }
 
 ol>li {
@@ -83,6 +85,7 @@ a,
 footer a:hover,
 nav a:hover {
     color: #fca311;
+    white-space: nowrap;
 }
 
 a:hover {
