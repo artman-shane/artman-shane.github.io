@@ -563,6 +563,7 @@ div.cards section img {
     width: 95%;
     margin: 1em auto;
     border-radius: 5px;
+    box-shadow: 5px 5px 20px var(--taupe);
 }
 
 div.cards .name {
