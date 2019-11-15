@@ -114,9 +114,37 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-     .wx-gallery div:hover {
-         box-shadow: 5px 5px 30px var(--yankeesblue);
-     }
+    .wx-gallery div:hover {
+        box-shadow: 5px 5px 30px var(--yankeesblue);
+    }
 
+    /* Cards for City info */
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: unset;
+    }
+
+    div.cards section {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "info""image";
+        width: 80%;
+        margin: 1em 0;
+    }
+
+    div.cards section:nth-child(2) {
+        grid-template-areas:
+            "info" "image";
+    }
+
+    div.cards section .image {
+        height: auto;
+    }
+
+    div.cards section .image {
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
 
 }

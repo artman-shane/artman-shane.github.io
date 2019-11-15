@@ -162,4 +162,37 @@
     .wx-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Cards for City info */
+    div.cards {
+        grid-template-rows: 1fr 1fr 1fr;
+        display: grid;
+    }
+
+    div.cards section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        grid-template-areas: "info image";
+        width: 90%;
+        padding: 1em;
+    }
+
+    div.cards section:nth-child(2) {
+        grid-template-areas:
+            "image info";
+    }
+
+    div.cards section .info {
+        grid-area: info;
+    }
+
+    div.cards section .image {
+        grid-area: image;
+        height: auto;
+        width: 95%;
+        margin: auto;
+    }
+
+
 }
