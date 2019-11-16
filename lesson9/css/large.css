@@ -98,16 +98,35 @@
 
     .contact-content h2 {
         font-size: 1.5em;
-        padding: .7em;
+        padding: .2em;
+    }
+
+    .contact-address-container {
+        padding-bottom: unset;
+    }
+
+    .contact-address {
+        margin-bottom: .5em;
     }
 
     .contact-icons img {
-        padding: 1em;
+        padding: .25em;
+        height: 25px;
     }
 
+    .comm-icons {
+        font-size: 1em;
+        margin-bottom: .5em;
+    }
+
+    .comm-icons img {
+        height: 25px;
+    }
+
+
     .map-container iframe {
-        width: 500px;
-        height: 350px;
+        width: 400px;
+        height: 150px;
     }
 
     .wx-gallery {

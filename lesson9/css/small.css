@@ -334,12 +334,10 @@ figure {
 
 .contact-content {
     text-align: center;
-    padding-bottom: 2em;
 }
 
 .contact-content h2 {
     font-size: 1.5em;
-    padding-bottom: .8em;
 }
 
 .contact-icons {
@@ -364,6 +362,10 @@ figure {
     vertical-align: middle;
 }
 
+.contact-container {
+    padding: .25em 0;
+}
+
 .contact-address-container {
     display: flex;
     align-items: center;
@@ -378,6 +380,7 @@ figure {
 .credits {
     width: 80%;
     margin: auto;
+    font-size: .2em;
 }
 
 .map-container {

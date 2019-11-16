@@ -125,7 +125,13 @@
 
     /* ***** End of Article Container ****** */
 
-    .contact-icons img {
+
+.comm-icons {
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+
+.contact-icons img {
         height: 43px;
     }
 
@@ -140,17 +146,22 @@
         align-items: center;
     }
 
+    .contact-address-container {
+        /* margin-top: -1em; */
+    }
+
     .contact-address-icons {
         display: none;
     }
-
 
     .map-container {
         display: unset;
     }
 
     .map-container iframe {
-        width: 200px;
+        width: 250px;
+        height: 250px;
+        margin:auto;
     }
 
     /* ***** Footer Container ****** */
