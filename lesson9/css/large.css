@@ -149,11 +149,27 @@
         grid-template-areas: "info""image";
         width: 80%;
         margin: 1em 0;
+        transition: all .5s ease-in-out;
+    }
+
+    div.cards section:hover {
+        transform: scale(1.1);
+        opacity: .9;
+    }
+
+    div.cards section:hover:first-child {
+        transform: translate(10px, 0) scale(1.1);
+        opacity: .9;
+    }
+
+    div.cards section:hover:last-child {
+        transform: translate(-10px, 0) scale(1.1);
+        opacity: .9;
     }
 
     div.cards section:nth-child(2) {
         grid-template-areas:
-            "info" "image";
+            "info""image";
     }
 
     div.cards section .image {
