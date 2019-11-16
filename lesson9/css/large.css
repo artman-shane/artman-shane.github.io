@@ -153,17 +153,17 @@
     }
 
     div.cards section:hover {
-        transform: scale(1.1);
+        transform: translate(0, 10px) scale(1.1);
         opacity: .9;
     }
 
     div.cards section:hover:first-child {
-        transform: translate(10px, 0) scale(1.1);
+        transform: translate(10px, 10px) scale(1.1);
         opacity: .9;
     }
 
     div.cards section:hover:last-child {
-        transform: translate(-10px, 0) scale(1.1);
+        transform: translate(-10px, 10px) scale(1.1);
         opacity: .9;
     }
 
