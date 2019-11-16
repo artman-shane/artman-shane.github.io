@@ -141,6 +141,7 @@
     div.cards {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: unset;
+        grid-template-areas: "preston sodasprings fishhaven";
     }
 
     div.cards section {
@@ -167,7 +168,7 @@
         opacity: .9;
     }
 
-    div.cards section:nth-child(2) {
+    div.cards section.sodasprings {
         grid-template-areas:
             "info""image";
     }

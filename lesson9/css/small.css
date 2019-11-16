@@ -552,6 +552,8 @@ form input.submitBtn {
 div.cards {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "preston" "sodasprings" "fishhaven";
     justify-items: center;
     margin: auto;
 }
@@ -562,6 +564,16 @@ div.cards section {
     box-shadow: 0 0 20px var(--taupe);
     border-radius: 10px;
     margin: .5em;
+}
+
+div.cards section.preston {
+    grid-area: preston;
+}
+div.cards section.sodasprings {
+    grid-area: sodasprings;
+}
+div.cards section.fishhaven {
+    grid-area: fishhaven;
 }
 
 div.cards section img {

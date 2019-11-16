@@ -189,7 +189,7 @@
         padding: 1em;
     }
 
-    div.cards section:nth-child(2) {
+    div.cards section.sodasprings {
         grid-template-areas:
             "image info";
     }

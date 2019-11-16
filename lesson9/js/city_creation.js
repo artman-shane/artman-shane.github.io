@@ -33,6 +33,11 @@ fetch(dataSourceURL)
                 rainfall.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
                 rainfall.classList.add('rainfall');
                 info.classList.add('info');
+
+                let townname = towns[i].name.replace(/\s+/g, "");
+                townname = townname.replace(/.*/, function (x) { return x.toLowerCase(); });
+
+                town.classList.add(townname);
                 
                 info.appendChild(name);
                 info.appendChild(motto);
