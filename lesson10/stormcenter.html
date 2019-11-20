@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Storm Center</title>
+    <meta name='description' content='Storm Center Submission Form'>
+    <meta name='author' content='Shane Artman'>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div class="special-news">
+        <div>
+            Saturday = Preston Pancakes in the Park!
+            9:00 a.m. Saturday at the city park.
+        </div>
+    </div>
+    <header>
+        <div><img src="images/WindMill.png" alt="Windmill logo"></div>
+        <div class="pagetitle">
+            <h1>Winder Weather</h1>
+            Some Motto
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu clearfix">
+            <li><a href="#" onclick="toggleMenu()" id="nav-first-element">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#" class="active">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thanks.html" method="GET" name="stormentryform">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="red">Red indicates a required field</div>
+                <label class="stacked">Full Name
+                    <input type="text" name="name" id="name" class="name" pattern="^[a-zA-Z]{2,}[ ][a-zA-Z\., 0-9]{2,}$"
+                        required placeholder="John Doe">
+                </label>
+                <label class="stacked">eMail<input type="email" name="email" id="email" class="email"
+                        placeholder="email@domain.net"></label>
+                <label class="stacked">Phone Number
+                    <input type="tel" pattern="[\d\+][\d\(\)\- ]{6,}" name="phone" id="phone" class="phone"
+                        placeholder="+1(200)555-1212 / 12005551212" required></label>
+                <label class="stacked">Zip Code
+                    <input type="number" name="zip" id="zip" class="zip" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="stacked">Storm Date<input type="date" name="stormdate" id="stormdate" class="stormdate"
+                        required></label>
+                <label class="stacked">Storm Type<input list="stormtype-list" name="stormtype" id="stormtype"
+                        class="stormtype" required></label>
+                <datalist id="stormtype-list">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <label class="stacked">Storm Severity: <span class="stormsevcursetting"><span id="stormseverity"
+                            class="red">5 - med</span></span>
+                    <input type="range" value="5" min="1" max="10" step="1" name="stormsev" id="stormsevsel"
+                        class="stormsev" list="listsettings" oninput="stormseverity()">
+                    <datalist id="listsettings">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </datalist>
+                </label>
+                <label class="stacked">Region<select name="stormregion" id="stormregion" class="stormregion red"
+                        required onchange="modified(stormentryform.stormregion)">
+                        <option value="" disabled selected hidden>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <fieldset class="userindanger">
+                    <legend id="dangerlegend" class="red">Are you in Danger?</legend>
+                    <label class="sbs"><input type="radio" name="danger" class="danger" value="Yes"
+                            onchange="modifiedById(dangerlegend)" required>Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" class="danger" value="No" required>No</label>
+                    <label class="sbs"><input type="radio" name="danger" class="danger" value="Maybe"
+                            required>Maybe</label>
+                </fieldset>
+                <label class="stacked addlinfo">Additional Information<textarea name="addlinfo" id="addlinfo" cols="30"
+                        rows="10"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Report Weather" class="submitBtn">
+        </form>
+        <section class="contact-container">
+            <div class="map-container"><iframe width="300" height="200" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+            <div class="contact-content">
+                <h2>Winder Weather</h2>
+                <div class="contact-info">
+                    <div class="contact-address-container">
+                        <div class="contact-address-icons">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9"><img src="images/005-pin.png"
+                                    alt="Map Pin"></a>
+                        </div>
+                        <div class="contact-address">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9">
+                                1 North First St<br>
+                                Preston, ID 83263
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-phone comm-icons">
+                        <a href="tel:+17778889999">
+                            <img src="images/008-phone-1.png" alt="Phone Icon">
+                        </a>
+                        <a href="tel:+17778889999">
+                            777-888-9999
+                        </a>
+                    </div>
+                    <div class="contact-email comm-icons">
+                        <a href="mailto:winderweather@ww.com">
+                            <img src="images/007-mail.png" alt="eMail Icon">
+                        </a>
+                        <a href="mailto:winderweather@ww.com">
+                            winderweather@ww.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-icons">
+                    <a href="#"><img src="images/001-facebook.png" alt="Facebook Icon"></a>
+                    <a href="#"><img src="images/002-twitter.png" alt="Twitter Icon"></a>
+                    <a href="#"><img src="images/003-instagram.png" alt="Instagram Icon"></a>
+                    <a href="#"><img src="images/004-pinterest.png" alt="Pinterest Icon"></a>
+                    <div class="credits">Icons made by
+                        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel
+                            Buddha,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="fullyear"></span> | Shane A. Artman | Georgia | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a><br>
+        <div id="lastupdate"></div>
+        <div id="footer-msg"></div>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/display-special-news.js" defer></script>
+    <script src="js/today.js" defer></script>
+    <script src="js/toggle-menu.js" defer></script>
+    <script src="js/toggle-read-more.js" defer></script>
+    <script src="js/populate-wx.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    <script src="js/sc_validation.js" defer></script>
+    <script src="js/stormseverity.js" defer></script>
+    <script src="js/formvalidation.js" defer></script>
+    <!-- 10.22.19 - webfont loading -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Mansalva', 'Open Sans']
+            }
+        });
+    </script>
+</body>
+
+</html>

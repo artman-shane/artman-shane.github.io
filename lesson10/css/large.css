@@ -1,0 +1,186 @@
+@media only screen and (min-width: 55em) {
+
+    .pagetitle {
+        font-size: 1.75em;
+    }
+
+    main,
+    footer {
+        min-width: 500px;
+        max-width: 1200px;
+    }
+
+    header {
+        height: 10em;
+    }
+
+    header img {
+        height: 150px;
+    }
+
+    /* ***** Navigation Menu Section ***** */
+
+    nav {
+        font-size: 1em;
+    }
+
+    nav ul li a {
+        padding: .5em .7em;
+    }
+
+    /* 
+
+
+    nav ul li {
+        display: unset;
+        align-self: center;
+    }
+
+    nav ul li a {
+        padding: .8em;
+    }
+
+    nav ul li:last-child a {
+        border: none;
+    }
+
+ */
+
+    header>img {
+        height: 170px;
+    }
+
+    /* ***** Summary Container ***** */
+
+    .summary-content {
+        font-size: 1.75em;
+        max-width: unset;
+    }
+
+    .summary-content h2 {
+        font-size: 1.1em;
+        margin: 0;
+    }
+
+    .summary-content>.header-row {
+        line-height: unset;
+    }
+
+    /* ***** End of Summary Container ***** */
+
+    .forecast-container {
+        max-width: 520px;
+    }
+
+    .forecast-container h3 {
+        font-size: 1.5em;
+    }
+
+    .forecast-content {
+        font-size: 1.25em;
+    }
+
+    /* ***** Article Container ****** */
+
+    .article-content h3 {
+        font-size: 1.7em;
+    }
+
+    .disp-full-artcile>button {
+        font-size: 1.2em;
+    }
+
+    .article-content p {
+        font-size: 1.2em;
+    }
+
+    /* ***** End of Article Container ****** */
+
+    .contact-content h2 {
+        font-size: 1.5em;
+        padding: .2em;
+    }
+
+    .contact-address-container {
+        padding-bottom: unset;
+    }
+
+    .contact-address {
+        margin-bottom: .5em;
+    }
+
+    .contact-icons img {
+        padding: .25em;
+        height: 25px;
+    }
+
+    .comm-icons {
+        font-size: 1em;
+        margin-bottom: .5em;
+    }
+
+    .comm-icons img {
+        height: 25px;
+    }
+
+
+    .map-container iframe {
+        width: 400px;
+        height: 150px;
+    }
+
+    .wx-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wx-gallery div:hover {
+        box-shadow: 5px 5px 30px var(--yankeesblue);
+    }
+
+    /* Cards for City info */
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: unset;
+        grid-template-areas: "preston sodasprings fishhaven";
+    }
+
+    div.cards section {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "info""image";
+        width: 80%;
+        margin: 1em 0;
+        transition: all .5s ease-in-out;
+    }
+
+    div.cards section:hover {
+        transform: translate(0, 10px) scale(1.1);
+        opacity: .9;
+    }
+
+    div.cards section:hover:first-child {
+        transform: translate(10px, 10px) scale(1.1);
+        opacity: .9;
+    }
+
+    div.cards section:hover:last-child {
+        transform: translate(-10px, 10px) scale(1.1);
+        opacity: .9;
+    }
+
+    div.cards section.sodasprings {
+        grid-template-areas:
+            "info""image";
+    }
+
+    div.cards section .image {
+        height: auto;
+    }
+
+    div.cards section .image {
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+
+}
