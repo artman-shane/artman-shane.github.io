@@ -1,5 +1,5 @@
 // Date format: Wednesday, 24 July 2020
-var todayDate = new Date()
+let todayDate = new Date()
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var todayDay = days[todayDate.getDay()];
 var todayNumDay = todayDate.getDate();

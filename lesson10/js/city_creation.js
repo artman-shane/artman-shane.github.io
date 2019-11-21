@@ -1,11 +1,11 @@
-const dataSourceURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+let dataSourceURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(dataSourceURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObj) {
-        const towns = jsonObj['towns'];
+        let towns = jsonObj['towns'];
 
         for (let i = 0; i < towns.length; i++) {
             if (['Fish Haven', 'Soda Springs', 'Preston'].indexOf(towns[i].name) > -1) {

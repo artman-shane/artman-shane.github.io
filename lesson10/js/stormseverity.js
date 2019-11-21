@@ -1,5 +1,5 @@
 function stormseverity() {
-    var stormseverity = document.getElementById("stormsevsel").value;
+    let stormseverity = document.getElementById("stormsevsel").value;
     switch (stormseverity) {
         case "1":
         case "2":

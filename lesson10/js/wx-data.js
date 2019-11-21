@@ -1,8 +1,8 @@
-const wxForecastURLBase = 'http://api.openweathermap.org/data/2.5/forecast?id=';
-const wxCurrentURLBase = 'http://api.openweathermap.org/data/2.5/weather?id=';
-const wxURLAPPID = '&APPID=2530a9dd66685fdcc10fc4a2805bd81d&units=imperial';
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let wxForecastURLBase = 'http://api.openweathermap.org/data/2.5/forecast?id=';
+let wxCurrentURLBase = 'http://api.openweathermap.org/data/2.5/weather?id=';
+let wxURLAPPID = '&APPID=2530a9dd66685fdcc10fc4a2805bd81d&units=imperial';
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 let cityID = '5604473';
 let wxForecastURL = wxForecastURLBase + cityID + wxURLAPPID;
@@ -30,7 +30,6 @@ fetch(wxForecastURL)
     .then(response => response.json())
     .then(jsonObj => {
         let town = jsonObj['list'];
-        let numOfForecastDays = 5;
         let forecastCounter = 0;
         for (let x = 0; x < town.length; x++) {
             let town_date = new Date(parseInt(town[x].dt) * 1000);
@@ -50,14 +49,7 @@ fetch(wxForecastURL)
                 document.getElementsByClassName('wx-icon')[forecastCounter].setAttribute('alt', town_wx_desc);
                 document.getElementsByClassName('wx-icon')[forecastCounter].setAttribute('title', town_wx_desc);
                 document.getElementsByClassName('text')[forecastCounter].innerHTML = town_max_temp + '&#0176;F';
-
                 forecastCounter++;
-                console.log('Forecast:');
-                console.log('Day of week: ' + town_dow);
-                console.log('Weather Desc: ' + town_wx_desc);
-                console.log('Temp Max: ' + town_max_temp + 'F');
-                // Farenheit = &#8457;
-                // Celcius = &#8451;
             }
         }
     });
