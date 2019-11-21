@@ -82,6 +82,8 @@
 
     .forecast-content {
         font-family: 'Mansalva', 'Comic Sans', cursive;
+        font-size: 1.2em;
+        font-weight: 100;
         background: var(--hovering-container-bg);
         opacity: .85;
         box-shadow: 5px 5px 30px var(--yankeesblue);
@@ -95,6 +97,7 @@
             "daynames daynames daynames daynames daynames"
             "daily-forecast daily-forecast daily-forecast daily-forecast daily-forecast";
         padding-bottom: 1.2em;
+        padding-top: 1em;
     }
 
     .daynames {
@@ -103,7 +106,8 @@
     }
 
     .daily-forecast .icon img {
-        width: 60%;
+        width: 80%;
+        margin: -.5em;
     }
 
     /* ***** End of Forecast Container ****** */

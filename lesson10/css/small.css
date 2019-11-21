@@ -227,7 +227,7 @@ figure {
     min-height: 100px;
     color: var(--hovering-container-color);
     display: grid;
-    grid-template-columns: 1.25fr .75fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "header header"
