@@ -3,7 +3,7 @@ let wxCurrentURLBase = 'https://api.openweathermap.org/data/2.5/weather?id=';
 let wxURLAPPID = '&APPID=2530a9dd66685fdcc10fc4a2805bd81d&units=imperial';
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
+let toProperCaseRegex = /(\b[a-z](?!\s))/g;
 let cityID = '5604473';
 let wxForecastURL = wxForecastURLBase + cityID + wxURLAPPID;
 let wxCurrentURL = wxCurrentURLBase + cityID + wxURLAPPID;
@@ -25,6 +25,9 @@ let wxCurrentURL = wxCurrentURLBase + cityID + wxURLAPPID;
 // }
 // dstToday ? workingDate.setHours(forecastHourST + 7) : workingDate.setHours(forecastHourDST + 6);
 
+function toProperCase(strToConvert) {
+    return strToConvert
+}
 
 fetch(wxForecastURL)
     .then(response => response.json())
@@ -41,6 +44,9 @@ fetch(wxForecastURL)
             if (town_date.getUTCHours() == 18) {
                 let town_dow = days[town_date.getDay()];
                 let town_wx_desc = town[x].weather[0].description;
+                town_wx_desc = town_wx_desc.replace(toProperCaseRegex, function (x) {
+                    return x.toUpperCase();
+                });
                 let town_max_temp = parseFloat(town[x].main.temp_max).toFixed(1);
                 let town_wx_icon = 'https://openweathermap.org/img/w/' + town[x].weather[0].icon + '.png';
 
@@ -58,6 +64,9 @@ fetch(wxCurrentURL)
     .then(response => response.json())
     .then(jsonObj => {
         let town_wx_desc = jsonObj.weather[0].description;
+        town_wx_desc = town_wx_desc.replace(toProperCaseRegex, function (x) {
+            return x.toUpperCase();
+        });
         let town_max_temp = parseFloat(jsonObj.main.temp_max);
         let town_wind_speed = parseFloat(jsonObj.wind.speed);
         let town_min_temp = parseFloat(jsonObj.main.temp_min);
