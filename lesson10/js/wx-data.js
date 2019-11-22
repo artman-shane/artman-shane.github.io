@@ -3,7 +3,7 @@ let wxCurrentURLBase = 'https://api.openweathermap.org/data/2.5/weather?id=';
 let wxURLAPPID = '&APPID=2530a9dd66685fdcc10fc4a2805bd81d&units=imperial';
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let toProperCaseRegex = '/(\b[a-z](?!\s))/g';
+let toProperCaseRegex = /(\b[a-z](?!\s))/g;
 let cityID = '5604473';
 let wxForecastURL = wxForecastURLBase + cityID + wxURLAPPID;
 let wxCurrentURL = wxCurrentURLBase + cityID + wxURLAPPID;
