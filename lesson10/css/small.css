@@ -620,7 +620,8 @@ div.cards .rainfall {
     background: var(--taupe);
     color: var(--yankeesblue);
     margin: auto;
-    width: 90%;
+    width: 95%;
+    max-width: 500px;
     padding: 1em 0em;
 }
 
