@@ -274,7 +274,7 @@ figure {
     text-align: center;
     position: relative;
     box-shadow: 5px 2px 30px var(--yankeesblue);
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .article-container h3 {
@@ -556,7 +556,7 @@ div.cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "preston" "sodasprings" "fishhaven";
+    grid-template-areas: "preston""sodasprings""fishhaven";
     justify-items: center;
     margin: auto;
 }
@@ -572,9 +572,11 @@ div.cards section {
 div.cards section.preston {
     grid-area: preston;
 }
+
 div.cards section.sodasprings {
     grid-area: sodasprings;
 }
+
 div.cards section.fishhaven {
     grid-area: fishhaven;
 }
@@ -611,4 +613,56 @@ div.cards .population {
 
 div.cards .rainfall {
     margin-bottom: .4em;
+}
+
+.upcoming-events {
+    box-shadow: 5px 5px 30px var(--yankeesblue);
+    background: var(--taupe);
+    color: var(--yankeesblue);
+    margin: auto;
+    width: 90%;
+    padding: 1em 0em;
+}
+
+.upcoming-events .town-events {
+    margin: .5em auto;
+}
+
+.upcoming-events .events-section {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    background: var(--platinum);
+    border-radius: 2px;
+}
+
+.upcoming-events .event-title-section {
+    padding-top: .25em;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.upcoming-events .town-section {
+    display: grid;
+    margin: auto 1em;
+    justify-items: center;
+}
+
+.upcoming-events .towns {
+    width: 90%;
+    text-align: center;
+    margin: 1em;
+}
+
+.upcoming-events .town-name {
+    text-align: center;
+}
+
+.upcoming-events .image {
+    width: 85%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.9);
+    margin: 1em auto 0 auto;
+    border-radius: 5px;
+
 }
