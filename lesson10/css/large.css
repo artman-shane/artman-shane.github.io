@@ -147,6 +147,7 @@
     div.cards section {
         text-align: center;
         height: 95%;
+        transition: all .5s ease-in-out;
     }
 
     div.cards section a{
