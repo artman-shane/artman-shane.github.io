@@ -569,11 +569,11 @@ div.cards section {
     margin: .5em;
 }
 
-div.cards section.preston {
+div.cards section.preston{
     grid-area: preston;
 }
 
-div.cards section.sodasprings {
+div.cards section.sodasprings{
     grid-area: sodasprings;
 }
 

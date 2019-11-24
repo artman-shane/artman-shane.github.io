@@ -183,25 +183,25 @@
         display: grid;
     }
 
-    div.cards section {
+    div.cards section a{
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         grid-template-areas: "info image";
         width: 90%;
         padding: 1em;
     }
 
-    div.cards section.sodasprings {
+    div.cards section.sodasprings a{
         grid-template-areas:
             "image info";
     }
 
-    div.cards section .info {
+    div.cards section a.info {
         grid-area: info;
     }
 
-    div.cards section .image {
+    div.cards section a.image {
         grid-area: image;
         height: auto;
         width: 95%;

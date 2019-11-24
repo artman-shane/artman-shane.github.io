@@ -10,6 +10,7 @@ fetch(dataSourceURL)
         for (let i = 0; i < towns.length; i++) {
             if (['Fish Haven', 'Soda Springs', 'Preston'].indexOf(towns[i].name) > -1) {
                 let town = document.createElement('section');
+                let townLink = document.createElement('a');
                 let info = document.createElement('div');
                 let name = document.createElement('h2');
                 let motto = document.createElement('div');
@@ -35,17 +36,21 @@ fetch(dataSourceURL)
                 info.classList.add('info');
 
                 let townname = towns[i].name.replace(/\s+/g, "");
-                townname = townname.replace(/.*/, function (x) { return x.toLowerCase(); });
-
+                townname = townname.replace(/.*/, function (x) {
+                    return x.toLowerCase();
+                });
+                townLink.setAttribute('href', townname + '.html');
+                townLink.classList.add(townname);
                 town.classList.add(townname);
-                
+
                 info.appendChild(name);
                 info.appendChild(motto);
                 info.appendChild(founded);
                 info.appendChild(population);
                 info.appendChild(rainfall);
-                town.appendChild(info);
-                town.appendChild(image);
+                townLink.appendChild(info);
+                townLink.appendChild(image);
+                town.appendChild(townLink);
 
                 document.querySelector('div.cards').appendChild(town);
             }

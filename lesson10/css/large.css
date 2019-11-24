@@ -145,11 +145,15 @@
     }
 
     div.cards section {
+        text-align: center;
+        height: 95%;
+    }
+
+    div.cards section a{
+        height: 100%;
         grid-template-columns: unset;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "info""image";
-        width: 80%;
-        margin: 1em 0;
         transition: all .5s ease-in-out;
     }
 
@@ -158,26 +162,22 @@
         opacity: .9;
     }
 
-    div.cards section:hover:first-child {
+    div.cards section.preston:hover {
         transform: translate(10px, 10px) scale(1.1);
         opacity: .9;
     }
 
-    div.cards section:hover:last-child {
+    div.cards section:hover.fishhaven {
         transform: translate(-10px, 10px) scale(1.1);
         opacity: .9;
     }
 
-    div.cards section.sodasprings {
+    div.cards section a.sodasprings{
         grid-template-areas:
             "info""image";
     }
 
-    div.cards section .image {
-        height: auto;
-    }
-
-    div.cards section .image {
+    div.cards section a.image {
         width: 95%;
         height: auto;
         margin: auto;
