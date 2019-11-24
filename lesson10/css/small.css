@@ -667,3 +667,33 @@ div.cards .rainfall {
     border-radius: 5px;
 
 }
+
+div.wx-story {
+    width: 80%;
+    margin: 1em auto;
+    box-shadow: 5px 5px 20px var(--taupe);
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+section.wx-story-section {
+    padding: 1em;
+    margin: auto;
+    border-radius: 10px;
+}
+
+section.wx-story-section h3 {
+    text-align: center;
+    margin: 0;
+    padding: .5em;
+}
+
+section.wx-story-section .wx-story-image-link {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+section.wx-story-section img {
+    width: 100%;
+}

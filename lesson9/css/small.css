@@ -553,7 +553,7 @@ div.cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "preston" "sodasprings" "fishhaven";
+    grid-template-areas: "preston""sodasprings""fishhaven";
     justify-items: center;
     margin: auto;
 }
@@ -569,9 +569,11 @@ div.cards section {
 div.cards section.preston {
     grid-area: preston;
 }
+
 div.cards section.sodasprings {
     grid-area: sodasprings;
 }
+
 div.cards section.fishhaven {
     grid-area: fishhaven;
 }
