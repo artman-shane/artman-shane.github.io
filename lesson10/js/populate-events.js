@@ -20,6 +20,9 @@ fetch(townURL)
         townSection.classList.add('town-section');
         for (let i = 0; i < towns.length; i++) {
             if (['Preston'].indexOf(towns[i].name) > -1) {
+                let townEventDesc = 'Image by Wesley Tingey on Unsplash';
+                let townEventImage = 'images/prestonEventImage.png';
+                let townEventImageCredit = 'https://unsplash.com/@wesleyphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
                 console.log('Town: ' + towns[i].name);
                 let townsDiv = document.createElement('div');
                 townsDiv.classList.add('towns');
@@ -37,14 +40,17 @@ fetch(townURL)
                     townEventsSection.appendChild(townEvents);
                 }
                 townCounter++;
+                let townImageLink = document.createElement('a');
+                townImageLink.setAttribute('href', townEventImageCredit)
                 let townImage = document.createElement('img');
                 townImage.classList.add('image');
-                townImage.setAttribute('src', 'images/' + towns[i].photo);
-                townImage.setAttribute('alt', towns[i].name);
+                townImage.setAttribute('src', townEventImage);
+                townImage.setAttribute('alt', 'Image representing ' + towns[i].events[events.length-1]);
                 townImage.setAttribute('title', towns[i].name);
                 // townsDiv.appendChild(townElements);
+                townImageLink.appendChild(townImage);
                 townsDiv.appendChild(townEventsSection);
-                townsDiv.appendChild(townImage);
+                townsDiv.appendChild(townImageLink);
                 townSection.appendChild(townsDiv);
             }
         }
