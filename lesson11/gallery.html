@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Winder Weather Gallery</title>
+    <meta name='description' content='Weather Gallery'>
+    <meta name='author' content='Shane Artman'>
+    <!-- 10.22.19 - Bro Odom suggested having the normalize in the HTML -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div class="special-news">
+        <div>
+            Saturday = Preston Pancakes in the Park!
+            9:00 a.m. Saturday at the city park.
+        </div>
+    </div>
+    <header>
+        <div><img src="images/WindMill.png" alt="Windmill logo"></div>
+        <div class="pagetitle">
+            <h1>Winder Weather</h1>
+            Some Motto
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu clearfix">
+            <li><a href="#" onclick="toggleMenu()" id="nav-first-element">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="#" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Weather Gallery</h1>
+        <div class="wx-gallery">
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Northern lights and ice hotel"
+                    data-src="images/gallery/aurora-borealis-icehotel 520.jpg">
+                <h2>Northern lights and ice hotel</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Snowy lane Somewhere"
+                    data-src="images/gallery/trees-snow 520.jpg" class="lazyimages">
+                <h2>Snowy lane Somewhere</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Springtime blossom favorite Place"
+                    data-src="images/gallery/blossom 520.jpg" class="lazyimages">
+                <h2>Springtime blossom favorite Place</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Field of flowers"
+                    data-src="images/gallery/blossom-field 520.jpg" class="lazyimages">
+                <h2>Field of flowers</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Springtime blossom Festival"
+                    data-src="images/gallery/blossom-trees 520.jpg" class="lazyimages">
+                <h2>Springtime blossom Festival</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Cherry blossom Georgia"
+                    data-src="images/gallery/blossom-cherry 520.jpg" class="lazyimages">
+                <h2>Cherry blossom Georgia</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Hurricane over Earth"
+                    data-src="images/gallery/world 520.jpg" class="lazyimages">
+                <h2>Hurricane over Earth</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Rainbows and windmills somwhere"
+                    data-src="images/gallery/rainbows and windmills 520.jpg" class="lazyimages">
+                <h2>Rainbows and windmills somewhere</h2>
+            </div>
+            <div>
+                <img src="images/gallery/placeholder520_347.jpg" alt="Farm and rainbow somewhere else"
+                    data-src="images/gallery/raibow-farm 520.jpg" class="lazyimages">
+                <h2>Farm and rainbow somewhere else</h2>
+            </div>
+        </div>
+        <section class="contact-container">
+            <div class="map-container"><iframe width="300" height="200" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiExIE4gMXN0IEUsIFByZXN0b24sIElEIDgzMjYzLCBVU0EiMBIuChQKEgnH6-Fn6fdUhxFYly81YikWVRABKhQKEglN_XSI7vdUhxEaWu_fON9fCg&key=AIzaSyBZjWHsS4Dfd2OvfjrXG39ly_x5kcFvcWA"
+                    allowfullscreen></iframe></div>
+            <div class="contact-content">
+                <h2>Winder Weather</h2>
+                <div class="contact-info">
+                    <div class="contact-address-container">
+                        <div class="contact-address-icons">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9"><img src="images/005-pin.png"
+                                    alt="Map Pin"></a>
+                        </div>
+                        <div class="contact-address">
+                            <a href="https://goo.gl/maps/2xDdvB4XUu2nvQbt9">
+                                1 North First St<br>
+                                Preston, ID 83263
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-phone comm-icons">
+                        <a href="tel:+17778889999">
+                            <img src="images/008-phone-1.png" alt="Phone Icon">
+                        </a>
+                        <a href="tel:+17778889999">
+                            777-888-9999
+                        </a>
+                    </div>
+                    <div class="contact-email comm-icons">
+                        <a href="mailto:winderweather@ww.com">
+                            <img src="images/007-mail.png" alt="eMail Icon">
+                        </a>
+                        <a href="mailto:winderweather@ww.com">
+                            winderweather@ww.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-icons">
+                    <a href="#"><img src="images/001-facebook.png" alt="Facebook Icon"></a>
+                    <a href="#"><img src="images/002-twitter.png" alt="Twitter Icon"></a>
+                    <a href="#"><img src="images/003-instagram.png" alt="Instagram Icon"></a>
+                    <a href="#"><img src="images/004-pinterest.png" alt="Pinterest Icon"></a>
+                    <div class="credits">Icons made by
+                        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel
+                            Buddha,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut,&nbsp;</a>
+                        <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="fullyear"></span> | Shane A. Artman | Georgia | <a href="https://www.byui.edu/online"
+            id="byulink">BYUI Online Learning</a><br>
+        <div id="lastupdate"></div>
+        <div id="footer-msg"></div>
+    </footer>
+    <!-- 10.22.19 - webfont loading -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Mansalva', 'Open Sans']
+            }
+        });
+    </script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/toggle-menu.js" defer></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/display-special-news.js"></script>
+</body>
+
+</html>
