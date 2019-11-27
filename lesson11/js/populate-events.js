@@ -18,22 +18,18 @@ fetch(townURL)
         titleSeperator.innerHTML = "<hr>";
         let townSection = document.createElement('div');
         townSection.classList.add('town-section');
+
         for (let i = 0; i < towns.length; i++) {
             if (['Preston'].indexOf(towns[i].name) > -1) {
-                let townEventDesc = 'Image by Wesley Tingey on Unsplash';
-                let townEventImage = 'images/prestonEventImage.png';
-                let townEventImageCredit = 'https://unsplash.com/@wesleyphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
-                console.log('Town: ' + towns[i].name);
+                let townname = towns[i].name.replace(/\s+/g, "");
+                let townEventImage = 'images/towns/' + townname + '/eventimage.png';
+                let townEventImageCredit = 'https://unsplash.com/@wesleyphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText';
                 let townsDiv = document.createElement('div');
                 townsDiv.classList.add('towns');
-                // townElements = document.createElement('div');
-                // townElements.classList.add('town-name')
-                // townElements.textContent = towns[i].name;
                 let townEventsSection = document.createElement('div');
                 townEventsSection.classList.add('town-events-section');
                 let events = towns[i]['events'];
                 for (let x = 0; x < events.length; x++) {
-                    console.log('Events: ' + events[x]);
                     townEvents = document.createElement('div');
                     townEvents.classList.add('town-events');
                     townEvents.textContent = towns[i].events[x];
@@ -47,7 +43,6 @@ fetch(townURL)
                 townImage.setAttribute('src', townEventImage);
                 townImage.setAttribute('alt', 'Image representing ' + towns[i].events[events.length-1]);
                 townImage.setAttribute('title', towns[i].name);
-                // townsDiv.appendChild(townElements);
                 townImageLink.appendChild(townImage);
                 townsDiv.appendChild(townEventsSection);
                 townsDiv.appendChild(townImageLink);

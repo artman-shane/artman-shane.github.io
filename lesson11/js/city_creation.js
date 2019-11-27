@@ -18,8 +18,9 @@ fetch(dataSourceURL)
                 let population = document.createElement('div');
                 let rainfall = document.createElement('div');
                 let image = document.createElement('img');
+                let townname = towns[i].name.replace(/\s+/g, "");
 
-                image.setAttribute('src', 'images/' + towns[i].photo);
+                image.setAttribute('src', 'images/towns/' + townname + '/' + towns[i].photo);
                 image.setAttribute('alt', 'Image of ' + towns[i].name);
                 image.setAttribute('title', towns[i].name);
                 image.classList.add('image');
@@ -35,7 +36,6 @@ fetch(dataSourceURL)
                 rainfall.classList.add('rainfall');
                 info.classList.add('info');
 
-                let townname = towns[i].name.replace(/\s+/g, "");
                 townname = townname.replace(/.*/, function (x) {
                     return x.toLowerCase();
                 });
