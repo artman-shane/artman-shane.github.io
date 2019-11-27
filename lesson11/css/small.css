@@ -18,7 +18,9 @@
 */
 
 :root {
-    --purplenavy: #4c6085;
+    /* Changed because of contrast problems */
+    /* --purplenavy: #4c6085; */
+    --purplenavy: #3c5685;
     --darktangerine: #fca311;
     --platinum: #e5e5e5;
     --taupe: #463730;
