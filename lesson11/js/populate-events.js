@@ -28,7 +28,7 @@ function getEvents(cityName, eventCreditURL) {
                 let cityNameTest = cityName.toLowerCase();
                 if ([cityNameTest].indexOf(towns[i].name.toLowerCase()) > -1) {
                     let townname = towns[i].name.replace(/\s+/g, "");
-                    let townEventImage = 'images/towns/' + townname + '/eventimage.png';
+                    let townEventImage = 'images/towns/' + townname.toLowerCase() + '/eventimage.png';
                     let townEventImageCredit = eventCreditURL;
                     let townsDiv = document.createElement('div');
                     townsDiv.classList.add('towns');
