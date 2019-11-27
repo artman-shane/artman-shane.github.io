@@ -197,11 +197,11 @@
             "image info";
     }
 
-    div.cards section a.info {
+    div.cards section a .info {
         grid-area: info;
     }
 
-    div.cards section a.image {
+    div.cards section a .image {
         grid-area: image;
         height: auto;
         width: 95%;
