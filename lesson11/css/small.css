@@ -302,7 +302,7 @@ figure {
     box-shadow: 5px 5px 10px var(--yankeesblue);
 }
 
-.float-right.article-image {
+.article-image  {
 max-width: 50%;
 max-height:500px;
     margin: 0 1em .5em;
