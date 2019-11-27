@@ -181,6 +181,10 @@ footer {
     float: left;
 }
 
+.float-right {
+    float: right;
+}
+
 .pagetitle {
     font-size: 1em;
     padding-left: .25em;
@@ -291,10 +295,23 @@ figure {
 }
 
 .article-image>img {
-    width: 95%;
+    max-width: 95%;
+    max-height: 500px;
     vertical-align: middle;
     margin: 5% 0;
     box-shadow: 5px 5px 10px var(--yankeesblue);
+}
+
+.float-right.article-image {
+max-width: 50%;
+max-height:500px;
+    margin: 0 1em .5em;
+    box-shadow: 5px 5px 10px var(--yankeesblue);
+}
+
+.grid-layout-2x1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .article-content>h3 {
@@ -569,11 +586,11 @@ div.cards section {
     margin: .5em;
 }
 
-div.cards section.preston{
+div.cards section.preston {
     grid-area: preston;
 }
 
-div.cards section.sodasprings{
+div.cards section.sodasprings {
     grid-area: sodasprings;
 }
 
@@ -662,7 +679,7 @@ div.cards .rainfall {
 
 .upcoming-events .image {
     width: 85%;
-    box-shadow: 5px 5px 20px rgba(0,0,0,.9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .9);
     margin: 1em auto 0 auto;
     border-radius: 5px;
 
