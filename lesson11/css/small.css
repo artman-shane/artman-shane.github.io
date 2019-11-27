@@ -23,7 +23,10 @@
     --platinum: #e5e5e5;
     --taupe: #463730;
     --yankeesblue: #14213d;
-    --shadowblue: #6f8faf;
+    /* Changed because of contrast problems */
+    /* --shadowblue: #8d9baa;  */
+    --shadowblue: #a5b6c7;
+
 
     --nav-background-color: var(--purplenavy);
     --nav-color: var(--darktangerine);
@@ -309,7 +312,8 @@ figure {
     box-shadow: 5px 5px 10px var(--yankeesblue);
 }
 
-.float-left.article-image, .float-right.article-image {
+.float-left.article-image,
+.float-right.article-image {
     max-width: 50%;
     max-height: 500px;
     margin: 0 1em 1em 1em;
