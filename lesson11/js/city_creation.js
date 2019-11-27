@@ -20,7 +20,7 @@ fetch(dataSourceURL)
                 let image = document.createElement('img');
                 let townname = towns[i].name.replace(/\s+/g, "");
 
-                image.setAttribute('src', 'images/towns/' + townname + '/' + towns[i].photo);
+                image.setAttribute('src', 'images/towns/' + townname.toLowerCase() + '/' + towns[i].photo);
                 image.setAttribute('alt', 'Image of ' + towns[i].name);
                 image.setAttribute('title', towns[i].name);
                 image.classList.add('image');
