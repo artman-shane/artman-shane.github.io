@@ -194,6 +194,13 @@ footer {
     margin: 0;
 }
 
+.title {
+    margin: auto;
+    text-align: center;
+    max-width: 70%;
+    font-size: .6em;
+}
+
 
 .clearfix:after {
     content: "";

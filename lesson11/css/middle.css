@@ -12,6 +12,11 @@
         font-size: 1.5em;
     }
 
+    .title {
+        max-width: 50%;
+        font-size: .75em;
+    }
+
     /* ***** Navigation Menu Section ***** */
     nav ul {
         margin: auto;
