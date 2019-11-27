@@ -714,3 +714,11 @@ section.wx-story-section .wx-story-image-link {
 section.wx-story-section img {
     width: 100%;
 }
+
+.thanks {
+    width: 50%;
+    margin: 2em auto;
+    text-align: center;
+    background: none;
+    line-height: 2em;
+}
