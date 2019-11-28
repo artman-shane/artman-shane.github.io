@@ -283,9 +283,11 @@ figure {
 .row2-col1,
 .row2-col2,
 .row3-col1,
-.row3-col2 {
+.row3-col2,
+.row5-col1,
+.row5-col2 {
     margin-top: .2em;
-    font-size: .75em;
+    font-size: .7em;
 }
 
 .forecast-container {
