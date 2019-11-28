@@ -54,10 +54,12 @@ function wxdata(cityID) {
             let town_min_temp = parseFloat(jsonObj.main.temp_min);
             let town_temp = parseFloat(jsonObj.main.temp);
             let town_humidity = jsonObj.main.humidity;
-            let town_wc = (35.74 + (0.6215 * town_min_temp) - (35.75 * Math.pow(town_wind_speed, .16)) + (0.4275 * town_min_temp * Math.pow(town_wind_speed, .16))).toFixed(0);
+            let town_wc = (35.74 + (0.6215 * town_temp) - (35.75 * Math.pow(town_wind_speed, .16)) + (0.4275 * town_temp * Math.pow(town_wind_speed, .16))).toFixed(0);
             (town_min_temp > 50 || town_wind_speed <= 3) ? town_wc = 'N/A': town_wc = town_wc.toString() + "&#0176;F";
             document.getElementsByClassName('wx-current')[0].innerHTML = town_wx_desc;
             document.getElementsByClassName('wx-high-temp')[0].innerHTML = town_max_temp.toFixed(0) + "&#0176;F";
+            document.getElementsByClassName('wx-min-temp')[0].innerHTML = town_min_temp.toFixed(0) + "&#0176;F";
+            document.getElementsByClassName('wx-current-temp')[0].innerHTML = town_temp.toFixed(0) + "&#0176;F";
             document.getElementsByClassName('wx-humidity')[0].innerHTML = town_humidity + "&#37;";
             document.getElementsByClassName('wx-wind-speed')[0].innerHTML = town_wind_speed + " MPH";
             document.getElementsByClassName('wx-wind-chill')[0].innerHTML = town_wc;
