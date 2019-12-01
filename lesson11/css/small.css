@@ -280,12 +280,12 @@ figure {
     color: var(--darktangerine);
 }
 
-.row2-col1,
-.row2-col2,
-.row3-col1,
-.row3-col2,
-.row5-col1,
-.row5-col2 {
+.summary-content .row2-col1,
+.summary-content .row2-col2,
+.summary-content .row3-col1,
+.summary-content .row3-col2,
+.summary-content .row5-col1,
+.summary-content .row5-col2 {
     margin-top: .2em;
     font-size: .7em;
 }
