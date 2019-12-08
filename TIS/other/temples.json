@@ -1,0 +1,123 @@
+{
+    "temples": [{
+            "name": "atlanta",
+            "address": {
+                "street": "6450 Barfield Rd NE",
+                "city": "Sandy Springs",
+                "state": "Georgia",
+                "zipcode": 30328
+            },
+            "telephone": "+1(770)393-3698",
+            "email": "atlanta-temple@churchofjesuschrist.org",
+            "services": [
+                "Temple clothing available for patrons",
+                "Lunch room available for temple workers",
+                "Other lunch and diner locations nearby",
+                "Patron housing available ONLY throuh this site",
+                "Beehive Clothing on temple grounds"
+            ],
+            "history": "somehistory",
+            "ordinanceschedule": [
+                "sched 1",
+                "sched 1"
+            ],
+            "templeclosuerschedule": [
+                "Tuesday, 24 December 2019",
+                "Wednesday, 25 December 2019 ",
+                "Tuesday, 31 December 2019 ",
+                "Wednesday, 1 January 2020 ",
+                "Monday, 23 March 2020 - Monday, 6 April 2020 ",
+                "Saturday, 4 July 2020 ",
+                "Monday, 21 September 2020 - Monday, 5 October 2020 ",
+                "Wednesday, 25 November 2020 - Thursday, 26 November 2020 ",
+                "Thursday, 24 December 2020 - Friday, 25 December 2020 ",
+                "Thursday, 31 December 2020 "
+            ],
+            "summary": "The temple was announced on the 2nd of April 1980, the groundbreaking began on the 7th of March 1981, and it was dedicated on the 1st of June 1983. Since that time, there have been 2 renovations. The first redidication was on the 14th of November, 1997. The second was on the 1st of May 2011.",
+            "wxcitycode": 123,
+            "latitute": 33.931793,
+            "longitude": -84.362455
+        },
+        {
+            "name": "salt lake city",
+            "address": {
+                "street": "50 W North Temple St",
+                "city": "Salt Lake City",
+                "state": "Utah",
+                "zipcode": 84150
+            },
+            "telephone": 30458,
+            "email": 21,
+            "services": [
+                "Temple clothing available for patrons",
+                "Lunch room available for temple workers",
+                "Other lunch and diner locations nearby",
+                "Patron housing available ONLY throuh this site",
+                "Distribution center nearby"
+            ],
+            "history": "somehistory",
+            "ordinanceschedule": [
+                "sched 1",
+                "sched 1"
+            ],
+            "templeclosuerschedule": [
+                "sched1",
+                "sched2"
+            ],
+            "summary": "some summary",
+            "wxcitycode": 1234
+        },
+        {
+            "name": "atlanta",
+            "address": {
+                "city": "Where you will grow!",
+                "state": 1788,
+                "zipcode": 1234
+            },
+            "telephone": 30458,
+            "email": 21,
+            "services": [
+                "March 4: March to the Drum of Donuts",
+                "September 5 - 11: Founder Days",
+                "December 1 - 26: Christmas in the Heart"
+            ],
+            "history": "somehistory",
+            "ordinanceschedule": [
+                "sched 1",
+                "sched 1"
+            ],
+            "templeclosuerschedule": [
+                "sched1",
+                "sched2"
+            ],
+            "summary": "some summary",
+            "wxcitycode": 1234
+        },
+        {
+            "name": "atlanta",
+            "address": {
+                "city": "Where you will grow!",
+                "state": 1788,
+                "zipcode": 1234
+            },
+            "telephone": 30458,
+            "email": 21,
+            "services": [
+                "March 4: March to the Drum of Donuts",
+                "September 5 - 11: Founder Days",
+                "December 1 - 26: Christmas in the Heart"
+            ],
+            "history": "somehistory",
+            "ordinanceschedule": [
+                "sched 1",
+                "sched 1"
+            ],
+            "templeclosuerschedule": [
+                "sched1",
+                "sched2"
+            ],
+            "summary": "some summary",
+            "wxcitycode": 1234
+        }
+    ]
+}

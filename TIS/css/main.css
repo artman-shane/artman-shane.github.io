@@ -1,0 +1,198 @@
+/* To use the fonts...
+    font-family: 'Open Sans', 'georgia', sans-serif;
+    font-family: 'Dancing Script', cursive;
+*/
+
+:root {
+    --baby-powder: #FDFFFC;
+    --jordy-blue: #8eb8e5;
+    --outer-space: #474749;
+    --peach-orange: #efc69b;
+    --space-cadet: #1d3461;
+
+    --body-bkg: var(--baby-powder);
+    --body-text: var(--outer-space);
+    --body-link-text: var(--outer-space);
+    --body-link-hover-text: var(--jordy-blue);
+    --body-link-visited-text: var(--space-cadet);
+
+    --main-nav-bkg: var(--space-cadet);
+    --main-nav-text: var(--peach-orange);
+    --main-nav-link-bkg: var(--jordy-blue);
+    --main-nav-link-hover-bkg: var(--baby-powder);
+    --main-nav-link-hover-text: var(--space-cadet);
+    --main-nav-link-visited-bkg: var(--main-nav-link);
+    --main-nav-active-link-bkg: var(--jordy-blue);
+    --main-nav-active-link-text: var(--outer-space);
+
+    --footer-link-hover-text: var(--baby-powder);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Elements Declaration */
+
+body {
+    background: var(--body-bkg);
+    font-family: 'Open Sans', 'georgia', sans-serif;
+    min-width: 240px;
+}
+
+li,
+a {
+    text-decoration: none;
+}
+
+a,
+a:visited {
+    color: var(--body-link-text);
+}
+
+a:hover {
+    color: var(--body-link-hover-text);
+}
+
+/* End of Main Elements Declaration */
+
+
+/* Header Section */
+
+header {
+    display: flex;
+    background: var(--main-nav-bkg);
+    color: var(--main-nav-text);
+    font-size: .75em;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+header h1 {
+    margin: 0 0 .25em 0;
+}
+
+/* End of Header Section */
+
+
+/* Main Navigation Section */
+nav {
+    margin: auto;
+    max-width: 1200px;
+    background: var(--space-cadet);
+    color: var(--peach-orange);
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: .5em 0 0 0;
+}
+
+nav ul li {
+    display: none;
+    padding: .7em 0;
+}
+
+.displayed>li {
+    display: block;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li.active {
+    background: var(--main-nav-active-link-bkg);
+}
+
+nav ul li.active a,
+nav ul li.active a:visited {
+    color: var(--main-nav-active-link-text);
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+nav ul li a:visited {
+    color: var(--peach-orange);
+}
+
+/* End of Main Navigation Section */
+
+
+/* Main Body Section */
+
+main {
+    margin: 1em;
+}
+
+/* End of Main Body Section */
+
+
+
+/* Footer Section */
+footer {
+    display: grid;
+    grid-template-areas: "contact""summary";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr;
+    background: var(--main-nav-bkg);
+    color: var(--main-nav-text);
+    padding: .5em 0;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer a,
+footer a:visited {
+    color: var(--main-nav-link-text);
+    margin: .5em;
+}
+
+footer .map {
+    grid-area: map;
+}
+
+footer .contact {
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contactlink contactlink""telcontact emailcontact";
+    align-items: center;
+}
+
+footer .contact .contact-link {
+    grid-area: contactlink;
+}
+
+footer .contact .tel-contact {
+    grid-area: telcontact;
+    text-align: right;
+    padding-right: .5em;
+    font-size: 20px;
+}
+
+footer .contact .email-contact {
+    grid-area: emailcontact;
+    text-align: left;
+    padding-left: .5em;
+    font-size: 30px;
+}
+
+footer .summary {
+    grid-area: summary;
+}
+
+#updated-on {
+    padding-top: .5em;
+    font-size: .5em;
+}
+
+/* End of Footer Section */

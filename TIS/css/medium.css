@@ -1,0 +1,28 @@
+@media only screen and (min-width: 32.5em) {
+
+
+    /* Main Navigation Section */
+
+    nav ul li:hover,
+    nav ul li:hover>a {
+        background: var(--main-nav-link-hover-bkg);
+        color: var(--main-nav-link-hover-text);
+        font-size: 1.2em;
+    }
+
+    /* End of Main Navigation Section */
+
+
+    /* Footer Section */
+
+    footer a,
+    footer a:visited {
+        transition: all .2s ease-in-out;
+    }
+
+    footer a:hover {
+        color: var(--footer-link-hover-text);
+    }
+
+    /* End Footer Section */
+}
