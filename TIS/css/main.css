@@ -127,10 +127,34 @@ nav ul li a:visited {
 /* Main Body Section */
 
 main {
-    margin: 1em;
+    margin: 1em auto;
+    max-width: 1000px;
 }
 
 /* End of Main Body Section */
+
+
+
+/* Activities Section */
+
+div.activity-images img {
+    height: 200px;
+    width: auto;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    border-radius: 2px;
+}
+
+.activities-image {
+    display: none;
+}
+
+.activities {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* End of Activities Section */
 
 
 

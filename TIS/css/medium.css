@@ -12,6 +12,17 @@
 
     /* End of Main Navigation Section */
 
+    
+    
+    /* Activities Section */
+    
+    div.activity-images img {
+        height: 300px;
+    }
+
+    /* End of Activities Section */
+
+
 
     /* Footer Section */
 
