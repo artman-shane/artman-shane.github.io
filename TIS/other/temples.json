@@ -1,6 +1,7 @@
 {
     "temples": [{
-            "name": "atlanta",
+            "name": "Atlanta",
+            "source": "https://churchofjesuschristtemples.org/atlanta-georgia-temple/",
             "address": {
                 "street": "6450 Barfield Rd NE",
                 "city": "Sandy Springs",
@@ -8,38 +9,186 @@
                 "zipcode": 30328
             },
             "telephone": "+1(770)393-3698",
-            "email": "atlanta-temple@churchofjesuschrist.org",
+            "email": "atlanta-temple@churchofjesuschrist-fake.org",
+            "reservationlink": "locations/atl.html",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
                 "Other lunch and diner locations nearby",
-                "Patron housing available ONLY throuh this site",
+                "Patron housing available ONLY through this site",
                 "Beehive Clothing on temple grounds"
             ],
-            "history": "somehistory",
-            "ordinanceschedule": [
-                "sched 1",
-                "sched 1"
+            "history": [
+                "2 April 1980 - Announced",
+                "7 March 1981 - Groundbreaking",
+                "1 June 1983 - Dedicated",
+                "14 November 1997 - Rededicated",
+                "1 May 2011 - Redidicated"
             ],
-            "templeclosuerschedule": [
-                "Tuesday, 24 December 2019",
-                "Wednesday, 25 December 2019 ",
-                "Tuesday, 31 December 2019 ",
-                "Wednesday, 1 January 2020 ",
-                "Monday, 23 March 2020 - Monday, 6 April 2020 ",
-                "Saturday, 4 July 2020 ",
-                "Monday, 21 September 2020 - Monday, 5 October 2020 ",
-                "Wednesday, 25 November 2020 - Thursday, 26 November 2020 ",
-                "Thursday, 24 December 2020 - Friday, 25 December 2020 ",
-                "Thursday, 31 December 2020 "
+            "ordinanceschedule": {
+                "baptism": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "10AM - 1:30PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Walk-ins & Appointments"
+                    ],
+                    "wednesday": [
+                        "10AM - 1:30PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Walk-ins & Appointments"
+                    ],
+                    "thursday": [
+                        "10AM - 1:30PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Walk-ins & Appointments"
+                    ],
+                    "friday": [
+                        "10AM - 1:30PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Family Priority Time / Walk-ins & Appointments"
+                    ],
+                    "saturday": [
+                        "8AM - 12PM - Family Priority Time / Walk-ins & Appointments",
+                        "12PM - 3:30PM Church Groups / Walk-ins & Appointments"
+                    ]
+                },
+                "initatory": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Walk-ins & Appointments"
+                    ],
+                    "wednesday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Walk-ins & Appointments"
+                    ],
+                    "thursday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Walk-ins & Appointments"
+                    ],
+                    "friday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 9:30PM Walk-ins & Appointments"
+                    ],
+                    "saturday": ["8AM - 4PM Walk-ins & Appointments"]
+                },
+                "endowment": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "10AM - 8PM Walk-ins Only & Appointments"
+                    ],
+                    "wednesday": [
+                        "10AM - 8PM Walk-ins Only & Appointments"
+                    ],
+                    "thursday": [
+                        "10AM - 7PM Walk-ins Only & Appointments",
+                        "8PM - Walk-ins & Appointments / Portuguese"
+                    ],
+                    "friday": [
+                        "10AM - 8PM Walk-ins Only & Appointments"
+                    ],
+                    "saturday": [
+                        "8AM - 3PM Walk-ins & Appointments"
+                    ]
+                },
+                "sealing": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 10PM Walk-ins & Appointments"
+                    ],
+                    "wednesday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 10PM Walk-ins & Appointments"
+                    ],
+                    "thursday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 10PM Walk-ins & Appointments"
+                    ],
+                    "friday": [
+                        "10AM - 2PM Walk-ins & Appointments",
+                        "6PM - 10PM Walk-ins & Appointments"
+                    ],
+                    "saturday": [
+                        "8AM - 5PM Walk-ins & Appointments"
+                    ]
+                }
+            },
+            "templeclosureschedule": [
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019 - Wednesday, 1 January 2020",
+                "Monday, 23 March 2020 - Monday, 6 April 2020",
+                "Saturday, 4 July 2020",
+                "Monday, 21 September 2020 - Monday, 5 October 2020",
+                "Wednesday, 25 November 2020 - Thursday, 26 November 2020",
+                "Thursday, 24 December 2020 - Friday, 25 December 2020",
+                "Thursday, 31 December 2020"
             ],
             "summary": "The temple was announced on the 2nd of April 1980, the groundbreaking began on the 7th of March 1981, and it was dedicated on the 1st of June 1983. Since that time, there have been 2 renovations. The first redidication was on the 14th of November, 1997. The second was on the 1st of May 2011.",
-            "wxcitycode": 123,
-            "latitute": 33.931793,
-            "longitude": -84.362455
+            "images": {
+                "path": "images/atl/",
+                "activities": [{
+                        "filename": "atl_manger_scene",
+                        "desc": "Jesus in Manger Atlanta",
+                        "source": "https://i.pinimg.com/originals/16/f8/4c/16f84c3f5aaeae8c96a29fbb0a2465e6.jpg"
+                    },
+                    {
+                        "filename": "atl_family_day",
+                        "desc": "Family at Atlanta Temple",
+                        "source": "bio.html"
+                    },
+                    {
+                        "filename": "atl_pathway_mtg",
+                        "desc": "Colleagues at Atlanta Temple",
+                        "source": "bio.html"
+                    },
+                    {
+                        "filename": "atl_temple_grounds",
+                        "desc": "Atlanta Temple",
+                        "source": "https://cdn.thegavoice.com/wp-content/uploads/2017/01/DSC_0554-e1484860882364-750x400.jpg"
+                    },
+                    {
+                        "filename": "atl_temple_wedding",
+                        "desc": "Wedding at Atlanta Temple",
+                        "source": "http://www.sarah-slavik.com/blog/12-i/atlanta-lds-temple-wedding.jpg"
+                    },
+                    {
+                        "filename": "atl_temple_engagement",
+                        "desc": "Engagment Pictures at Atlanta Temple",
+                        "source": "http://www.sarah-slavik.com/blog/11-i/atlanta-lds-temple-wedding.jpg"
+                    }
+                ],
+                "temple": [{
+                        "filename": "atl_celestial_rm",
+                        "desc": "Atlanta Celestial Room",
+                        "source": "http://1.bp.blogspot.com/-XtTF-8eoyoo/T9o3I3eQEdI/AAAAAAAAAcA/ueM2ZP0nYbI/s1600/atlanta_georgia_temple_celestial_room1.jpg"
+                    },
+                    {
+                        "filename": "atl_sealing_rm",
+                        "desc": "Atlanta Sealing Room",
+                        "source": "https://i.pinimg.com/originals/80/47/b9/8047b94bf2cf98e07ca5534978128d5e.jpg"
+                    },
+                    {
+                        "filename": "atl_baptistry",
+                        "desc": "Atlanta Temple Baptistry",
+                        "source": "https://i.pinimg.com/originals/93/e0/a7/93e0a7bf017554f651077dad2d54481b.jpg"
+                    }
+                ],
+                "hotel": [{
+                    "filename": "atl_hotel_exterior",
+                    "desc": "Exterior at the Atlanta Inn",
+                    "source": "https://cdn.vox-cdn.com/thumbor/gPhE0rC4j5T_H6yhfibfiomiA6I=/0x0:1280x960/1200x800/filters:focal(477x294:681x498)/cdn.vox-cdn.com/uploads/chorus_image/image/65482960/unnamed.0.jpg"
+                }, {
+                    "filename": "atl_hotel_interior",
+                    "desc": "Interior at the Atlanta Inn",
+                    "source": "https://cdn.vox-cdn.com/thumbor/DeEDdXWDmagQZUQ3UfVElZACpA8=/0x0:2048x1536/920x0/filters:focal(0x0:2048x1536):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19293297/2.jpg"
+                }]
+            }
         },
         {
-            "name": "salt lake city",
+            "name": "Salt Lake City",
+            "source": "https://churchofjesuschristtemples.org/salt-lake-temple/",
             "address": {
                 "street": "50 W North Temple St",
                 "city": "Salt Lake City",
@@ -47,77 +196,427 @@
                 "zipcode": 84150
             },
             "telephone": 30458,
-            "email": 21,
+            "email": "slc-temple@churchofjesuschrist-fake.org",
+            "reservationlink": "locations/slc.html",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
                 "Other lunch and diner locations nearby",
-                "Patron housing available ONLY throuh this site",
+                "Patron housing available ONLY through this site",
                 "Distribution center nearby"
             ],
-            "history": "somehistory",
-            "ordinanceschedule": [
-                "sched 1",
-                "sched 1"
+            "history": [
+                "28 July 1847 - Announced",
+                "14 February 1853 - Groundbreaking",
+                "6 April 1893 - Dedicated"
             ],
-            "templeclosuerschedule": [
-                "sched1",
-                "sched2"
+            "ordinanceschedule": {
+                "baptism": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "5AM - 7AM - Walk-ins Only",
+                        "7AM - 8PM Walk-ins & Appointments"
+                    ],
+                    "wednesday": ["5AM - 7PM - Walk-ins & Appointments"],
+                    "thursday": ["5AM - 8PM - Walk-ins & Appointments"],
+                    "friday": [
+                        "5AM - 6PM - Walk-ins & Appointments",
+                        "6PM - 8PM Family Priority Time / Walk-ins & Appointments"
+                    ],
+                    "saturday": [
+                        "5AM - 6AM - Walk-ins Only",
+                        "6AM - 6PM Walk-ins & Appointments",
+                        "6PM - 8PM Family Priority Time / Walk-ins & Appointments"
+                    ]
+
+                },
+                "initatory": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": ["6AM - 8PM Walk-ins Only"],
+                    "wednesday": ["6AM - 8PM Walk-ins Only"],
+                    "thursday": ["6AM - 8PM Walk-ins Only"],
+                    "friday": ["6AM - 8PM Walk-ins Only"],
+                    "saturday": ["6AM - 8PM Walk-ins Only"]
+                },
+                "endowment": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "6AM - 8AM Walk-ins Only",
+                        "9AM Walk-ins & Appointments",
+                        "10AM - 12PM Walk-ins Only",
+                        "1PM Walk-ins & Appointments",
+                        "2PM - 5PM Walk-ins Only",
+                        "6PM Walk-ins & Appointments",
+                        "7PM Walk-ins Only"
+                    ],
+                    "wednesday": [
+                        "6AM - 8AM Walk-ins Only",
+                        "9AM Walk-ins & Appointments",
+                        "10AM - 12PM Walk-ins Only",
+                        "1PM Walk-ins & Appointments",
+                        "2PM - 5PM Walk-ins Only",
+                        "6PM Walk-ins & Appointments",
+                        "7PM Walk-ins Only"
+                    ],
+                    "thursday": [
+                        "6AM - 8AM Walk-ins Only",
+                        "9AM Walk-ins & Appointments",
+                        "10AM - 12PM Walk-ins Only",
+                        "1PM Walk-ins & Appointments",
+                        "2PM - 5PM Walk-ins Only",
+                        "6PM Walk-ins & Appointments",
+                        "7PM Walk-ins Only"
+                    ],
+                    "friday": [
+                        "6AM - 8AM Walk-ins Only",
+                        "9AM Walk-ins & Appointments",
+                        "10AM - 12PM Walk-ins Only",
+                        "1PM Walk-ins & Appointments",
+                        "2PM - 5PM Walk-ins Only",
+                        "6PM Walk-ins & Appointments",
+                        "7PM Walk-ins Only"
+                    ],
+                    "saturday": [
+                        "6AM - 8AM Walk-ins Only",
+                        "9AM Walk-ins & Appointments",
+                        "10AM - 12PM Walk-ins Only",
+                        "1PM Walk-ins & Appointments",
+                        "2PM - 5PM Walk-ins Only",
+                        "6PM Walk-ins & Appointments",
+                        "7PM Walk-ins Only"
+                    ]
+                },
+                "sealing": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": ["7AM - 8PM Walk-ins & Appointments"],
+                    "wednesday": ["7AM - 8PM Walk-ins & Appointments"],
+                    "thursday": ["7AM - 8PM Walk-ins & Appointments"],
+                    "friday": ["7AM - 8PM Walk-ins & Appointments"],
+                    "saturday": [
+                        "7AM - 11AM Walk-ins & Appointments",
+                        "4PM - 8PM Walk-ins & Appointments"
+                    ]
+                }
+            },
+            "templeclosureschedule": [
+                "24 December 2019 - 25 December 2019",
+                "29 December 2019 - 2022"
             ],
-            "summary": "some summary",
-            "wxcitycode": 1234
+            "summary": "Beautiful grounds with welcome centers for learning about the history of the temple and the members of the Church of Jesus Christ of Latter Day Saints",
+            "images": {
+                "path": "images/slc/",
+                "activities": [{
+                        "filename": "slc_beehive_house",
+                        "desc": "Beehive House Salt Lake City",
+                        "source": "http://mormonhistoricsites.org/wp-content/uploads/2013/04/Beehive-House-2008-02-HR.jpg"
+                    },
+                    {
+                        "filename": "slc_family_temple",
+                        "desc": "Family at  Salt Lake City Temple",
+                        "source": "http://jessieanddallin.com/wp-content/uploads/sites/3997/2019/03/Salt-Lake-Temple-Sealing-Salt-Lake-Wedding-Photographers_0023.jpg"
+                    },
+                    {
+                        "filename": "slc_christmas_lights",
+                        "desc": "Christmas Lights Salt Lake City Temple",
+                        "source": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_417,q_75,w_800/http://res.cloudinary.com/simpleview/image/upload/v1519421070/clients/saltlake/salt_lake_temple_christmas_lights_1091751_wallpaper_800x417_acf_cropped_57196fc6-a6e9-4086-8332-e2cdb01a8df1.jpg"
+                    },
+                    {
+                        "filename": "slc_reflecting_pool",
+                        "desc": "Reflecting Pool Salt Lake City Temple",
+                        "source": "https://i.pinimg.com/originals/bf/8b/4f/bf8b4fb66b323724e1dac0f533e15bd7.jpg"
+                    }
+                ],
+                "temple": [{
+                        "filename": "slc_celestial_rm",
+                        "desc": "Salt Lake City Celestial Room",
+                        "source": "http://1.bp.blogspot.com/-0G4wG5R5Jr8/VZ3RMR6Kw6I/AAAAAAAACeY/ZW97B1NH2H8/s1600/IMG_0012%2B-%2BCopy.jpg"
+                    },
+                    {
+                        "filename": "slc_temple_baptistry",
+                        "desc": "Salt Lake City Sealing Room",
+                        "source": "https://1.bp.blogspot.com/-6sTuQpuxQio/XYkoGGn-EZI/AAAAAAAAGo4/Wa2Z0Wvt8rY-WH2O6KfgmOGiZRmG5YSVgCLcBGAsYHQ/s1600/salt-lake-temple-4927.jpg"
+                    }
+                ],
+                "hotel": [{
+                    "filename": "slc_hotel_exterior",
+                    "desc": "Exterior at the Salt Lake City Inn",
+                    "source": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_650,q_auto,w_1000/itemimages/60/14/60145_v2.jpeg"
+                }, {
+                    "filename": "slc_hotel_interior",
+                    "desc": "Interior at the Salt Lake City Inn",
+                    "source": "https://q-cf.bstatic.com/images/hotel/max1024x768/273/27377096.jpg"
+                }]
+            }
         },
         {
-            "name": "atlanta",
+            "name": "Omaha",
+            "source": "https://churchofjesuschristtemples.org/winter-quarters-nebraska-temple/",
             "address": {
-                "city": "Where you will grow!",
-                "state": 1788,
-                "zipcode": 1234
+                "street": "8283 N 34th St",
+                "city": "Omaha",
+                "state": "Nebraska",
+                "zipcode": 68112
             },
-            "telephone": 30458,
-            "email": 21,
+            "telephone": "+1(402)453-3406",
+            "email": "omaha-temple@churchofjesuschrist-fake.org",
+            "reservationlink": "locations/oma.html",
             "services": [
-                "March 4: March to the Drum of Donuts",
-                "September 5 - 11: Founder Days",
-                "December 1 - 26: Christmas in the Heart"
+                "Temple clothing available for patrons ONLY",
+                "Lunch room is not available",
+                "Other lunch and diner locations nearby",
+                "Patron housing available ONLY through this site",
+                "No distribution center or clothing store nearby",
+                "Mormon trail center on grounds",
+                "LDS Cemetery on grounds"
             ],
-            "history": "somehistory",
-            "ordinanceschedule": [
-                "sched 1",
-                "sched 1"
+            "history": [
+                "14 June 1999 - Announced",
+                "28 November 1999 - Groundbreaking",
+                "22 April 2001 - Dedicated"
             ],
-            "templeclosuerschedule": [
-                "sched1",
-                "sched2"
+            "ordinanceschedule": {
+                "baptism": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "6:30PM - 8PM Appointments Only"
+                    ],
+                    "wednesday": [
+                        "6:30PM - 8PM Appointments Only"
+                    ],
+                    "thursday": [
+                        "6:30PM - 8PM Appointments Only"
+                    ],
+                    "friday": [
+                        "6PM - 8PM Family Priority Time / Walk-ins Only"
+                    ],
+                    "saturday": [
+                        "8:30AM - 4PM - Appointments Only"
+                    ]
+                },
+                "initatory": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "5:30PM - 8:45PM Walk-ins & Appointments"
+                    ],
+                    "wednesday": [
+                        "9AM - 12PM Walk-ins & Appointments",
+                        "6:30PM - 8PM Walk-ins & Appointments"
+                    ],
+                    "thursday": [
+                        "5:30PM - 8:45PM Walk-ins & Appointments"
+                    ],
+                    "friday": [
+                        "9:30AM - 11AM Walk-ins & Appointments",
+                        "12PM - 1PM Walk-ins & Appointments",
+                        "5:30PM - 7PM Walk-ins & Appointments",
+                        "7:45PM - 8:45PM Walk-ins & Appointments"
+                    ],
+                    "saturday": ["7:30AM - 7PM Walk-ins & Appointments"]
+                },
+                "endowment": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "6PM - 7:30PM Walk-ins & Appointments"
+                    ],
+                    "wednesday": [
+                        "9:30AM - 11AM Walk-ins & Appointments",
+                        "7PM Walk-ins & Appointments"
+                    ],
+                    "thursday": [
+                        "6PM - 7:30PM Walk-ins & Appointments"
+                    ],
+                    "friday": [
+                        "6AM Walk-ins & Appointments",
+                        "10AM Walk-ins & Appointments",
+                        "12PM Walk-ins & Appointments",
+                        "6PM Walk-ins & Appointments",
+                        "7:30PM Walk-ins & Appointments"
+                    ],
+                    "saturday": [
+                        "8AM Walk-ins & Appointments",
+                        "10AM Walk-ins & Appointments",
+                        "12PM Walk-ins & Appointments",
+                        "2PM Walk-ins & Appointments",
+                        "4PM Walk-ins & Appointments",
+                        "6PM Walk-ins & Appointments"
+                    ]
+                },
+                "sealing": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": [
+                        "6PM - 7PM Walk-ins & Appointments",
+                        "7:45PM - 8:45PM Walk-ins & Appointments"
+                    ],
+                    "wednesday": [
+                        "9:30AM - 10:30AM Walk-ins & Appointments",
+                        "11:15AM - 12:15PM Walk-ins & Appointments",
+                        "7M - 8PM Walk-ins & Appointments"
+                    ],
+                    "thursday": [
+                        "6PM - 7PM Walk-ins & Appointments",
+                        "7:45PM - 8:45PM Walk-ins & Appointments"
+                    ],
+                    "friday": [
+                        "10AM - 11AM Walk-ins & Appointments",
+                        "12PM - 1PM Walk-ins & Appointments",
+                        "6PM - 7PM Walk-ins & Appointments",
+                        "7:45PM - 8:45PM Walk-ins & Appointments"
+                    ],
+                    "saturday": [
+                        "8AM - 7PM Walk-ins & Appointments"
+                    ]
+                }
+            },
+            "templeclosureschedule": [
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019 - Wednesday, 1 January 2020",
+                "Monday, 23 March 2020 - Monday, 6 April 2020",
+                "Saturday, 4 July 2020",
+                "Monday, 21 September 2020 - Monday, 5 October 2020",
+                "Wednesday, 25 November 2020 - Thursday, 26 November 2020",
+                "Thursday, 24 December 2020 - Friday, 25 December 2020",
+                "Friday, 1 January 2021"
             ],
-            "summary": "some summary",
-            "wxcitycode": 1234
+            "summary": "There is great history at the Winter Quarters temple. Visit the Mormon Pioneer Cemetery and the Mormon Trail Center while visiting this beautiful smaller temple that is a typical wester monumental motif.",
+            "images": {
+                "path": "images/oma/",
+                "activities": [{
+                        "filename": "oma_mormon_trail_center",
+                        "desc": "Mormon Trail Center",
+                        "source": "https://visitnebraska.com/sites/default/files/styles/listing_slideshow/public/listing_images/profile/3437/MTCExterior1_Detailjpg1496167330.jpg?itok=x4b6Erpo"
+                    },
+                    {
+                        "filename": "oma_mormon_trail_center_2",
+                        "desc": "Mormon Trail Center Interior",
+                        "source": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_553,q_75,w_1105/https://assets.simpleviewinc.com/simpleview/image/upload/crm/omaha/mormontrail_int0_3db80357-5056-a36a-09c6d28d2b709c03.jpg"
+                    },
+                    {
+                        "filename": "oma_temple_ground",
+                        "desc": "Omaha (Winter Quarters) Temple Grounds",
+                        "source": "http://mormonhistoricsites.org/wp-content/uploads/2016/05/Winter-Quarters-Temple-55.jpg"
+                    }
+                ],
+                "temple": [{
+                    "filename": "oma_baptistry",
+                    "desc": "Omaha Temple Baptistry",
+                    "source": "http://3.bp.blogspot.com/-ia-Hjz2gNik/TctAFHiSDmI/AAAAAAAAAWA/BHUr5Za_9d8/s1600/FontWinterQuartersNebraska1.jpg"
+                }],
+                "hotel": [{
+                    "filename": "oma_hotel_exterior",
+                    "desc": "Exterior at the Omaha Inn",
+                    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Aquila_Court_%28Omaha%29_from_NW_1.JPG/1200px-Aquila_Court_%28Omaha%29_from_NW_1.JPG"
+                }, {
+                    "filename": "oma_hotel_interior",
+                    "desc": "Interior at the Omaha Inn",
+                    "source": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_553,q_75,w_1105/https://assets.simpleviewinc.com/simpleview/image/upload/crm/omaha/Single-King0_3d9dfeed-5056-a36a-097641995436814e.jpg"
+                }]
+            }
         },
         {
-            "name": "atlanta",
+            "name": "St. George",
+            "source": "https://churchofjesuschristtemples.org/st.-george-utah-temple/",
             "address": {
-                "city": "Where you will grow!",
-                "state": 1788,
-                "zipcode": 1234
+                "street": "250 East 400 South",
+                "city": "St. George",
+                "state": "Utah",
+                "zipcode": 84770
             },
-            "telephone": 30458,
-            "email": 21,
+            "telephone": "+1(435)673-3533",
+            "email": "omaha-temple@churchofjesuschrist-fake.org",
+            "reservationlink": "locations/stg.html",
             "services": [
-                "March 4: March to the Drum of Donuts",
-                "September 5 - 11: Founder Days",
-                "December 1 - 26: Christmas in the Heart"
+                "Temple clothing available",
+                "Lunch room is available",
+                "Other lunch and diner locations nearby",
+                "Patron housing available through the temple site and through this site",
+                "Distribution center nearby"
             ],
-            "history": "somehistory",
-            "ordinanceschedule": [
-                "sched 1",
-                "sched 1"
+            "history": [
+                "31 January 1871 - Announced",
+                "9 November 1871 - Site Dedication & Groundbreaking",
+                "1 January 1877 - Private Dedication by Wilford Woodruff, Erastus Snow, and Brigham Young",
+                "6-8 April 1877 - Dedication by Daniel H. Wells with Brigham Young presiding",
+                "15-25 October 1975 - Public Open House",
+                "11-12 November 1975 - Rededication by Spencer W. Kimball"
             ],
-            "templeclosuerschedule": [
-                "sched1",
-                "sched2"
+            "ordinanceschedule": {
+                "baptism": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": ["Closed"],
+                    "wednesday": ["Closed"],
+                    "thursday": ["Closed"],
+                    "friday": ["Closed"],
+                    "saturday": ["Closed"]
+                },
+                "initatory": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": ["Closed"],
+                    "wednesday": ["Closed"],
+                    "thursday": ["Closed"],
+                    "friday": ["Closed"],
+                    "saturday": ["Closed"]
+                },
+                "endowment": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": ["Closed"],
+                    "wednesday": ["Closed"],
+                    "thursday": ["Closed"],
+                    "friday": ["Closed"],
+                    "saturday": ["Closed"]
+                },
+                "sealing": {
+                    "sunday": ["Closed"],
+                    "monday": ["Closed"],
+                    "tuesday": ["Closed"],
+                    "wednesday": ["Closed"],
+                    "thursday": ["Closed"],
+                    "friday": ["Closed"],
+                    "saturday": ["Closed"]
+                }
+            },
+            "templeclosureschedule": [
+                "Closed for Renovations until 2022"
             ],
-            "summary": "some summary",
-            "wxcitycode": 1234
+            "summary": "The longest operating temple in the Church Temple System. It was the first built in Utah and where the first endowments for the dead were performed. Because of the swampy ground chosen for the site, a cannon was used as a pile driver which is still available to view on display in the visitors' center",
+            "images": {
+                "path": "images/stg/",
+                "activities": [{
+                        "filename": "stg_temple_wedding",
+                        "desc": "Wedding at St George Temple",
+                        "source": "http://www.gideonphoto.com/blog/wp-content/uploads/2017/04/st-george-temple-wedding-photographer-5542.jpg"
+                    },
+                    {
+                        "filename": "stg_temple_grounds",
+                        "desc": "St George Temple Grounds",
+                        "source": "https://i.ytimg.com/vi/VtrdECK1v-A/maxresdefault.jpg"
+                    }
+                ],
+                "temple": [{
+                    "filename": "stg_temple_entrance",
+                    "desc": "St George Temple Desk",
+                    "source": "https://www.gannett-cdn.com/presto/2019/05/22/PSTG/41267c6c-1391-4e6a-a2a9-0499194af643-02-Recommend-Desk---Rendering.jpg?width=540&height=&fit=bounds&auto=webp"
+                }],
+                "hotel": [{
+                    "filename": "stg_hotel_exterior",
+                    "desc": "Interior at the St George Inn",
+                    "source": "https://media.deseretdigital.com/file/50082b8982?resize%3Dwidth%3A640%26crop%3Dtop%3A175%7Cleft%3A266%7Cwidth%3A944%7Cheight%3A620%26order%3Dcrop%2Cresize%26type%3Djpg%26c%3D14%26a%3D0b13a96f"
+                }, {
+                    "filename": "stg_hotel_interior",
+                    "desc": "Exterior at the St George Inn",
+                    "source": "https://bnbwebsites.s3.amazonaws.com/5480/mobile_slideshow_04.jpg"
+                }]
+            }
         }
     ]
 }

@@ -15,6 +15,9 @@
     --body-link-text: var(--outer-space);
     --body-link-hover-text: var(--jordy-blue);
     --body-link-visited-text: var(--space-cadet);
+    --container-background: var(--jordy-blue);
+    --button-background: var(--space-cadet);
+    --button-text: var(--peach-orange);
 
     --main-nav-bkg: var(--space-cadet);
     --main-nav-text: var(--peach-orange);
@@ -32,6 +35,16 @@
     content: "";
     display: table;
     clear: both;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
 }
 
 /* Main Elements Declaration */
@@ -137,24 +150,110 @@ main {
 
 /* Activities Section */
 
-div.activity-images img {
-    height: 200px;
-    width: auto;
+div.activities-section,
+div.locations {
+    background: var(--container-background);
     margin: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,.7);
-    border-radius: 2px;
+    border-radius: 5px;
+    max-width: 500px;
+
+}
+
+div.activity-images {
+    margin: auto;
+    padding-top: 1em;
 }
 
 .activities-image {
+    min-width: 250px;
+    max-width: 95%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    border-radius: 2px;
     display: none;
 }
 
 .activities {
-    max-width: 800px;
     margin: auto;
+    padding: .5em;
 }
 
 /* End of Activities Section */
+
+/* Activities and Temple Sections */
+
+div.activities-section,
+div.locations {
+    background: var(--container-background);
+    margin: auto;
+    border-radius: 5px;
+}
+
+/*  End of Activities and Temple Sections */
+
+/* Temple Location Section */
+
+div.locations {
+    margin-top: 1em;
+}
+
+div.locations h2, div.locations p {
+    padding: .5em .5em 0 .5em;
+}
+
+div.hotels h3 {
+    text-align: center;
+    margin: .5em;
+}
+
+div.hotels {
+    padding: 1em;
+}
+
+div.hotels .image {
+    max-width: 300px;
+    margin: auto;
+}
+
+div.hotels>a {
+    max-width: 150px;
+    display: block;
+    margin: 1em auto;
+    padding: .5em;
+    background: var(--button-background);
+    border: none;
+    color: var(--button-text);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+div.hotels a:hover {
+    transform: scale(1.1);
+}
+
+div.hotels img {
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    border-radius: 2px;
+}
+
+div.hotels p {
+    width: 95%;
+    margin: auto;
+    max-width: 25em;
+}
+
+div.hotels hr {
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 1px;
+    margin-top: 2em;
+}
+
+
+/* End of Temple Location Section */
 
 
 
