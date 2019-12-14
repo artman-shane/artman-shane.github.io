@@ -6,9 +6,30 @@ function buildTemples(jsonFilename, classToFind, classToCreate) {
         .then(function (jsonObj) {
             let temples = jsonObj.temples;
 
+            let templeContainer = document.createElement("div");
+            templeContainer.classList.add("temple-container");
+
+            let buttonContainer = document.createElement("div");
+            buttonContainer.classList.add("button-container");
+            templeContainer.appendChild(buttonContainer);
+
+            for (let i = 0; i < temples.length; i++) {
+                let _temple = temples[i];
+                let _rscName = _temple.resourcename;
+                let _templeName = _temple.name;
+                let templeDisplayButton = document.createElement("input");
+                templeDisplayButton.setAttribute("type", "button"); 
+                templeDisplayButton.setAttribute("onclick", "toggleDisplayTemple(\"" + _rscName + "\")");
+                templeDisplayButton.classList.add("display-button");
+                i == 0 ? templeDisplayButton.classList.add("active"):null;
+                templeDisplayButton.value = _templeName;
+                buttonContainer.appendChild(templeDisplayButton);
+            }
+
             for (let i = 0; i < temples.length; i++) {
                 let _temple = temples[i];
                 let _templeName = _temple.name;
+                let _rscName = _temple.resourcename;
                 let _infoSrc = _temple.source;
                 let _street = _temple.address.street;
                 let _city = _temple.address.city;
@@ -32,6 +53,8 @@ function buildTemples(jsonFilename, classToFind, classToCreate) {
 
                 let templeLocation = document.createElement("div");
                 templeLocation.classList.add(classToCreate);
+                templeLocation.classList.add(_rscName);
+                i != 0 ? templeLocation.classList.add("hide") : null; 
 
                 let templeName = document.createElement("h3");
                 templeName.textContent = _templeName;
@@ -58,13 +81,30 @@ function buildTemples(jsonFilename, classToFind, classToCreate) {
                 templeReservationButton.textContent = "Check Availability";
                 templeLocation.appendChild(templeReservationButton);
 
+
                 let templeSummary = document.createElement("p");
                 templeSummary.textContent = _summary;
                 templeLocation.appendChild(templeSummary);
 
                 i < temples.length - 1 ? templeLocation.appendChild(document.createElement("hr")) : null;
 
-                document.querySelector(classToFind).appendChild(templeLocation);
+                templeContainer.appendChild(templeLocation);
+            }
+
+            document.querySelector(classToFind).appendChild(templeContainer);
+
+            // This section is to care for the wayfinder functions
+            let btnContainer = document.getElementsByClassName("button-container")[0];
+            let buttons = btnContainer.getElementsByClassName("display-button");
+
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", function () {
+                    let currentBtn = btnContainer.getElementsByClassName("active");
+                    for (let j = 0; j < currentBtn.length; j++) {
+                        currentBtn[j].classList.remove("active");
+                    }
+                    this.classList.add("active");
+                });
             }
         });
 }

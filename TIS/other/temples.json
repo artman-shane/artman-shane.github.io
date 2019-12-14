@@ -1,6 +1,7 @@
 {
     "temples": [{
             "name": "Atlanta",
+            "resourcename": "atl",
             "source": "https://churchofjesuschristtemples.org/atlanta-georgia-temple/",
             "address": {
                 "street": "6450 Barfield Rd NE",
@@ -188,6 +189,7 @@
         },
         {
             "name": "Salt Lake City",
+            "resourcename": "slc",
             "source": "https://churchofjesuschristtemples.org/salt-lake-temple/",
             "address": {
                 "street": "50 W North Temple St",
@@ -354,6 +356,7 @@
         },
         {
             "name": "Omaha",
+            "resourcename": "oma",
             "source": "https://churchofjesuschristtemples.org/winter-quarters-nebraska-temple/",
             "address": {
                 "street": "8283 N 34th St",
@@ -522,6 +525,7 @@
         },
         {
             "name": "St. George",
+            "resourcename": "stg",
             "source": "https://churchofjesuschristtemples.org/st.-george-utah-temple/",
             "address": {
                 "street": "250 East 400 South",

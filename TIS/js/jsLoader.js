@@ -9,4 +9,3 @@ var baseGeocodeURL = "https://maps.googleapis.com/maps/api/geocode/json?address=
 buildActivities("other/temples.json", "div.activity-images", "activities-image");
 buildTemples("other/temples.json", "div.locations", "hotels");
 initMap("4800+Montgomery+Ln", "Bethesda", "MD", '.map-active', "Temple Inn & Suites");
-// initMap("1046+Denali+Way", "Winder", "GA", '.map-active', "Shane's House");

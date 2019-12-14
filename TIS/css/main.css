@@ -215,7 +215,8 @@ div.hotels .image {
     margin: auto;
 }
 
-div.hotels>a {
+div.hotels>a,
+div.locations .display-button {
     max-width: 150px;
     display: block;
     margin: 1em auto;
@@ -229,8 +230,13 @@ div.hotels>a {
     text-align: center;
 }
 
-div.hotels a:hover {
+div.hotels a:hover,
+div.locations .display-button:hover {
     transform: scale(1.1);
+}
+
+div.locations .button-container {
+    display: none;
 }
 
 div.hotels img {

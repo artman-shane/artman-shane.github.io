@@ -13,7 +13,6 @@
     /* End of Main Navigation Section */
 
 
-
     /* Activities Section */
 
     div.activity-images img {
@@ -26,9 +25,31 @@
 
     /* Temple Location Section */
 
+    div.locations .hide,
+    div.locations hr {
+        display: none;
+    }
+
+    div.locations .display-button.active {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+
     div.locations {
-        display: grid;
-        grid-template-columns: ;
+        /* max-width: 100px; */
+    }
+
+    div.locations .button-container {
+        display: block;
+        text-align: center;
+    }
+
+    div.locations .display-button {
+        display: inline;
+        margin: 0 .4em;
+    }
+
+    div.hotels {
+        /* display: none; */
     }
 
     /* End Temple Location Section */
