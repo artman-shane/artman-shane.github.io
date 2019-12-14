@@ -1,6 +1,9 @@
 @media only screen and (min-width: 32.5em) {
 
 
+    main {
+            max-width: 1000px;
+    }
     /* Main Navigation Section */
 
     
@@ -13,26 +16,13 @@
         color: unset;
     }
 
-    /* nav ul li:hover,
-    nav ul li.active:hover {
-        background: var(--main-nav-link-hover-bkg);
-        border-radius: 5px;
-    } */
-
-    /* nav ul li:hover>a,
-    nav ul li.active:hover>a {
-        color: var(--main-nav-link-hover-text);
-    } */
-
-
     nav {
         max-width: 1200px;
     }
 
     nav ul {
         /* overflow: hidden; */
-        width: 100%;
-        margin: auto;
+        width: unset;
     }
 
     nav ul:not(.displayed) li {
@@ -82,13 +72,14 @@
 
     /* Temple Location Section */
 
+    div.activities-section,
+    div.locations {
+        max-width: 500px;
+    }
+
     div.locations .hide,
     div.locations hr {
         display: none;
-    }
-
-    div.locations {
-        /* max-width: 100px; */
     }
 
     div.locations .button-container {
@@ -120,10 +111,6 @@
         transform: scale(1.1);
         background: var(--button-background-hover);
         color: var(--button-text-hover);
-    }
-
-    div.hotels {
-        /* display: none; */
     }
 
     /* End Temple Location Section */

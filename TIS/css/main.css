@@ -146,7 +146,6 @@ nav ul li:first-child {
 
 main {
     margin: 1em auto;
-    max-width: 1000px;
 }
 
 /* End of Main Body Section */
@@ -154,15 +153,6 @@ main {
 
 
 /* Activities Section */
-
-div.activities-section,
-div.locations {
-    background: var(--container-background);
-    margin: auto;
-    border-radius: 5px;
-    max-width: 500px;
-
-}
 
 div.activity-images {
     margin: auto;
@@ -183,6 +173,7 @@ div.activity-images {
     padding: .5em;
 }
 
+
 /* End of Activities Section */
 
 /* Activities and Temple Sections */
@@ -190,9 +181,18 @@ div.activity-images {
 div.activities-section,
 div.locations {
     background: var(--container-background);
+    margin: auto;
+    border-radius: 5px;
+}
+
+div.activities-section,
+div.locations {
+    background: var(--container-background);
     margin: 1em auto;
     border-radius: 5px;
 }
+
+
 
 /*  End of Activities and Temple Sections */
 
@@ -249,11 +249,6 @@ div.hotels img {
     border-radius: 2px;
 }
 
-div.hotels p {
-    width: 95%;
-    margin: auto;
-    max-width: 25em;
-}
 
 div.hotels hr {
     border: 1px solid rgba(255, 255, 255, .2);

@@ -1,2 +1,67 @@
 @media only screen and (min-width: 55em) {
+
+    main {
+        max-width: 1500px;
+    }
+
+
+
+    div.activities-section p {
+        max-width: 50em;
+    }
+
+    div.activities-section h2 {
+        margin: 1em auto .5em auto;
+        text-align: center;
+    }
+
+    div.locations h3 {
+        width: 50%;
+        margin: .5em auto;
+    }
+
+    div.locations .button-container {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        float: left;
+        margin-top: 3em;
+        margin-left: 5em;
+    }
+
+    div.activities-section p,
+    div.hotels p {
+        max-width: 50em;
+        margin: auto;
+    }
+
+
+    div.hotels .image {
+        max-width: 400px;
+    }
+
+
+    div.locations .display-button {
+        margin: 1em 0 .2em 1em;
+    }
+
+    div.locations .display-button.active {
+        box-shadow: none;
+        background: var(--button-background-hover);
+        color: var(--button-text-hover);
+        transform: none;
+    }
+
+    div.locations .display-button:not(.active):hover {
+        transform: scale(1.1);
+        background: var(--button-background-hover);
+        color: var(--button-text-hover);
+    }
+
+
+    div.activities-section,
+    div.locations {
+        max-width: 1000px;
+    }
+
 }
