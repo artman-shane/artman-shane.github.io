@@ -1,9 +1,4 @@
-function buildActivities(jsonFilename, classToFind, classToCreate) {
-    fetch(jsonFilename)
-        .then(response => {
-            return response.json();
-        })
-        .then(function (jsonObj) {
+function buildActivities(jsonObj, classToFind, classToCreate) {
             let temples = jsonObj.temples;
             let rndTemple = Math.floor(Math.random() * temples.length);
             let _temple = temples[rndTemple];
@@ -24,6 +19,5 @@ function buildActivities(jsonFilename, classToFind, classToCreate) {
             activityImageLink.appendChild(activityImage);
 
             document.querySelector(classToFind).appendChild(activityImageLink);
-            showSlides();
-        });
+            // showSlides(classToCreate);
 }

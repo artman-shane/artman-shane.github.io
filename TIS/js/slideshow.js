@@ -1,5 +1,5 @@
-function showSlides() {
-    let slides = document.getElementsByClassName("activities-image");
+function showSlides(_classToShow) {
+    let slides = document.getElementsByClassName(_classToShow);
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }

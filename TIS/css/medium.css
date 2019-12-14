@@ -3,11 +3,68 @@
 
     /* Main Navigation Section */
 
-    nav ul li:hover,
-    nav ul li:hover>a {
+    
+    nav ul li.active {
+        background: unset;
+    }
+
+    nav ul li.active a,
+    nav ul li.active a:visited {
+        color: unset;
+    }
+
+    /* nav ul li:hover,
+    nav ul li.active:hover {
+        background: var(--main-nav-link-hover-bkg);
+        border-radius: 5px;
+    } */
+
+    /* nav ul li:hover>a,
+    nav ul li.active:hover>a {
+        color: var(--main-nav-link-hover-text);
+    } */
+
+
+    nav {
+        max-width: 1200px;
+    }
+
+    nav ul {
+        /* overflow: hidden; */
+        width: 100%;
+        margin: auto;
+    }
+
+    nav ul:not(.displayed) li {
+        display: unset;
+    }
+
+    nav ul.displayed li {
+        display: unset;
+    }
+
+    nav ul li {
+        display: unset;
+        float: left;
+        padding:0;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    nav ul li a:hover:not(.active) {
         background: var(--main-nav-link-hover-bkg);
         color: var(--main-nav-link-hover-text);
-        font-size: 1.2em;
+    }
+
+    nav ul li a.active {
+    }
+
+    nav ul li:first-child {
+        display: none;
     }
 
     /* End of Main Navigation Section */
@@ -30,10 +87,6 @@
         display: none;
     }
 
-    div.locations .display-button.active {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-    }
-
     div.locations {
         /* max-width: 100px; */
     }
@@ -43,9 +96,30 @@
         text-align: center;
     }
 
+    div.locations .display-button.active {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        background: var(--button-background-hover);
+        color: var(--button-text-hover);
+        transform: scale(1.1);
+
+    }
+
     div.locations .display-button {
+        padding: .5em;
+        border: none;
+        transition: all .2s ease-in-out;
+        text-align: center;
+        background: var(--button-background);
+        color: var(--button-text);
+        border-radius: 3px;
         display: inline;
         margin: 0 .4em;
+    }
+
+    div.locations .display-button:hover {
+        transform: scale(1.1);
+        background: var(--button-background-hover);
+        color: var(--button-text-hover);
     }
 
     div.hotels {
