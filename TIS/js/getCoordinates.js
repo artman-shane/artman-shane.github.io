@@ -1,4 +1,7 @@
-function getCoordinates (street, city, state) {
+function getCoordinates(street, city, state) {
+
+    let geocodeURL = baseGeocodeURL + street + "+" + city + "+" + state + "&key=" + gcp_api_key;
+
     fetch(geocodeURL)
         .then(response => response.json())
         .then(jsonObj => {

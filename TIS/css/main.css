@@ -260,7 +260,7 @@ div.hotels hr {
 /* Footer Section */
 footer {
     display: grid;
-    grid-template-areas: "contact""summary";
+    grid-template-areas: "contact" "summary";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr .5fr;
     background: var(--main-nav-bkg);
@@ -270,16 +270,13 @@ footer {
     align-items: center;
     max-width: 1200px;
     margin: auto;
+    justify-content: center;
 }
 
 footer a,
 footer a:visited {
     color: var(--main-nav-link-text);
     margin: .5em;
-}
-
-footer .map {
-    grid-area: map;
 }
 
 footer .contact {

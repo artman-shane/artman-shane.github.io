@@ -12,10 +12,10 @@
 
     /* End of Main Navigation Section */
 
-    
-    
+
+
     /* Activities Section */
-    
+
     div.activity-images img {
         height: 300px;
     }
@@ -24,7 +24,23 @@
 
 
 
+    /* Temple Location Section */
+
+    div.locations {
+        display: grid;
+        grid-template-columns: ;
+    }
+
+    /* End Temple Location Section */
+
+
+
     /* Footer Section */
+
+    footer {
+        grid-template-areas: "map contact""map summary";
+        grid-template-columns: minmax(100px, 400px) minmax(100px, 400px);
+    }
 
     footer a,
     footer a:visited {
@@ -33,6 +49,13 @@
 
     footer a:hover {
         color: var(--footer-link-hover-text);
+    }
+
+    footer .map-active {
+        grid-area: map;
+        margin: auto;
+        height: 200px;
+        width: 95%;
     }
 
     /* End Footer Section */
