@@ -1,4 +1,4 @@
-function buildTemples(jsonObj, classToFind, classToCreate) {
+function homeBuildTemplesTeaser(jsonObj, classToFind, classToCreate) {
     let temples = jsonObj.temples;
 
     let templeContainer = document.createElement("div");

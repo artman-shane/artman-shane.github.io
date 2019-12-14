@@ -4,8 +4,6 @@
         max-width: 1500px;
     }
 
-
-
     div.activities-section p {
         max-width: 50em;
     }
@@ -57,7 +55,6 @@
         background: var(--button-background-hover);
         color: var(--button-text-hover);
     }
-
 
     div.activities-section,
     div.locations {

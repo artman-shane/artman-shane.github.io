@@ -1,4 +1,4 @@
-function buildActivities(jsonObj, classToFind, classToCreate) {
+function homeBuildActivitiesTeaser(jsonObj, classToFind, classToCreate) {
             let temples = jsonObj.temples;
             let rndTemple = Math.floor(Math.random() * temples.length);
             let _temple = temples[rndTemple];
@@ -19,5 +19,4 @@ function buildActivities(jsonObj, classToFind, classToCreate) {
             activityImageLink.appendChild(activityImage);
 
             document.querySelector(classToFind).appendChild(activityImageLink);
-            // showSlides(classToCreate);
 }

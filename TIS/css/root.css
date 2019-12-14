@@ -1,0 +1,31 @@
+:root {
+    --baby-powder: #FDFFFC;
+    --jordy-blue: #8eb8e5;
+    --outer-space: #474749;
+    --peach-orange: #efc69b;
+    --space-cadet: #1d3461;
+
+    --body-bkg: var(--baby-powder);
+    --body-text: var(--outer-space);
+    --body-link-text: var(--outer-space);
+    --body-link-hover-text: var(--jordy-blue);
+    --body-link-visited-text: var(--space-cadet);
+    --container-background: var(--jordy-blue);
+    --button-background: var(--space-cadet);
+    --button-background-hover: var(--peach-orange);
+    --button-text: var(--peach-orange);
+    --button-text-hover: var(--space-cadet);
+
+    --main-nav-bkg: var(--space-cadet);
+    --main-nav-text: var(--peach-orange);
+    --main-nav-link-bkg: var(--jordy-blue);
+    --main-nav-link-hover-bkg: var(--baby-powder);
+    --main-nav-link-hover-text: var(--space-cadet);
+    --main-nav-link-visited-bkg: var(--main-nav-link-bkg);
+    --main-nav-active-link-bkg: var(--jordy-blue);
+    --main-nav-active-link-text: var(--baby-powder);
+    --main-nav-active-link-text-med: var(--baby-powder);
+    --main-nav-active-link-bkg-med: var(--baby-powder);
+
+    --footer-link-hover-text: var(--baby-powder);
+}

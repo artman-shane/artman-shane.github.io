@@ -11,6 +11,7 @@
     <meta name='author' content='Shane Artman'>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -29,10 +30,10 @@
         <ul class="menu-control">
             <li><a href="#" onclick="toggleMenu()">&#9776</a></li>
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Temples</a></li>
-            <li><a href="#">Reserve Now</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="temples/index.html">Temples</a></li>
+            <li><a href="locations/index.html">Reserve Now</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -62,7 +63,8 @@
 
 
     <footer>
-        <div class="map-active"></div>
+        <!-- Remove this one you are ready to test so that map can be displayed -->
+        <!-- <div class="map-active"></div> -->
         <div class="contact">
             <div class="contact-link"><a href="./contact.html">Contact Us</a></div>
             <div class="tel-contact"><a href="tel:+17778889999">&#9742;</a></div>
@@ -85,10 +87,9 @@
     </script>
     <script src="js/todayDate.js" defer></script>
     <script src="js/toggleMenu.js"></script>
-    <script src="js/buildActivities.js"></script>
-    <script src="js/buildTemples.js"></script>
-    <script src="js/slideshow.js"></script>
-    <script src="js/jsLoader.js" defer></script>
+    <script src="js/homeBuildActivitiesTeaser.js"></script>
+    <script src="js/homeBuildTemplesTeaser.js"></script>
+    <script src="js/homeJsLoader.js" defer></script>
     <script src="js/toggleDisplayTemple.js"></script>
 </body>
 

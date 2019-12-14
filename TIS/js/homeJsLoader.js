@@ -4,8 +4,8 @@ fetch("other/temples.json")
         return response.json();
     })
     .then(function (jsonObj) {
-        buildActivities(jsonObj, "div.activity-images", "activities-image");
-        buildTemples(jsonObj, "div.locations", "hotels");
+        homeBuildActivitiesTeaser(jsonObj, "div.activity-images", "activities-image");
+        homeBuildTemplesTeaser(jsonObj, "div.locations", "hotels");
     });
 
 initMap("4800+Montgomery+Ln", "Bethesda", "MD", '.map-active', "Temple Inn & Suites");
