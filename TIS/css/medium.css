@@ -113,6 +113,14 @@
         color: var(--button-text-hover);
     }
 
+    div.locations .map {
+            grid-area: map;
+            margin: auto;
+            height: 200px;
+            width: 95%;
+        }
+
+
     /* End Temple Location Section */
 
 
@@ -141,4 +149,5 @@
     }
 
     /* End Footer Section */
+
 }
