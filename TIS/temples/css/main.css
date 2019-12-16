@@ -1,0 +1,16 @@
+/* Begin Temples Page Section */
+
+div.temples .phone {
+    background: none;
+    box-shadow: none;
+}
+
+div.temples a {
+    color: var(--main-nav-link-text);
+}
+
+div.temples a:hover {
+    color: var(--baby-powder);
+}
+
+/* End Temples Page Section */

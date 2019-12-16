@@ -14,7 +14,7 @@ function homeBuildTemplesTeaser(jsonObj, classToFind, classToCreate) {
         let _templeName = _temple.name;
         let templeDisplayButton = document.createElement("input");
         templeDisplayButton.setAttribute("type", "button");
-        templeDisplayButton.setAttribute("onclick", "toggleDisplayTemple(\"" + _rscName + "\")");
+        templeDisplayButton.setAttribute("onclick", "toggleDisplayTemple(\"" + _rscName + "\",\"" + classToCreate + "\")");
         templeDisplayButton.classList.add("display-button");
         i == 0 ? templeDisplayButton.classList.add("active") : null;
         templeDisplayButton.value = _templeName;

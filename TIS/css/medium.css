@@ -2,11 +2,12 @@
 
 
     main {
-            max-width: 1000px;
+        max-width: 1000px;
     }
+
     /* Main Navigation Section */
 
-    
+
     nav ul li.active {
         background: unset;
     }
@@ -36,7 +37,7 @@
     nav ul li {
         display: unset;
         float: left;
-        padding:0;
+        padding: 0;
     }
 
     nav ul li a {
@@ -50,8 +51,7 @@
         color: var(--main-nav-link-hover-text);
     }
 
-    nav ul li a.active {
-    }
+    nav ul li a.active {}
 
     nav ul li:first-child {
         display: none;
@@ -114,11 +114,12 @@
     }
 
     div.locations .map {
-            grid-area: map;
-            margin: auto;
-            height: 200px;
-            width: 95%;
-        }
+        grid-area: map;
+        margin: auto;
+        height: 200px;
+        width: 95%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    }
 
 
     /* End Temple Location Section */
@@ -149,5 +150,105 @@
     }
 
     /* End Footer Section */
+
+
+    /* Begin Temples Page Section */
+
+    div.temple-locations {
+        max-width: 1000px;
+    }
+
+    div.temple-locations .hide,
+    div.temple-locations hr {
+        display: none;
+    }
+
+    div.temple-locations h2,
+    div.temple-locations p {
+        text-align: center;
+    }
+
+    div.temple-locations p {
+        margin: 0 0 2em 0;
+    }
+
+    div.temple-locations .button-container {
+        display: block;
+        text-align: center;
+        margin: 1em;
+    }
+
+    div.temple-locations .display-button.active {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        background: var(--button-background-hover);
+        color: var(--button-text-hover);
+        transform: scale(1.1);
+
+    }
+
+    div.temple-locations .display-button {
+        padding: .5em;
+        border: none;
+        transition: all .2s ease-in-out;
+        text-align: center;
+        background: var(--button-background);
+        color: var(--button-text);
+        border-radius: 3px;
+        display: inline;
+        margin: 0 .4em;
+    }
+
+    div.temple-locations .display-button:hover {
+        transform: scale(1.1);
+        background: var(--button-background-hover);
+        color: var(--button-text-hover);
+    }
+
+    div.temples {
+        margin: auto;
+        width: 100%;
+    }
+
+
+    div.temples .image {
+        max-width: 500px;
+    }
+
+    div.temples .list-title {
+        width: 90%;
+        margin: 1.7em auto 0 auto;
+        font-size: 1.5em;
+    }
+
+    div.temples li {
+        width: 95%;
+        font-size: 1em;
+        margin-top: .2em;
+        text-align: left;
+    }
+
+    div.temples .temple-services,
+    div.temples .temple-histories,
+    div.temples .temple-closures,
+    div.temples .temple-baptistry-schedule,
+    div.temples .temple-initatory-schedule,
+    div.temples .temple-endowment-schedule,
+    div.temples .temple-sealing-schedule {
+        text-align: center;
+        width: 90%;
+        margin: 1.7em auto 0 auto;
+    }
+
+    div.temples .map {
+        grid-area: map;
+        margin: auto;
+        padding-bottom: 1em;
+        height: 200px;
+        width: 95%;
+        max-width: 500px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    }
+
+    /* End Temples Page Section */
 
 }

@@ -14,7 +14,7 @@ function initMap(street, city, state, classToFind, nameOfLocation) {
     let baseGeocodeURL = "https://maps.googleapis.com/maps/api/geocode/json?address=";
     let gcp_api_key = "AIzaSyCLooeXEVw42-Ae3VNO3p5W8hdhExEDNao";
     // Costs $$$
-    let enableMap = false;
+    let enableMap = 0;
     // Test for Map Active classes
     if (document.querySelector('.map-active') || document.querySelectorAll('.temple-map-active')) {
 
@@ -51,4 +51,10 @@ function drawMap(latitude, longitude, classToFind, nameOfLocation) {
         visible: true
     });
     marker.setMap(map);
+}
+
+// In order for the mousedown to work, you must return the function and not call the function.
+// Calling the function causes it to fire immediately and this costs for the map
+function returnInitMap(street, city, state, classToFind, nameOfLocation) {
+    return function () { initMap(street, city, state, classToFind, nameOfLocation); }
 }

@@ -17,7 +17,14 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
         let _state = _temple.address.state;
         let templeDisplayButton = document.createElement("input");
         templeDisplayButton.setAttribute("type", "button");
-        templeDisplayButton.setAttribute("onclick", "toggleDisplayTempleWithMap(\"" + _rscName + "\",\"" + _street.split(' ').join('+') + "\",\"" + _city.split(' ').join('+') + "\",\"" + _state + "\",\"" + "temple-map-active-" + _rscName + "\",\"" + _templeName + " Temple" + "\")");
+        templeDisplayButton.setAttribute("onclick", "toggleDisplayTemple(\"" + _rscName + "\",\"" + classToCreate + "\")");
+        // templeDisplayButton.setAttribute("onclick", "toggleDisplayTempleWithMap(\"" + _rscName + "\",\"" + _street.split(' ').join('+') + "\",\"" + _city.split(' ').join('+') + "\",\"" + _state + "\",\"" + "temple-map-active-" + _rscName + "\",\"" + _templeName + " Temple" + "\")");
+        if (i != 0) {
+            templeDisplayButton.addEventListener("mousedown", returnInitMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "temple-map-active-" + _rscName, _templeName + " Temple"), {
+                once: true
+            });
+        }
+
         templeDisplayButton.classList.add("display-button");
         i == 0 ? templeDisplayButton.classList.add("active") : null;
         templeDisplayButton.value = _templeName;
@@ -58,30 +65,41 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
         templeName.textContent = _templeName;
         templeLocation.appendChild(templeName);
 
-        let templePhone = document.createElement("a");
-        templePhone.setAttribute("href", "tel:" + _tele);
-        templePhone.classList.add("phone");
-        templePhone.textContent = _tele;
-        templeLocation.appendChild(templePhone);
-
-        let templeEmail = document.createElement("a");
-        templeEmail.setAttribute("href", "mailto:" + _email);
-        templeEmail.classList.add("email");
-        templeEmail.innerHTML = "&#x2709;";
-        templeLocation.appendChild(templeEmail);
+        let templeContactContainer = document.createElement("div");
+        templeContactContainer.classList.add("temple-contact-container");
 
         let templeAddress = document.createElement("div");
         templeAddress.classList.add("address");
         templeAddress.innerHTML = _street + "<br>" + _city + ", " + _state + " " + _zipcode;
-        templeLocation.appendChild(templeAddress);
+        templeContactContainer.appendChild(templeAddress);
 
-        let templeMap = document.createElement("div");
-        templeMap.classList.add("map");
-        templeMap.classList.add("temple-map-active-" + _rscName);
-        templeLocation.appendChild(templeMap);
+        let templePhone = document.createElement("a");
+        templePhone.setAttribute("href", "tel:" + _tele);
+        templePhone.classList.add("phone");
+        let phoneText = document.createElement("span");
+        phoneText.textContent = _tele;
+        phoneText.classList.add("phone-text");
+        templePhone.appendChild(phoneText);
+        let phoneIcon = document.createElement("span");
+        phoneIcon.innerHTML = "&#9742;";
+        phoneIcon.classList.add("phone-icon");
+        templePhone.appendChild(phoneIcon);
+        templeContactContainer.appendChild(templePhone);
 
+        let templeEmail = document.createElement("a");
+        templeEmail.setAttribute("href", "mailto:" + _email);
+        templeEmail.classList.add("email");
+        let emailText = document.createElement("span");
+        emailText.textContent = _email;
+        emailText.classList.add("email-text");
+        templeEmail.appendChild(emailText);
+        let emailIcon = document.createElement("span");
+        emailIcon.innerHTML = "&#x2709;";
+        emailIcon.classList.add("email-icon");
+        templeEmail.appendChild(emailIcon);
+        templeContactContainer.appendChild(templeEmail);
 
-
+        templeLocation.appendChild(templeContactContainer);
 
         // Temple Images
         if (imagesToDisplay > 0) {
@@ -106,30 +124,45 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
             templeLocation.appendChild(imageElement);
         }
 
+        let gridContainer = document.createElement("div");
+        gridContainer.classList.add("temples-grid-container");
+
         // Temple Services
-        createList(_services, "services", templeLocation, "Services Available Here:");
+        createList(_services, "services", gridContainer, "Services Available Here:");
         // Temple History
-        createList(_histories, "histories", templeLocation, "History of the " + _templeName + " Temple:");
+        createList(_histories, "histories", gridContainer, "History of the " + _templeName + " Temple:");
         // Temple Closure Schedule
-        createList(_templeClosures, "closures", templeLocation, "Closure Schedule:");
+        createList(_templeClosures, "closures", gridContainer, "Closure Schedule:");
         // Baptistry Schedule
-        createList(_baptismSchedules, "baptistry-schedule", templeLocation, "Baptistry Schedule:", 1);
+        createList(_baptismSchedules, "baptistry-schedule", gridContainer, "Baptistry Schedule:", 1);
         // Initatory Schedule
-        createList(_initatorySchedules, "initatory-schedule", templeLocation, "Initatory Schedule:", 1);
+        createList(_initatorySchedules, "initatory-schedule", gridContainer, "Initatory Schedule:", 1);
         // Endowment Schedule
-        createList(_endowmentSchedules, "endowment-schedule", templeLocation, "Endowment Schedule:", 1);
+        createList(_endowmentSchedules, "endowment-schedule", gridContainer, "Endowment Schedule:", 1);
         // Sealing Schedule
-        createList(_sealingSchedules, "sealing-schedule", templeLocation, "Sealing Schedule:", 1);
+        createList(_sealingSchedules, "sealing-schedule", gridContainer, "Sealing Schedule:", 1);
+
+        templeLocation.appendChild(gridContainer);
 
 
         let templeSummary = document.createElement("p");
         templeSummary.textContent = _summary;
         templeLocation.appendChild(templeSummary);
 
+        let templeMap = document.createElement("div");
+        templeMap.classList.add("map");
+        templeMap.classList.add("temple-map-active-" + _rscName);
+        templeLocation.appendChild(templeMap);
+
+
         i < temples.length - 1 ? templeLocation.appendChild(document.createElement("hr")) : null;
 
         templeContainer.appendChild(templeLocation);
-        i == 0 ? templeContainer.addEventListener("onload", initMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "temple-map-active-" + _rscName, _templeName + " Temple"), { once: true }) : null;
+        if (i == 0) {
+            templeContainer.addEventListener("onload", initMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "temple-map-active-" + _rscName, _templeName + " Temple"), {
+                once: true
+            });
+        }
     }
 
     document.querySelector(classToFind).appendChild(templeContainer);
@@ -153,7 +186,10 @@ function createList(_objs, _obj, _parent, _title, _dow = 0) {
     // Temple Services
     let _elements = document.createElement("div");
     _elements.classList.add("temple-" + _obj);
-    _elements.textContent = _title;
+    let _subEmelemnt = document.createElement("span");
+    _subEmelemnt.textContent = _title;
+    _subEmelemnt.classList.add("list-title");
+    _elements.appendChild(_subEmelemnt);
 
     if (_dow) {
         let _days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
@@ -163,6 +199,7 @@ function createList(_objs, _obj, _parent, _title, _dow = 0) {
             let _object = _objs[_dayName];
             let _day = document.createElement("li");
             _day.textContent = _dayName[0].toUpperCase() + _dayName.slice(1);
+            _day.classList.add("day-name");
             // _day.textContent = _days[k][0].toUpperCase + _days[k].slice(1);
             let _elementsList = document.createElement("ul");
             for (let j = 0; j < _object.length; j++) {

@@ -4,7 +4,7 @@ fetch("../other/temples.json")
         return response.json();
     })
     .then(function (jsonObj) {
-        buildTemplesPage(jsonObj, "div.locations", "hotels");
+        buildTemplesPage(jsonObj, "div.temple-locations", "temples");
     });
 
 

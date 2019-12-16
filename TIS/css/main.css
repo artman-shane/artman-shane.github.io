@@ -35,6 +35,8 @@ a {
 a,
 a:visited {
     color: var(--body-link-text);
+    margin: 0;
+    padding: 0;
 }
 
 a:hover {
@@ -171,7 +173,8 @@ div.locations {
     margin-top: 1em;
 }
 
-div.locations h2, div.locations p {
+div.locations h2,
+div.locations p {
     padding: .5em .5em 0 .5em;
 }
 
@@ -233,7 +236,7 @@ div.hotels hr {
 /* Footer Section */
 footer {
     display: grid;
-    grid-template-areas: "contact" "summary";
+    grid-template-areas: "contact""summary";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr .5fr;
     background: var(--main-nav-bkg);
@@ -289,3 +292,118 @@ footer .summary {
 }
 
 /* End of Footer Section */
+
+
+/* Begin Temples Page Section */
+
+div.activities-section,
+div.locations {
+    background: var(--container-background);
+    margin: auto;
+    border-radius: 5px;
+}
+
+div.activities-section,
+div.locations {
+    background: var(--container-background);
+    margin: 1em auto;
+    border-radius: 5px;
+}
+
+
+
+/*  End of Activities and Temple Sections */
+
+/* Temple Location Section */
+
+div.temple-locations {
+    margin: auto;
+    margin-top: 1em;
+}
+
+div.temples {
+    margin: auto;
+    margin-top: 2em;
+}
+
+div.temple-locations h2,
+div.temple-locations p {
+    padding: .5em .5em 0 .5em;
+}
+
+div.temple-locations .button-container {
+    display: none;
+}
+
+div.temples a,
+div.temples a:visited {
+    color: var(--main-nav-link-text);
+}
+
+div.temples a:hover {
+    color: var(--jordy-blue);
+}
+
+div.temples h3 {
+    text-align: center;
+}
+
+div.temples .temple-contact-container {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+div.temples .email-text {
+    display: none;
+}
+
+div.temples .phone-text {
+    display: none;
+}
+
+div.temples .phone-icon {
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+div.temples .email-icon {
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+div.temples .address {
+    text-align: center;
+    margin: 1em auto;
+}
+
+div.temples .image {
+    grid-area: temples-image;
+    margin: .5em auto auto auto;
+    width: 95%
+}
+
+div.temples img {
+    width: 100%;
+}
+
+div.temples .temple-services,
+div.temples .temple-histories,
+div.temples .temple-closures,
+div.temples .temple-baptistry-schedule,
+div.temples .temple-initatory-schedule,
+div.temples .temple-endowment-schedule,
+div.temples .temple-sealing-schedule {
+    margin: 1em 1em 0 1em;
+}
+
+div.temples .list-title {
+    font-size: .9em;
+}
+
+div.temples li {
+    font-size: .7em;
+}
+
+
+
+/* End Temples Page Section */
