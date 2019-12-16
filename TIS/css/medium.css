@@ -126,31 +126,6 @@
 
 
 
-    /* Footer Section */
-
-    footer {
-        grid-template-areas: "map contact""map summary";
-        grid-template-columns: minmax(100px, 400px) minmax(100px, 400px);
-    }
-
-    footer a,
-    footer a:visited {
-        transition: all .2s ease-in-out;
-    }
-
-    footer a:hover {
-        color: var(--footer-link-hover-text);
-    }
-
-    footer .map-active {
-        grid-area: map;
-        margin: auto;
-        height: 200px;
-        width: 95%;
-    }
-
-    /* End Footer Section */
-
 
     /* Begin Temples Page Section */
 
@@ -207,6 +182,19 @@
     div.temples {
         margin: auto;
         width: 100%;
+    }
+
+    div.temples .email,
+    div.temples .phone {
+        display: block;
+    }
+
+    div.temples .email-text {
+        display: unset;
+    }
+
+    div.temples .phone-text {
+        display: unset;
     }
 
 

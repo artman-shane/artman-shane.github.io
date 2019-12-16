@@ -8,4 +8,4 @@ fetch("other/temples.json")
         homeBuildTemplesTeaser(jsonObj, "div.locations", "hotels");
     });
 
-initMap("4800+Montgomery+Ln", "Bethesda", "MD", 'map-active', "Temple Inn & Suites");
+// initMap("4800+Montgomery+Ln", "Bethesda", "MD", 'map-active', "Temple Inn & Suites");
