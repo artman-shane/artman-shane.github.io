@@ -11,7 +11,7 @@
             },
             "telephone": "+1(770)393-3698",
             "email": "atl-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/atl.html",
+            "reservationlink": "/TIS/locations/reserve.html?location=atl",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -240,7 +240,7 @@
             },
             "telephone": "+1(801)240-2640",
             "email": "slc-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/slc.html",
+            "reservationlink": "/TIS/locations/reserve.html?location=slc",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -448,7 +448,7 @@
             },
             "telephone": "+1(402)453-3406",
             "email": "oma-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/oma.html",
+            "reservationlink": "/TIS/locations/reserve.html?location=oma",
             "services": [
                 "Temple clothing available for patrons ONLY",
                 "Lunch room is not available",
@@ -656,7 +656,7 @@
             },
             "telephone": "+1(435)673-3533",
             "email": "stg-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/stg.html",
+            "reservationlink": "/TIS/locations/reserve.html?location=stg",
             "services": [
                 "Temple clothing available",
                 "Lunch room is available",

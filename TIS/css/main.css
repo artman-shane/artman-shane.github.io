@@ -535,11 +535,63 @@ div.property li {
 
 /* Reservations Section */
 
-div.res-container label{
+div.res-container form {
     display: flex;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+div.res-container form div {
+    margin: 2em auto;
+}
+
+div.res-container label {
+    margin: auto auto 1em auto;
+}
+
+div.res-container select {
+    margin: auto auto 2em auto;
+}
+
+div.res-container .red {
+    color: red;
+}
+
+div.res-container form label.stacked,
+div.res-container select {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 95%
+}
+
+div.res-container form label.stacked.namelbl {
+    margin: 2em auto 1em auto;
+}
+
+form input:required:invalid {
+    border-left: red solid 4px;
+}
+
+form input:required:valid {
+    border-left: green solid 3px;
+}
+
+div.res-container form input.submitbtn {
+    margin: auto auto 2em;
+    background: var(--button-background);
+    color: var(--button-text);
+    width: 50%;
+    height: 2em;
+    transition: all .2s ease-in-out;
+}
+
+div.res-container form input.submitbtn:hover {
+    transform: scale(1.1);
+        background: var(--button-background-hover);
+        color: var(--button-text-hover);
+
 }
 
 /* End of Reservations Section */

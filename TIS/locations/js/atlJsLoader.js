@@ -5,6 +5,6 @@ fetch("../other/temples.json")
     })
     .then(function (jsonObj) {
         // buildIndividualPropertyPage(jsonObj, "atl", "div.atl-properties-container", "property");
-        createResForm(jsonObj, "atl", "div.atl-properties-container")
+        createResForm(jsonObj, "div.properties-container")
         });
 
