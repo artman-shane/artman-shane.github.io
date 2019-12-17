@@ -17,8 +17,7 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
         let _state = _temple.address.state;
         let templeDisplayButton = document.createElement("input");
         templeDisplayButton.setAttribute("type", "button");
-        templeDisplayButton.setAttribute("onclick", "toggleDisplayTemple(\"" + _rscName + "\",\"" + classToCreate + "\")");
-        // templeDisplayButton.setAttribute("onclick", "toggleDisplayTempleWithMap(\"" + _rscName + "\",\"" + _street.split(' ').join('+') + "\",\"" + _city.split(' ').join('+') + "\",\"" + _state + "\",\"" + "temple-map-active-" + _rscName + "\",\"" + _templeName + " Temple" + "\")");
+        templeDisplayButton.setAttribute("onclick", "toggleDisplayDiv(\"" + _rscName + "\",\"" + classToCreate + "\")");
         if (i != 0) {
             templeDisplayButton.addEventListener("mousedown", returnInitMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "temple-map-active-" + _rscName, _templeName + " Temple"), {
                 once: true
@@ -128,19 +127,19 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
         gridContainer.classList.add("temples-grid-container");
 
         // Temple Services
-        createList(_services, "services", gridContainer, "Services Available Here:");
+        createList(_services, "services", gridContainer, "Services Available Here:", 0,"temple-services");
         // Temple History
-        createList(_histories, "histories", gridContainer, "History of the " + _templeName + " Temple:");
+        createList(_histories, "histories", gridContainer, "History of the " + _templeName + " Temple:", 0,"temple-histories");
         // Temple Closure Schedule
-        createList(_templeClosures, "closures", gridContainer, "Closure Schedule:");
+        createList(_templeClosures, "closures", gridContainer, "Closure Schedule:",0,"temple-closures");
         // Baptistry Schedule
-        createList(_baptismSchedules, "baptistry-schedule", gridContainer, "Baptistry Schedule:", 1);
+        createList(_baptismSchedules, "baptistry-schedule", gridContainer, "Baptistry Schedule:", 1, "temple-baptistry-schedule");
         // Initatory Schedule
-        createList(_initatorySchedules, "initatory-schedule", gridContainer, "Initatory Schedule:", 1);
+        createList(_initatorySchedules, "initatory-schedule", gridContainer, "Initatory Schedule:", 1, "temple-initatory-schedule");
         // Endowment Schedule
-        createList(_endowmentSchedules, "endowment-schedule", gridContainer, "Endowment Schedule:", 1);
+        createList(_endowmentSchedules, "endowment-schedule", gridContainer, "Endowment Schedule:", 1, "temple-endowment-schedule");
         // Sealing Schedule
-        createList(_sealingSchedules, "sealing-schedule", gridContainer, "Sealing Schedule:", 1);
+        createList(_sealingSchedules, "sealing-schedule", gridContainer, "Sealing Schedule:", 1, "temple-sealing-schedule");
 
         templeLocation.appendChild(gridContainer);
 
@@ -180,45 +179,4 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
             this.classList.add("active");
         });
     }
-}
-
-function createList(_objs, _obj, _parent, _title, _dow = 0) {
-    // Temple Services
-    let _elements = document.createElement("div");
-    _elements.classList.add("temple-" + _obj);
-    let _subEmelemnt = document.createElement("span");
-    _subEmelemnt.textContent = _title;
-    _subEmelemnt.classList.add("list-title");
-    _elements.appendChild(_subEmelemnt);
-
-    if (_dow) {
-        let _days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-        let _dayList = document.createElement("ul")
-        for (let k = 0; k < _days.length; k++) {
-            let _dayName = _days[k];
-            let _object = _objs[_dayName];
-            let _day = document.createElement("li");
-            _day.textContent = _dayName[0].toUpperCase() + _dayName.slice(1);
-            _day.classList.add("day-name");
-            // _day.textContent = _days[k][0].toUpperCase + _days[k].slice(1);
-            let _elementsList = document.createElement("ul");
-            for (let j = 0; j < _object.length; j++) {
-                let _element = document.createElement("li");
-                _element.textContent = _object[j];
-                _elementsList.appendChild(_element);
-            }
-            _day.appendChild(_elementsList);
-            _dayList.appendChild(_day);
-            _elements.appendChild(_dayList);
-        }
-    } else {
-        let _elementsList = document.createElement("ul");
-        for (let j = 0; j < _objs.length; j++) {
-            let _element = document.createElement("li");
-            _element.textContent = _objs[j];
-            _elementsList.appendChild(_element);
-        }
-        _elements.appendChild(_elementsList);
-    }
-    _parent.appendChild(_elements);
 }

@@ -14,7 +14,7 @@ function initMap(street, city, state, classToFind, nameOfLocation) {
     let baseGeocodeURL = "https://maps.googleapis.com/maps/api/geocode/json?address=";
     let gcp_api_key = "AIzaSyCLooeXEVw42-Ae3VNO3p5W8hdhExEDNao";
     // Costs $$$
-    let enableMap = 1;
+    let enableMap = 0;
     // Test for Map Active classes
     if (document.querySelector('.map-active') || document.querySelectorAll('.temple-map-active')) {
 

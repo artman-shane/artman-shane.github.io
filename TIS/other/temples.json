@@ -10,8 +10,8 @@
                 "zipcode": 30328
             },
             "telephone": "+1(770)393-3698",
-            "email": "atlanta-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "locations/atl.html",
+            "email": "atl-temple@churchofjesuschrist-fake.org",
+            "reservationlink": "/TIS/locations/atl.html",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -175,16 +175,57 @@
                         "desc": "Atlanta Temple Baptistry",
                         "source": "https://i.pinimg.com/originals/93/e0/a7/93e0a7bf017554f651077dad2d54481b.jpg"
                     }
+                ]
+            },
+            "propertyinfo": {
+                "address": {
+                    "street": "6450 Barfield Rd NE",
+                    "city": "Sandy Springs",
+                    "state": "Georgia",
+                    "zipcode": 30328
+                },
+                "telephone": "+1(770)393-3698",
+                "email": "atl-temple@templeinnsuites.com",
+                "rooms": {
+                    "count": "100"
+                },
+                "garage": "Covered and conditioned garage is available for $10/night to keep your vehicle warm during cold nights",
+                "amenities": [
+                    "Breakfast",
+                    "Lunch",
+                    "Dinner",
+                    "Special dinners if assigned over the holiday",
+                    "Group / Family room for games and fun",
+                    "Exercise / workout room",
+                    "Indoor pool",
+                    "WiFi high - speed internet access and smart TVs",
+                    "Parking",
+                    "Temple shuttle",
+                    "Family history consultation and family ordinance card service",
+                    "Rewards available for free night stays at participating hotels"
                 ],
-                "hotel": [{
-                    "filename": "atl_hotel_exterior",
-                    "desc": "Exterior at the Atlanta Inn",
-                    "source": "https://cdn.vox-cdn.com/thumbor/gPhE0rC4j5T_H6yhfibfiomiA6I=/0x0:1280x960/1200x800/filters:focal(477x294:681x498)/cdn.vox-cdn.com/uploads/chorus_image/image/65482960/unnamed.0.jpg"
-                }, {
-                    "filename": "atl_hotel_interior",
-                    "desc": "Interior at the Atlanta Inn",
-                    "source": "https://cdn.vox-cdn.com/thumbor/DeEDdXWDmagQZUQ3UfVElZACpA8=/0x0:2048x1536/920x0/filters:focal(0x0:2048x1536):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19293297/2.jpg"
-                }]
+                "services": [
+                    "Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes",
+                    "A playroom and low - cost, short - term babysitting services for the children of patrons",
+                    "Long - term stay accommodations in kitchenette suites for full - time temple missionaries",
+                    "Temple history themed reception and sitting area",
+                    "A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving",
+                    "A family search center that supports family search and ordinance work",
+                    "Forget your personal hygene item? Please stop by the front desk and we have got you covered"
+                ],
+                "images": {
+                    "path": "images/atl/",
+                    "interior": [{
+                        "filename": "atl_hotel_interior",
+                        "desc": "Interior at the Atlanta Inn",
+                        "source": "https://cdn.vox-cdn.com/thumbor/DeEDdXWDmagQZUQ3UfVElZACpA8=/0x0:2048x1536/920x0/filters:focal(0x0:2048x1536):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19293297/2.jpg"
+                    }],
+                    "exterior": [{
+                        "filename": "atl_hotel_exterior",
+                        "desc": "Exterior at the Atlanta Inn",
+                        "source": "https://cdn.vox-cdn.com/thumbor/gPhE0rC4j5T_H6yhfibfiomiA6I=/0x0:1280x960/1200x800/filters:focal(477x294:681x498)/cdn.vox-cdn.com/uploads/chorus_image/image/65482960/unnamed.0.jpg"
+                    }]
+                }
             }
         },
         {
@@ -199,7 +240,7 @@
             },
             "telephone": "+1(801)240-2640",
             "email": "slc-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "locations/slc.html",
+            "reservationlink": "/TIS/locations/slc.html",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -342,16 +383,57 @@
                         "desc": "Salt Lake City Sealing Room",
                         "source": "https://1.bp.blogspot.com/-6sTuQpuxQio/XYkoGGn-EZI/AAAAAAAAGo4/Wa2Z0Wvt8rY-WH2O6KfgmOGiZRmG5YSVgCLcBGAsYHQ/s1600/salt-lake-temple-4927.jpg"
                     }
+                ]
+            },
+            "propertyinfo": {
+                "address": {
+                    "street": "50 W North Temple St",
+                    "city": "Salt Lake City",
+                    "state": "Utah",
+                    "zipcode": 84150
+                },
+                "telephone": "+1(770)393-3698",
+                "email": "slc-temple@templeinnsuites.com",
+                "rooms": {
+                    "count": "150"
+                },
+                "garage": "Covered and conditioned garage is available for $10/night to keep your vehicle warm during cold nights",
+                "amenities": [
+                    "Breakfast",
+                    "Lunch",
+                    "Dinner",
+                    "Special dinners if assigned over the holiday",
+                    "Group / Family room for games and fun",
+                    "Exercise / workout room",
+                    "Indoor pool",
+                    "WiFi high - speed internet access and smart TVs",
+                    "Parking",
+                    "Temple shuttle",
+                    "Family history consultation and family ordinance card service",
+                    "Rewards available for free night stays at participating hotels"
                 ],
-                "hotel": [{
-                    "filename": "slc_hotel_exterior",
-                    "desc": "Exterior at the Salt Lake City Inn",
-                    "source": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_650,q_auto,w_1000/itemimages/60/14/60145_v2.jpeg"
-                }, {
-                    "filename": "slc_hotel_interior",
-                    "desc": "Interior at the Salt Lake City Inn",
-                    "source": "https://q-cf.bstatic.com/images/hotel/max1024x768/273/27377096.jpg"
-                }]
+                "services": [
+                    "Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes",
+                    "A playroom and low - cost, short - term babysitting services for the children of patrons",
+                    "Long - term stay accommodations in kitchenette suites for full - time temple missionaries",
+                    "Temple history themed reception and sitting area",
+                    "A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving",
+                    "A family search center that supports family search and ordinance work",
+                    "Forget your personal hygene item? Please stop by the front desk and we have got you covered"
+                ],
+                "images": {
+                    "path": "images/slc/",
+                    "interior": [{
+                        "filename": "slc_hotel_interior",
+                        "desc": "Interior at the Salt Lake City Inn",
+                        "source": "https://q-cf.bstatic.com/images/hotel/max1024x768/273/27377096.jpg"
+                    }],
+                    "exterior": [{
+                        "filename": "slc_hotel_exterior",
+                        "desc": "Exterior at the Salt Lake City Inn",
+                        "source": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_650,q_auto,w_1000/itemimages/60/14/60145_v2.jpeg"
+                    }]
+                }
             }
         },
         {
@@ -365,8 +447,8 @@
                 "zipcode": 68112
             },
             "telephone": "+1(402)453-3406",
-            "email": "omaha-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "locations/oma.html",
+            "email": "oma-temple@churchofjesuschrist-fake.org",
+            "reservationlink": "/TIS/locations/oma.html",
             "services": [
                 "Temple clothing available for patrons ONLY",
                 "Lunch room is not available",
@@ -511,16 +593,55 @@
                     "filename": "oma_baptistry",
                     "desc": "Omaha Temple Baptistry",
                     "source": "http://3.bp.blogspot.com/-ia-Hjz2gNik/TctAFHiSDmI/AAAAAAAAAWA/BHUr5Za_9d8/s1600/FontWinterQuartersNebraska1.jpg"
-                }],
-                "hotel": [{
-                    "filename": "oma_hotel_exterior",
-                    "desc": "Exterior at the Omaha Inn",
-                    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Aquila_Court_%28Omaha%29_from_NW_1.JPG/1200px-Aquila_Court_%28Omaha%29_from_NW_1.JPG"
-                }, {
-                    "filename": "oma_hotel_interior",
-                    "desc": "Interior at the Omaha Inn",
-                    "source": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_553,q_75,w_1105/https://assets.simpleviewinc.com/simpleview/image/upload/crm/omaha/Single-King0_3d9dfeed-5056-a36a-097641995436814e.jpg"
                 }]
+            },
+            "propertyinfo": {
+                "address": {
+                    "street": "8283 N 34th St",
+                    "city": "Omaha",
+                    "state": "Nebraska",
+                    "zipcode": 68112
+                },
+                "telephone": "+1(770)393-3698",
+                "email": "oma-temple@templeinnsuites.com",
+                "rooms": {
+                    "count": "20"
+                },
+                "garage": "Covered and conditioned garage is available for $10/night to keep your vehicle warm during cold nights",
+                "amenities": [
+                    "Breakfast",
+                    "Lunch",
+                    "Group / Family room for games and fun",
+                    "Exercise / workout room",
+                    "Indoor pool",
+                    "WiFi high - speed internet access and smart TVs",
+                    "Parking",
+                    "Temple shuttle",
+                    "Family history consultation and family ordinance card service",
+                    "Rewards available for free night stays at all participating hotels"
+                ],
+                "services": [
+                    "Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes",
+                    "A playroom and low - cost, short - term babysitting services for the children of patrons",
+                    "Long - term stay accommodations in kitchenette suites for full - time temple missionaries",
+                    "Temple history themed reception and sitting area",
+                    "A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving",
+                    "A family search center that supports family search and ordinance work",
+                    "Forget your personal hygene item? Please stop by the front desk and we have got you covered"
+                ],
+                "images": {
+                    "path": "images/oma/",
+                    "interior": [{
+                        "filename": "oma_hotel_interior",
+                        "desc": "Interior at the Omaha Inn",
+                        "source": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_553,q_75,w_1105/https://assets.simpleviewinc.com/simpleview/image/upload/crm/omaha/Single-King0_3d9dfeed-5056-a36a-097641995436814e.jpg"
+                    }],
+                    "exterior": [{
+                        "filename": "oma_hotel_exterior",
+                        "desc": "Exterior at the Omaha Inn",
+                        "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Aquila_Court_%28Omaha%29_from_NW_1.JPG/1200px-Aquila_Court_%28Omaha%29_from_NW_1.JPG"
+                    }]
+                }
             }
         },
         {
@@ -534,8 +655,8 @@
                 "zipcode": 84770
             },
             "telephone": "+1(435)673-3533",
-            "email": "omaha-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "locations/stg.html",
+            "email": "stg-temple@churchofjesuschrist-fake.org",
+            "reservationlink": "/TIS/locations/stg.html",
             "services": [
                 "Temple clothing available",
                 "Lunch room is available",
@@ -610,16 +731,57 @@
                     "filename": "stg_temple_entrance",
                     "desc": "St George Temple Desk",
                     "source": "https://www.gannett-cdn.com/presto/2019/05/22/PSTG/41267c6c-1391-4e6a-a2a9-0499194af643-02-Recommend-Desk---Rendering.jpg?width=540&height=&fit=bounds&auto=webp"
-                }],
-                "hotel": [{
-                    "filename": "stg_hotel_exterior",
-                    "desc": "Interior at the St George Inn",
-                    "source": "https://media.deseretdigital.com/file/50082b8982?resize%3Dwidth%3A640%26crop%3Dtop%3A175%7Cleft%3A266%7Cwidth%3A944%7Cheight%3A620%26order%3Dcrop%2Cresize%26type%3Djpg%26c%3D14%26a%3D0b13a96f"
-                }, {
-                    "filename": "stg_hotel_interior",
-                    "desc": "Exterior at the St George Inn",
-                    "source": "https://bnbwebsites.s3.amazonaws.com/5480/mobile_slideshow_04.jpg"
                 }]
+            },
+            "propertyinfo": {
+                "address": {
+                    "street": "250 East 400 South",
+                    "city": "St. George",
+                    "state": "Utah",
+                    "zipcode": 84770
+                },
+                "telephone": "+1(770)393-3698",
+                "email": "stg-temple@templeinnsuites.com",
+                "rooms": {
+                    "count": "50"
+                },
+                "garage": "No covered parking at this time",
+                "amenities": [
+                    "Breakfast",
+                    "Lunch",
+                    "Dinner",
+                    "Special dinners if assigned over the holiday",
+                    "Group / Family room for games and fun",
+                    "Exercise / workout room",
+                    "Indoor pool",
+                    "WiFi high - speed internet access and smart TVs",
+                    "Parking",
+                    "Temple shuttle",
+                    "Family history consultation and family ordinance card service",
+                    "Rewards available for free night stays at participating hotels"
+                ],
+                "services": [
+                    "Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes",
+                    "A playroom and low - cost, short - term babysitting services for the children of patrons",
+                    "Long - term stay accommodations in kitchenette suites for full - time temple missionaries",
+                    "Temple history themed reception and sitting area",
+                    "A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving",
+                    "A family search center that supports family search and ordinance work",
+                    "Forget your personal hygene item? Please stop by the front desk and we have got you covered"
+                ],
+                "images": {
+                    "path": "images/stg/",
+                    "interior": [{
+                        "filename": "stg_hotel_interior",
+                        "desc": "Exterior at the St George Inn",
+                        "source": "https://bnbwebsites.s3.amazonaws.com/5480/mobile_slideshow_04.jpg"
+                    }],
+                    "exterior": [{
+                        "filename": "stg_hotel_exterior",
+                        "desc": "Interior at the St George Inn",
+                        "source": "https://media.deseretdigital.com/file/50082b8982?resize%3Dwidth%3A640%26crop%3Dtop%3A175%7Cleft%3A266%7Cwidth%3A944%7Cheight%3A620%26order%3Dcrop%2Cresize%26type%3Djpg%26c%3D14%26a%3D0b13a96f"
+                    }]
+                }
             }
         }
     ]

@@ -294,7 +294,7 @@ footer .summary {
 /* End of Footer Section */
 
 
-/* Begin Temples Page Section */
+/* Begin Activities & Temples Page Section */
 
 div.activities-section,
 div.locations {
@@ -407,3 +407,127 @@ div.temples li {
 
 
 /* End Temples Page Section */
+
+
+/*  Property Section */
+
+div.properties-container,
+div.atl-properties-container {
+    margin: auto;
+    margin-top: 1em;
+}
+
+div.property {
+    margin: auto;
+    margin-top: 2em;
+}
+
+div.properties-container h2,
+div.properties-container p,
+div.atl-properties-container h2,
+div.atl-properties-container p {
+    padding: .5em .5em 0 .5em;
+}
+
+div.properties-container .button-container {
+    display: none;
+}
+
+div.property a,
+div.property a:visited {
+    color: var(--main-nav-link-text);
+}
+
+div.property a:hover {
+    color: var(--jordy-blue);
+}
+
+div.property h3 {
+    text-align: center;
+}
+
+div.property .property-contact-container {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+div.property .email-text {
+    display: none;
+}
+
+div.property .phone-text {
+    display: none;
+}
+
+div.property .phone-icon {
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+div.property .email-icon {
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+div.property .address {
+    text-align: center;
+    margin: 1em auto;
+}
+
+div.property>a,
+div.property>a:visited {
+    max-width: 150px;
+    display: block;
+    margin: 1em auto;
+    padding: .5em;
+    background: var(--button-background);
+    border: none;
+    color: var(--button-text);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+div.property>a:hover {
+    transform: scale(1.1);
+    background: var(--button-background-hover);
+    color: var(--button-text-hover);
+
+}
+
+div.property .image {
+    grid-area: temples-image;
+    margin: .5em auto auto auto;
+    width: 95%
+}
+
+div.property img {
+    width: 100%;
+}
+
+div.property .room-count {
+    width: 90%;
+    margin: 2em auto auto;
+}
+
+div.property .garage {
+    width: 90%;
+    margin: 1em auto;
+}
+
+
+div.property .property-services,
+div.property .property-amenities {
+    margin: 1em 1em 0 1em;
+}
+
+div.property .list-title {
+    font-size: .9em;
+}
+
+div.property li {
+    font-size: .7em;
+}
+
+/* End Property Section */

@@ -159,6 +159,80 @@
     /* End Temples Page Section */
 
 
+    /* Property Page Section */
+    div.properties-container {
+        max-width: 1500px;
+    }
+
+    div.property {
+        text-align: center;
+    }
+
+    div.property .property-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "room-count room-count" "garage garage" "property-services property-amenities";
+        margin-bottom: 2em;
+    }
+
+    div.property .image {
+        display: inline;
+        margin: .5em;
+    }
+
+    div.property img {
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.property image a {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.property .property-contact-container {
+        grid-area: temple-contact-container;
+    }
+
+    div.property .room-count {
+        grid-area: room-count;
+        width: 90%;
+        margin: 2em auto auto;
+    }
+
+    div.property .garage {
+        grid-area: garage;
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    div.property .property-services {
+        grid-area: property-services;
+    }
+
+    div.property .property-services,
+    div.property .property-amenities {
+                background: var(--jordy-blue);
+                padding: 1em;
+                border-radius: 5px;
+                box-shadow: 0 0 30px var(--jordy-blue);
+    }
+
+
+    div.property .property-services ul,
+    div.property .property-amenities ul {
+        width: 50%;
+        margin: .5em auto auto auto;
+    }
+
+    div.property .property-amenities {
+        grid-area: property-amenities;
+    }
+
+    /* End Temples Page Section */
+
+
 
     /* Footer Section */
 

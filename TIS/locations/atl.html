@@ -1,1 +1,81 @@
-Atlanta
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Reservations and Property Information for Atlanta</title>
+    <meta name='description' content='Reservations and information about our Atlanta Property'>
+    <meta name='author' content='Shane Artman'>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+</head>
+
+<body>
+
+    <header class=".clearfix">
+        <div><img src="../images/TIS_logo_only_trsn_75x75.png" alt="Logo"></div>
+        <div class="title">
+            <h1>Temple Inn & Suites</h1>
+            If we build it they will serve
+        </div>
+    </header>
+    <nav>
+        <ul class="menu-control">
+            <li><a href="#" onclick="toggleMenu()">&#9776</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../temples/index.html">Temples</a></li>
+            <li><a href="#" class="active">Reserve Now</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="atl-properties-container">
+            <h2>Temple Inn & Suites' properties.</h2>
+            <p>Reserve your stay now!
+            </p>
+        </div>
+    </main>
+
+
+    <footer>
+        <!-- Remove this one you are ready to test so that map can be displayed -->
+        <!-- <div class="map-active"></div> -->
+        <div class="contact">
+            <div class="contact-link"><a href="./contact.html">Contact Us</a></div>
+            <div class="tel-contact"><a href="tel:+17778889999">&#9742;</a></div>
+            <div class="email-contact"><a href="mailto:winderweather@ww.com">&#x2709;</a></div>
+        </div>
+        <div class="summary">
+            <div id="todays-date"></div>
+            <div id="updated-on"></div>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLooeXEVw42-Ae3VNO3p5W8hdhExEDNao"></script>
+    <script src="../js/buildMap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Open Sans', 'Dancing Script']
+            }
+        });
+    </script>
+    <script src="../js/todayDate.js" defer></script>
+    <script src="../js/createList.js"></script>
+    <script src="../js/toggleMenu.js"></script>
+    <script src="../js/toggleDisplayDiv.js"></script>
+    <script src="js/buildIndividualPropertyPage.js"></script>
+    <script src="js/createResForm.js"></script>
+    <script src="js/atlJsLoader.js"></script>
+</body>
+
+</html>
