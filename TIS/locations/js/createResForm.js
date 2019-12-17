@@ -36,6 +36,8 @@ function createResForm(_jsonObj, _rscname, _classToFind) {
 
     reservationContainer.appendChild(_datalist);
 
+    createInputElement("stacked", "date", "Select the beginning date", "begindate", "date", "", "required", "", reservationContainer);
+    createInputElement("stacked", "date", "Select the ending date", "endingdate", "date", "", "required", "", reservationContainer);
     createInputElement("stacked", "text", "", "name", "name", "^[a-zA-Z]{2,}[ ][a-zA-Z\., 0-9]{2,}$", "required", "Your First and Last Name", reservationContainer);
     createInputElement("stacked", "email", "eMail", "email", "email", "", "", "youremail@yourdomain.com", reservationContainer);
     createInputElement("stacked", "tel", "Phone Number", "phone", "phone", "[\d\+][\d\(\)\- ]{6,}", "required", "+1(200)555-1212 / 12005551212", reservationContainer);
@@ -45,15 +47,6 @@ function createResForm(_jsonObj, _rscname, _classToFind) {
     //         <legend>Storm Information</legend>
     //         <label class="stacked">Storm Date<input type="date" name="stormdate" id="stormdate" class="stormdate"
     //                 required></label>
-    //         <label class="stacked">Storm Type<input list="stormtype-list" name="stormtype" id="stormtype"
-    //                 class="stormtype" required></label>
-    //         <datalist id="stormtype-list">
-    //             <option value="Flash Flood">
-    //             <option value="Hail">
-    //             <option value="Hurricane">
-    //             <option value="Thunderstorm">
-    //             <option value="Tornado">
-    //         </datalist>
     //         <label class="stacked">Storm Severity: <span class="stormsevcursetting"><span id="stormseverity"
     //                     class="red">5 - med</span></span>
     //             <input type="range" value="5" min="1" max="10" step="1" name="stormsev" id="stormsevsel"

@@ -14,11 +14,9 @@ function initMap(street, city, state, classToFind, nameOfLocation) {
     let baseGeocodeURL = "https://maps.googleapis.com/maps/api/geocode/json?address=";
     let gcp_api_key = "AIzaSyCLooeXEVw42-Ae3VNO3p5W8hdhExEDNao";
     // Costs $$$
-    let enableMap = 0;
+    let enableMap = 1;
     // Test for Map Active classes
-    if (document.querySelector('.map-active') || document.querySelectorAll('.temple-map-active')) {
-
-        if ((document.querySelector("." + classToFind) || classToFind.includes("temple-map-active")) && enableMap) {
+        if (enableMap) {
             let geocodeURL = baseGeocodeURL + street + "+" + city + "+" + state + "&key=" + gcp_api_key;
             fetch(geocodeURL)
                 .then(response => response.json())
@@ -30,7 +28,6 @@ function initMap(street, city, state, classToFind, nameOfLocation) {
                     }
                 });
         }
-    }
 }
 
 function drawMap(latitude, longitude, classToFind, nameOfLocation) {

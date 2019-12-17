@@ -531,3 +531,15 @@ div.property li {
 }
 
 /* End Property Section */
+
+
+/* Reservations Section */
+
+div.res-container label{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+/* End of Reservations Section */
