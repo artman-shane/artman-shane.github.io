@@ -1,154 +1,57 @@
-function buildReceptionPage(jsonObj, classToFind, classToCreate, imagesToDisplay = 0) {
-    let temples = jsonObj.temples;
-    let receptioninfo = jsonObj.receptioninfo;
+function buildReceptionPage(_jsonObj, classToFind, _classToCreate, _numOfImgs = 0) {
+    let jsonObj = _jsonObj.receptioninfo;
+    let summary = jsonObj.summary;
+    let cateringsvcs = jsonObj.catering;
+    let images = jsonObj.images;
+    let imagePath = jsonObj.imagepath;
 
-    let propertyContainer = document.createElement("div");
-    propertyContainer.classList.add("property-container");
+    let _generalContainer = document.createElement("div");
+    _generalContainer.classList.add(_classToCreate);
 
-    let buttonContainer = document.createElement("div");
-    buttonContainer.classList.add("button-container");
-    propertyContainer.appendChild(buttonContainer);
+    let _returnBtn = document.createElement("a");
+    _returnBtn.classList.add("return-link");
+    _returnBtn.classList.add("link");
+    if (history.back) {
+        _returnBtn.setAttribute("onclick", "history.back()");
+        _returnBtn.textContent = "Go Back";
+    } else {
+        _returnBtn.setAttribute("href", "services.html");
+        _returnBtn.textContent = "Services";
+    }
+    _generalContainer.appendChild(_returnBtn);
 
-    for (let i = 0; i < temples.length; i++) {
-        let temple = temples[i];
-        let _rscName = temple.resourcename;
-        let _propertyName = temple.name;
-        let _street = temple.address.street;
-        let _city = temple.address.city;
-        let _state = temple.address.state;
-        let propertyDisplayButton = document.createElement("input");
-        propertyDisplayButton.setAttribute("type", "button");
-        propertyDisplayButton.setAttribute("onclick", "toggleDisplayDiv(\"" + _rscName + "\",\"" + classToCreate + "\")");
-        if (i != 0) {
-            propertyDisplayButton.addEventListener("mousedown", returnInitMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "property-map-active-" + _rscName, _propertyName + " property"), {
-                once: true
-            });
-        }
-
-        propertyDisplayButton.classList.add("display-button");
-        i == 0 ? propertyDisplayButton.classList.add("active") : null;
-        propertyDisplayButton.value = _propertyName;
-        buttonContainer.appendChild(propertyDisplayButton);
+    // Temple Images
+    if (_numOfImgs > 0) {
+        _numOfImgs > images.length ? _numOfImgs = images.length : null;
+    } else {
+        // Default to all images
+        _numOfImgs = images.length;
+    }
+    for (let j = 0; j < _numOfImgs; j++) {
+        let imageElement = document.createElement("div");
+        imageElement.classList.add("image");
+        let _image = document.createElement("img");
+        _image.setAttribute("src", imagePath + images[j].filename + ".jpg");
+        _image.setAttribute("alt", images[j].desc);
+        _image.setAttribute("title", images[j].desc);
+        _image.setAttribute("srcset", imagePath + "x200/" + images[j].filename + "_200.jpg 300w," + imagePath + "x300/" + images[j].filename + "_300.jpg 600w ");
+        _image.setAttribute("sizes", "(max-width: 520px) 280px, (max-width: 1200px) 500px");
+        let _imageLink = document.createElement("a");
+        _imageLink.setAttribute("href", images[j].source);
+        _imageLink.appendChild(_image);
+        imageElement.appendChild(_imageLink);
+        _generalContainer.appendChild(imageElement);
     }
 
-    for (let i = 0; i < temples.length; i++) {
-        let temple = temples[i];
-        let _property = temple.propertyinfo
-        let _propertyName = temple.name;
-        let _rscName = temple.resourcename;
-        let _street = _property.address.street;
-        let _city = _property.address.city;
-        let _state = _property.address.state;
-        let _zipcode = _property.address.zipcode;
-        let _tele = _property.telephone;
-        let _email = _property.email;
-        let _reservationLink = temple.reservationlink;
-        let _ftmissionarylink = temple.ftmissionarylink;
-        let _receptionlink = receptioninfo.receptionlink;
-        let _amenities = _property.amenities;
-        let _services = _property.services;
+    let _listContainer = document.createElement("div");
+    _listContainer.classList.add("property-grid-container");
 
-        let propertyLocation = document.createElement("div");
-        propertyLocation.classList.add(classToCreate);
-        propertyLocation.classList.add(_rscName);
-        i != 0 ? propertyLocation.classList.add("hide") : null;
+    // Wedding Receptions Services
+    // crerateList(_objs, _obj, _parent, _title, _dow = 0, _classToCreate)
+    createList(summary, "summary", _listContainer, "Wedding Reception Services Offered", 0, "wedding-reception-services");
+    createList(cateringsvcs, "catering", _listContainer, "Catering Services Available", 0, "catering-services");
 
-        let propertyName = document.createElement("h3");
-        propertyName.textContent = _propertyName;
-        propertyLocation.appendChild(propertyName);
+    _generalContainer.appendChild(_listContainer);
 
-        let _div = document.createElement("div");
-        _div.classList.add("link-container");
-        propertyLocation.appendChild(_div);
-        createLink(_reservationLink, "Reserve Now", _div);
-        createLink(_receptionlink, "Wedding Receptions", _div);
-        createLink(_ftmissionarylink, "Full Time Missionary Info", _div);
-
-
-        let propertyContactContainer = document.createElement("div");
-        propertyContactContainer.classList.add("property-contact-container");
-
-        let propertyAddress = document.createElement("div");
-        propertyAddress.classList.add("address");
-        propertyAddress.innerHTML = _street + "<br>" + _city + ", " + _state + " " + _zipcode;
-        propertyContactContainer.appendChild(propertyAddress);
-
-        let propertyPhone = document.createElement("a");
-        propertyPhone.setAttribute("href", "tel:" + _tele);
-        propertyPhone.classList.add("phone");
-
-        let phoneText = document.createElement("span");
-        phoneText.textContent = _tele;
-        phoneText.classList.add("phone-text");
-        propertyPhone.appendChild(phoneText);
-
-        let phoneIcon = document.createElement("span");
-        phoneIcon.innerHTML = "&#9742;";
-        phoneIcon.classList.add("phone-icon");
-        propertyPhone.appendChild(phoneIcon);
-        propertyContactContainer.appendChild(propertyPhone);
-
-        let propertyEmail = document.createElement("a");
-        propertyEmail.setAttribute("href", "mailto:" + _email);
-        propertyEmail.classList.add("email");
-
-        let emailText = document.createElement("span");
-        emailText.textContent = _email;
-        emailText.classList.add("email-text");
-        propertyEmail.appendChild(emailText);
-
-        let emailIcon = document.createElement("span");
-        emailIcon.innerHTML = "&#x2709;";
-        emailIcon.classList.add("email-icon");
-        propertyEmail.appendChild(emailIcon);
-        propertyContactContainer.appendChild(propertyEmail);
-
-        propertyLocation.appendChild(propertyContactContainer);
-
-        let gridContainer = document.createElement("div");
-        gridContainer.classList.add("property-grid-container");
-
-        // property Services
-        createList(_amenities, "amenities", gridContainer, "Amenities at this property", 0, "property-amenities");
-        createList(_services, "services", gridContainer, "Services offered this property", 0, "property-services");
-
-        propertyLocation.appendChild(gridContainer);
-
-        let propertyMap = document.createElement("div");
-        propertyMap.classList.add("map");
-        propertyMap.classList.add("property-map-active-" + _rscName);
-        propertyLocation.appendChild(propertyMap);
-
-        i < temples.length - 1 ? propertyLocation.appendChild(document.createElement("hr")) : null;
-
-        propertyContainer.appendChild(propertyLocation);
-        if (i == 0) {
-            propertyContainer.addEventListener("onload", initMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "property-map-active-" + _rscName, _propertyName + " property"), {
-                once: true
-            });
-        }
-    }
-
-    document.querySelector(classToFind).appendChild(propertyContainer);
-
-    // This section is to care for the wayfinder functions
-    let btnContainer = document.getElementsByClassName("button-container")[0];
-    let buttons = btnContainer.getElementsByClassName("display-button");
-
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", function () {
-            let currentBtn = btnContainer.getElementsByClassName("active");
-            for (let j = 0; j < currentBtn.length; j++) {
-                currentBtn[j].classList.remove("active");
-            }
-            this.classList.add("active");
-        });
-    }
-}
-
-function createLink(_link, _name, _appendTo) {
-    let _button = document.createElement("a");
-    _button.setAttribute("href", _link);
-    _button.textContent = _name;
-    _appendTo.appendChild(_button);
+    document.querySelector(classToFind).appendChild(_generalContainer);
 }
