@@ -58,6 +58,11 @@ function buildPropertyPage(jsonObj, classToFind, classToCreate, imagesToDisplay 
         propertyName.textContent = _propertyName;
         propertyLocation.appendChild(propertyName);
 
+        let propertyReservationButton = document.createElement("a");
+        propertyReservationButton.setAttribute("href", _reservationLink);
+        propertyReservationButton.textContent = "Reserve Now";
+        propertyLocation.appendChild(propertyReservationButton);
+
         let propertyContactContainer = document.createElement("div");
         propertyContactContainer.classList.add("property-contact-container");
 
@@ -93,12 +98,6 @@ function buildPropertyPage(jsonObj, classToFind, classToCreate, imagesToDisplay 
         propertyContactContainer.appendChild(propertyEmail);
 
         propertyLocation.appendChild(propertyContactContainer);
-
-        let propertyReservationButton = document.createElement("a");
-        propertyReservationButton.setAttribute("href", _reservationLink);
-        propertyReservationButton.textContent = "Reserve Now";
-        propertyLocation.appendChild(propertyReservationButton);
-
 
         let interiorImagesToDisplay = 0;
         let exteriorImagesToDisplay = 0;

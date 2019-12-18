@@ -12,6 +12,7 @@
             "telephone": "+1(770)393-3698",
             "email": "atl-temple@churchofjesuschrist-fake.org",
             "reservationlink": "/TIS/locations/reserve.html?location=atl",
+            "ftmissionarylink": "/TIS/ftmissionary.html",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -806,6 +807,7 @@
         }
     ],
     "receptioninfo": {
+        "receptionlink": "/TIS/reception.html",
         "summary": [
             "Large, spacious room for wedding receptions are available to rent by the day.",
             "Food can be brought in, requiring a reasonable cleaning surcharge for janitorial services",

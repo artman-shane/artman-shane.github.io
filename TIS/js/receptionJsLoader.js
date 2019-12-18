@@ -4,6 +4,5 @@ fetch("/TIS/other/temples.json")
         return response.json();
     })
     .then(function (jsonObj) {
-        createResForm(jsonObj, "div.properties-container")
-        });
-
+        buildReceptionPage(jsonObj, "div.properties-container", "property");
+    });

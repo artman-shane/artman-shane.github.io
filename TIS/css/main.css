@@ -433,15 +433,6 @@ div.properties-container .button-container {
     display: none;
 }
 
-div.property a,
-div.property a:visited {
-    color: var(--main-nav-link-text);
-}
-
-div.property a:hover {
-    color: var(--jordy-blue);
-}
-
 div.property h3 {
     text-align: center;
 }
@@ -473,6 +464,16 @@ div.property .address {
     text-align: center;
     margin: 1em auto;
 }
+
+/* Removed on 12.18 - I think it is unnecessary */
+/* div.property a,
+div.property a:visited {
+    color: var(--main-nav-link-text);
+}
+
+div.property a:hover {
+    color: var(--jordy-blue);
+} */
 
 div.property>a,
 div.property>a:visited {
@@ -605,3 +606,30 @@ div.res-container form input.submitbtn:hover {
 }
 
 /* End of Reservations Section */
+
+
+/* Services Section */
+
+div.property>.link-container>a,
+div.property>.link-container>a:visited {
+    max-width: 150px;
+    display: block;
+    margin: 1em auto;
+    padding: .5em;
+    background: var(--button-background);
+    border: none;
+    color: var(--button-text);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+div.property>.link-container>a:hover {
+    transform: scale(1.1);
+    background: var(--button-background-hover);
+    color: var(--button-text-hover);
+
+}
+
+/* End of Services Section */

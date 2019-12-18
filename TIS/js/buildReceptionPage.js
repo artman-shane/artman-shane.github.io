@@ -1,4 +1,4 @@
-function buildServicesPage(jsonObj, classToFind, classToCreate, imagesToDisplay = 0) {
+function buildReceptionPage(jsonObj, classToFind, classToCreate, imagesToDisplay = 0) {
     let temples = jsonObj.temples;
     let receptioninfo = jsonObj.receptioninfo;
 
