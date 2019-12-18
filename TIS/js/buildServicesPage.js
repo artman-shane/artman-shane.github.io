@@ -1,4 +1,4 @@
-function buildPropertyPage(jsonObj, classToFind, classToCreate, imagesToDisplay = 0) {
+function buildServicesPage(jsonObj, classToFind, classToCreate, imagesToDisplay = 0) {
     let temples = jsonObj.temples;
 
     let propertyContainer = document.createElement("div");
@@ -94,59 +94,28 @@ function buildPropertyPage(jsonObj, classToFind, classToCreate, imagesToDisplay 
 
         propertyLocation.appendChild(propertyContactContainer);
 
+        let _button = document.createElement("a");
+        _button.setAttribute("href", _reservationLink);
+        _button.textContent = "Reserve Now";
+        propertyLocation.appendChild(_button);
+        
+        let _button = document.createElement("a");
+        _button.setAttribute("href", _reservationLink);
+        _button.textContent = "Reserve Now";
+        propertyLocation.appendChild(_button);
+
+        let _button = document.createElement("a");
+        _button.setAttribute("href", _reservationLink);
+        _button.textContent = "Reserve Now";
+        propertyLocation.appendChild(_button);
+
         let propertyReservationButton = document.createElement("a");
         propertyReservationButton.setAttribute("href", _reservationLink);
         propertyReservationButton.textContent = "Reserve Now";
         propertyLocation.appendChild(propertyReservationButton);
 
-
-        let interiorImagesToDisplay = 0;
-        let exteriorImagesToDisplay = 0;
-
-        // property Images
-        if (imagesToDisplay > 0) {
-            imagesToDisplay > _propertyImages.interior.length ? interiorImagesToDisplay = _propertyImages.interior.length : interiorImagesToDisplay = imagesToDisplay;
-            imagesToDisplay > _propertyImages.exterior.length ? exteriorImagesToDisplay = _propertyImages.exterior.length : exteriorImagesToDisplay = imagesToDisplay;
-        } else {
-            // Default to all images
-            interiorImagesToDisplay = _propertyImages.interior.length
-            exteriorImagesToDisplay = _propertyImages.exterior.length;
-        }
-
-        let imagetypes = ["interior", "exterior"];
-        for (let x in imagetypes) {
-            let _imagesToDisplay = imagetypes[x] == "interior" ? interiorImagesToDisplay : exteriorImagesToDisplay;
-            for (let j = 0; j < _imagesToDisplay; j++) {
-                let propertyImageName = _propertyImages[imagetypes[x]];
-                let imageElement = document.createElement("div");
-                imageElement.classList.add(imagetypes[x] + "-image");
-                imageElement.classList.add("image");
-                let propertyImage = document.createElement("img");
-                propertyImage.setAttribute("src", _imagePath + propertyImageName[j].filename + ".jpg");
-                propertyImage.setAttribute("alt", propertyImageName[j].desc);
-                propertyImage.setAttribute("title", propertyImageName[j].desc);
-                propertyImage.setAttribute("srcset", _imagePath + "x200/" + propertyImageName[j].filename + "_200.jpg 300w," + _imagePath + "x300/" + propertyImageName[j].filename + "_300.jpg 600w ");
-                propertyImage.setAttribute("sizes", "(max-width: 520px) 280px, (max-width: 1200px) 500px");
-                let propertyImageLink = document.createElement("a");
-                propertyImageLink.setAttribute("href", propertyImageName[j].source);
-                propertyImageLink.appendChild(propertyImage);
-                imageElement.appendChild(propertyImageLink);
-                propertyLocation.appendChild(imageElement);
-            }
-        }
-
         let gridContainer = document.createElement("div");
         gridContainer.classList.add("property-grid-container");
-
-        let roomCount = document.createElement("div");
-        roomCount.classList.add("room-count");
-        roomCount.textContent = "We have " + _roomCount + " rooms for your convienence and still growing";
-        gridContainer.appendChild(roomCount);
-
-        let garage = document.createElement("div");
-        garage.classList.add("garage");
-        garage.textContent = _garage;
-        gridContainer.appendChild(garage);
 
         // property Services
         createList(_amenities, "amenities", gridContainer, "Amenities at this property", 0, "property-amenities");

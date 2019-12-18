@@ -5,8 +5,8 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title>Services & Ammenities</title>
-    <meta name='description' content='Services and Ammenities for Temple Inn & Suites'>
+    <title>Reservations and Property Information for Atlanta</title>
+    <meta name='description' content='Reservations and information about our Atlanta Property'>
     <meta name='author' content='Shane Artman'>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
@@ -28,22 +28,19 @@
     <nav>
         <ul class="menu-control">
             <li><a href="#" onclick="toggleMenu()">&#9776</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="temples/index.html">Temples</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../temples/index.html">Temples</a></li>
             <li><a href="locations/index.html">Reserve Now</a></li>
             <li><a href="#" class="active">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../contact.html">Contact</a></li>
         </ul>
     </nav>
 
 
     <main>
-        <div class="locations">
-            <h2>Visiting the temple?</h2>
-            <p>If you are planning a visit to the temple, we are proud to announce Temple Inn & Suites now provides
-                accommodations, nearby the temple, in several US cities. We have hotels in Atlanta Gerogia, Salt Lake
-                City Utah, Omaha Nebraska, and St. George Utah. To Learn More, please visit our property information
-                pages.
+        <div class="properties-container">
+            <h2>Temple Inn & Suites' properties.</h2>
+            <p>Please find information, pictures, and reservations for our properties.
             </p>
         </div>
     </main>
@@ -68,12 +65,17 @@
     <script>
         WebFont.load({
             google: {
-                families: ['Open Sans', 'Dancing Script']
+                families: ['Open Sans', 'Dancing Script'],
+                display: "swap"
             }
         });
     </script>
     <script src="js/todayDate.js" defer></script>
+    <script src="js/createList.js"></script>
     <script src="js/toggleMenu.js"></script>
+    <script src="js/toggleDisplayDiv.js"></script>
+    <script src="js/buildServicesPage.js"></script>
+    <script src="js/servicesJsLoader.js"></script>
 </body>
 
 </html>

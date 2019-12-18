@@ -224,6 +224,11 @@
                         "filename": "atl_hotel_exterior",
                         "desc": "Exterior at the Atlanta Inn",
                         "source": "https://cdn.vox-cdn.com/thumbor/gPhE0rC4j5T_H6yhfibfiomiA6I=/0x0:1280x960/1200x800/filters:focal(477x294:681x498)/cdn.vox-cdn.com/uploads/chorus_image/image/65482960/unnamed.0.jpg"
+                    }],
+                    "kitchen": [{
+                        "filename": "atl_kitchen",
+                        "desc": "Kitchen at the Atlanta Inn",
+                        "source": "https://thumbnails.trvl-media.com/VxS-vp_-JQzf2-x84s_nXpQ8DOQ=/582x388/smart/filters:quality(60)/images.trvl-media.com/hotels/40000000/39470000/39460200/39460155/dc84d50b_z.jpg"
                     }]
                 }
             }
@@ -432,6 +437,11 @@
                         "filename": "slc_hotel_exterior",
                         "desc": "Exterior at the Salt Lake City Inn",
                         "source": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_650,q_auto,w_1000/itemimages/60/14/60145_v2.jpeg"
+                    }],
+                    "kitchen": [{
+                        "filename": "slc_kitchen",
+                        "desc": "Kitchen at the Salt Lake City Inn",
+                        "source": "https://r-cf.bstatic.com/images/hotel/max1280x900/395/39526994.jpg"
                     }]
                 }
             }
@@ -640,6 +650,11 @@
                         "filename": "oma_hotel_exterior",
                         "desc": "Exterior at the Omaha Inn",
                         "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Aquila_Court_%28Omaha%29_from_NW_1.JPG/1200px-Aquila_Court_%28Omaha%29_from_NW_1.JPG"
+                    }],
+                    "kitchen": [{
+                        "filename": "oma_kitchen",
+                        "desc": "Kitchen at the Omaha Inn",
+                        "source": "https://www.hilton.com/im/en/OMACSHT/1554092/home2-suites-by-hilton-omaha-west-1-king-1-bedroom-suite-988687.jpg?impolicy=crop&cw=3840&ch=2150&gravity=NorthWest&xposition=330&yposition=425&rw=768&rh=430"
                     }]
                 }
             }
@@ -780,9 +795,53 @@
                         "filename": "stg_hotel_exterior",
                         "desc": "Interior at the St George Inn",
                         "source": "https://media.deseretdigital.com/file/50082b8982?resize%3Dwidth%3A640%26crop%3Dtop%3A175%7Cleft%3A266%7Cwidth%3A944%7Cheight%3A620%26order%3Dcrop%2Cresize%26type%3Djpg%26c%3D14%26a%3D0b13a96f"
+                    }],
+                    "kitchen": [{
+                        "filename": "stg_kitchen",
+                        "desc": "Kitchen at the St George Inn",
+                        "source": "https://home2suites3.hilton.com/resources/media/ht/SLCLNHT/en_US/img/shared/full_page_image_gallery/main/HT_onebedstekitchen_15_990x410_FitToBoxSmallDimension_Center.jpg"
                     }]
                 }
             }
         }
-    ]
+    ],
+    "receptioninfo": {
+        "summary": [
+            "Large, spacious room for wedding receptions are available to rent by the day.",
+            "Food can be brought in, requiring a reasonable cleaning surcharge for janitorial services",
+            "Do not worry about finding the catering service or hassle with getting the family to cook and clean up with our all inclusive catering and cleaning services.",
+            "Wedding gowns can be rented for temple cerimonies (only temple dresses are provided)",
+            "Bishops are welcome to perform services in our venues",
+            "Larger and taller clothing is available for rental to patrons that forgot their temple clothing. (Check our temples page to determine if they have free clothing to loan)",
+            "We also provide props, music (DJ services), setup and tear-down.",
+            "Wedding photography services provided with proper notification (2 weeks suggested)"
+        ],
+        "catering": [
+            "Food options including gluten free, sugar free, low sodium, peanut (and other alergy concerns).",
+            "Dinks include caffinated and non-caffinated options. Coffee and tea are not provided but will not be turned away by the catering services.",
+            "NO Alcoholic beverages nor are they permitted on the property"
+        ],
+        "imagepath": "/TIS/images/",
+        "images": [{
+                "filename": "outsidereception",
+                "desc": "Outdoor room for wedding receptions",
+                "source": "https://junebugweddings.com/wedding-blog/wp-content/uploads/2016/08/this-couple-achieved-a-dreamy-woodland-affair-for-their-lds-wedding-in-denver-23-600x400.jpg"
+            },
+            {
+                "filename": "weddingreception",
+                "desc": "Large room for wedding receptions",
+                "source": "https://i0.wp.com/ldswedding.com/wp-content/uploads/2019/04/Memorial-House-in-Memory-Grove-Park-Salt-Lake-City-Wedding-Venue-Feature.jpg?resize=940%2C470&ssl=1"
+            },
+            {
+                "filename": "chapel",
+                "desc": "Large room for wedding receptions",
+                "source": "https://lh4.googleusercontent.com/proxy/_Y2lkZh3Eu88qlBp5u9EFQXVB00MfjyfD5TDsMPmMlKdWHNkTtV5xAe1rl2Viq2axTrh4G0qHggD3YXO8PRgK1F1v4KdvZ1-MqTIPkzb1o2ZwIKimCdjBZc0bzBG2hH1Wizz2JSWusQ=s0-d"
+            },
+            {
+                "filename": "chapel2",
+                "desc": "Large room for wedding receptions",
+                "source": "ttps://i.pinimg.com/originals/c1/80/fb/c180fbb621bc8cdd8b37ab57798eaf00.jpg"
+            }
+        ]
+    }
 }

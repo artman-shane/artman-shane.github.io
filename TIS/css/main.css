@@ -87,7 +87,7 @@ nav ul {
     overflow: auto;
 }
 
-nav ul:not(.displayed) li {
+nav>ul:not(.displayed) li {
     display: none;
 }
 
@@ -105,7 +105,7 @@ nav ul li a.active {
     color: var(--main-nav-active-link-text);
 }
 
-nav ul li:first-child {
+nav>ul>li:first-child {
     display: inline;
 }
 
@@ -552,10 +552,20 @@ div.res-container label {
 
 div.res-container select {
     margin: auto auto 2em auto;
+    border: 1px solid black;
+}
+
+div.res-container div.red {
+    color: var(--space-cadet);
+    background: var(--peach-orange);
+    padding: 1em;
+    border-radius: 5px;
+    border: 3px solid red;
+    margin-bottom: 3em;
 }
 
 div.res-container .red {
-    color: red;
+    color: rgba(255, 0, 0);
 }
 
 div.res-container form label.stacked,
@@ -589,8 +599,8 @@ div.res-container form input.submitbtn {
 
 div.res-container form input.submitbtn:hover {
     transform: scale(1.1);
-        background: var(--button-background-hover);
-        color: var(--button-text-hover);
+    background: var(--button-background-hover);
+    color: var(--button-text-hover);
 
 }
 

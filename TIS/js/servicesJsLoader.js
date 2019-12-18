@@ -4,5 +4,5 @@ fetch("/TIS/other/temples.json")
         return response.json();
     })
     .then(function (jsonObj) {
-        buildPropertyPage(jsonObj, "div.properties-container", "property");
+        buildServicesPage(jsonObj, "div.properties-container", "property");
     });

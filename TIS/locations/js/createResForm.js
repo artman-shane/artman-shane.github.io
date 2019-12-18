@@ -26,12 +26,16 @@ function createResForm(_jsonObj, _classToFind, _rscname = "") {
     form.appendChild(requiredField);
 
     // Create select input
+    let selectlbl = document.createElement("label");
+    selectlbl.textContent = "Select property from the list";
+    selectlbl.classList.add("selectlbl");
     let select = document.createElement("select");
     select.setAttribute("id", "property");
     select.classList.add("propertyselect");
     if (_tmpIndx == null) {
         select.classList.add("red");
     }
+    
     select.required = 1;
     select.setAttribute("onchange", "modified(\"property\")");
     let _options = document.createElement("option");
@@ -48,7 +52,8 @@ function createResForm(_jsonObj, _classToFind, _rscname = "") {
         _tmpIndx == i ? _options.selected = 1 : null;
         select.appendChild(_options);
     }
-    form.appendChild(select);
+    selectlbl.appendChild(select);
+    form.appendChild(selectlbl);
     // End of the select input
 
 
