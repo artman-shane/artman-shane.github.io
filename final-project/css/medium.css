@@ -357,6 +357,7 @@
         width: 95%;
         max-width: 500px;
     }
+
     div.property>.link-container>a,
     div.property>.link-container>a:visited {
         display: flex;
@@ -367,5 +368,14 @@
     }
 
     /* End of Services Section */
+
+    /* Reception Section */
+
+    .reception-page .images {
+        height: 425px;
+        max-width: 500px;
+    }
+
+    /* End Reception Section */
 
 }

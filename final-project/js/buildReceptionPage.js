@@ -7,6 +7,7 @@ function buildReceptionPage(_jsonObj, classToFind, _classToCreate, _numOfImgs = 
 
     let _generalContainer = document.createElement("div");
     _generalContainer.classList.add(_classToCreate);
+    _generalContainer.classList.add("reception-page");
 
     let _returnBtn = document.createElement("a");
     _returnBtn.classList.add("return-link");
@@ -20,6 +21,10 @@ function buildReceptionPage(_jsonObj, classToFind, _classToCreate, _numOfImgs = 
     }
     _generalContainer.appendChild(_returnBtn);
 
+    let _imageContainer = document.createElement("div");
+    _imageContainer.classList.add("images");
+    _generalContainer.appendChild(_imageContainer);
+
     // Temple Images
     if (_numOfImgs > 0) {
         _numOfImgs > images.length ? _numOfImgs = images.length : null;
@@ -29,18 +34,20 @@ function buildReceptionPage(_jsonObj, classToFind, _classToCreate, _numOfImgs = 
     }
     for (let j = 0; j < _numOfImgs; j++) {
         let imageElement = document.createElement("div");
-        imageElement.classList.add("image");
+        imageElement.classList.add("image-div");
+        j != 0 ? imageElement.classList.add("hidden") : null;
         let _image = document.createElement("img");
         _image.setAttribute("src", imagePath + images[j].filename + ".jpg");
         _image.setAttribute("alt", images[j].desc);
         _image.setAttribute("title", images[j].desc);
         _image.setAttribute("srcset", imagePath + "x200/" + images[j].filename + "_200.jpg 300w," + imagePath + "x300/" + images[j].filename + "_300.jpg 600w ");
         _image.setAttribute("sizes", "(max-width: 520px) 280px, (max-width: 1200px) 500px");
+        _image.classList.add("image");
         let _imageLink = document.createElement("a");
         _imageLink.setAttribute("href", images[j].source);
         _imageLink.appendChild(_image);
         imageElement.appendChild(_imageLink);
-        _generalContainer.appendChild(imageElement);
+        _imageContainer.appendChild(imageElement);
     }
 
     let _listContainer = document.createElement("div");

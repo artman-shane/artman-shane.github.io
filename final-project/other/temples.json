@@ -11,8 +11,8 @@
             },
             "telephone": "+1(770)393-3698",
             "email": "atl-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/reserve.html?location=atl",
-            "ftmissionarylink": "/TIS/ftmissionary.html",
+            "reservationlink": "/final-project/locations/reserve.html?location=atl",
+            "ftmissionarylink": "/final-project/ftmissionary.html",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -246,7 +246,7 @@
             },
             "telephone": "+1(801)240-2640",
             "email": "slc-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/reserve.html?location=slc",
+            "reservationlink": "/final-project/locations/reserve.html?location=slc",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -398,7 +398,7 @@
                     "state": "Utah",
                     "zipcode": 84150
                 },
-                "telephone": "+1(770)393-3698",
+                "telephone": "+1(801)240-2640",
                 "email": "slc-temple@templeinnsuites.com",
                 "rooms": {
                     "count": "150"
@@ -459,7 +459,7 @@
             },
             "telephone": "+1(402)453-3406",
             "email": "oma-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/reserve.html?location=oma",
+            "reservationlink": "/final-project/locations/reserve.html?location=oma",
             "services": [
                 "Temple clothing available for patrons ONLY",
                 "Lunch room is not available",
@@ -613,7 +613,7 @@
                     "state": "Nebraska",
                     "zipcode": 68112
                 },
-                "telephone": "+1(770)393-3698",
+                "telephone": "+1(402)453-3406",
                 "email": "oma-temple@templeinnsuites.com",
                 "rooms": {
                     "count": "20"
@@ -672,7 +672,7 @@
             },
             "telephone": "+1(435)673-3533",
             "email": "stg-temple@churchofjesuschrist-fake.org",
-            "reservationlink": "/TIS/locations/reserve.html?location=stg",
+            "reservationlink": "/final-project/locations/reserve.html?location=stg",
             "services": [
                 "Temple clothing available",
                 "Lunch room is available",
@@ -756,7 +756,7 @@
                     "state": "Utah",
                     "zipcode": 84770
                 },
-                "telephone": "+1(770)393-3698",
+                "telephone": "+1(435)673-3533",
                 "email": "stg-temple@templeinnsuites.com",
                 "rooms": {
                     "count": "50"
@@ -807,7 +807,7 @@
         }
     ],
     "receptioninfo": {
-        "receptionlink": "/TIS/reception.html",
+        "receptionlink": "/final-project/reception.html",
         "summary": [
             "Large, spacious room for wedding receptions are available to rent by the day.",
             "Food can be brought in, requiring a reasonable cleaning surcharge for janitorial services",
@@ -823,7 +823,7 @@
             "Dinks include caffinated and non-caffinated options. Coffee and tea are not provided but will not be turned away by the catering services.",
             "NO Alcoholic beverages nor are they permitted on the property"
         ],
-        "imagepath": "/TIS/images/",
+        "imagepath": "/final-project/images/catering/",
         "images": [{
                 "filename": "outsidereception",
                 "desc": "Outdoor room for wedding receptions",

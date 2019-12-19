@@ -9,7 +9,6 @@
     clear: both;
 }
 
-
 h1,
 h2,
 h3,
@@ -633,3 +632,41 @@ div.property>.link-container>a:hover {
 }
 
 /* End of Services Section */
+
+/* Wedding Reception Section */
+
+
+div.property.reception-page>a {
+    margin: 0 auto;
+}
+.reception-page .images .image-div:not(.hidden) {
+    display: unset;
+}
+
+.reception-page .images .image-div.hidden {
+    display: none;
+}
+
+.reception-page .images {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.reception-page .image-div {
+    text-align: center;
+    width: 100%;
+}
+
+.reception-page .images .image {
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    border-radius: 2px;
+}
+
+.reception-page .property-grid-container {
+    margin: auto .5em;
+}
+/* End Wedding Reception Section */

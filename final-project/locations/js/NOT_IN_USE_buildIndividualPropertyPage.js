@@ -17,7 +17,7 @@ function buildIndividualPropertyPage(jsonObj, cityToBuild, classToFind, classToC
             let _tele = _property.telephone;
             let _email = _property.email;
             let _reservationLink = temple.reservationlink;
-            let _imagePath = "/TIS/" + _property.images.path;
+            let _imagePath = "/final-project/" + _property.images.path;
             let _propertyImages = _property.images;
             let _garage = _property.garage;
             let _roomCount = _property.rooms.count;

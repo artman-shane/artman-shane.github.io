@@ -17,7 +17,7 @@ function createResForm(_jsonObj, _classToFind, _rscname = "") {
     let form = document.createElement("form");
     form.setAttribute("name", "reservation-form");
     form.setAttribute("method", "GET");
-    form.setAttribute("action", "/TIS/thanks.html");
+    form.setAttribute("action", "/final-project/thanks.html");
     reservationContainer.appendChild(form);
 
     let requiredField = document.createElement("div");
