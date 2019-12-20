@@ -239,6 +239,8 @@ div.hotels hr {
     background: var(--container-background);
     box-shadow: 0 0 10px rgba(0, 0, 0, .7);
     border-radius: 5px;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
 }
 
 .wx-icon {
@@ -250,23 +252,21 @@ div.temples img.wx-icon {
 }
 
 .wx-current-container.hidden {
-    display:none;
+    display: none;
 }
 
 .wx-current-container div span {
     color: var(--space-cadet);
-    font-weight: bolder;
-    font-family: 'Dancing Script', cursive;
 }
 
 .wx-desc {
     font-size: 1.25em;
     padding: .5em;
     grid-area: wx-desc;
-    background: var(--peach-orange);
-    opacity: .7;
+    /* background: var(--peach-orange); */
+    /* opacity: .7;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7); */
 }
 
 .current-temp {
@@ -572,12 +572,16 @@ div.property .images {
 div.property .image-div {
     width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 div.property .image {
     grid-area: temples-image;
     margin: .5em auto auto auto;
     width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    border-radius: 5px;
+
     /* Modified 12/19/19 6PM */
 }
 
@@ -724,7 +728,7 @@ div.property>.link-container>a:hover {
 
 div.property.reception-page>a,
 div.property-container>a.return-link {
-    margin: 0 auto;
+    margin: 1em auto 0;
 }
 
 .reception-page .images .image-div:not(.hidden) {
@@ -766,7 +770,8 @@ div.property-container>a.return-link {
 }
 
 .ftmissionary-container p {
-    width: 50%;
+    width: 95%;
+    max-width: 500px;
     margin: auto;
 }
 
