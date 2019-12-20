@@ -67,6 +67,16 @@
     div.activities-section,
     div.locations {
         max-width: 1000px;
+        min-height: 330px;
+    }
+
+    div.activities-section .activity-images {
+        float: right;
+        margin: auto 1em;
+    }
+
+    div.activities-section .activities {
+        padding-top: 4em;
     }
 
 
@@ -90,6 +100,11 @@
         display: inline;
         margin: .5em;
     }
+
+    div.temples div.image img {
+        margin-top: 1em;
+    }
+
 
     div.temples img {
         max-width: 400px;
@@ -164,7 +179,7 @@
         grid-template-areas: "wx-icon wx-desc current-temp high-temp low-temp humidity wind-speed wind-chill";
         font-size: large;
     }
-    
+
 
 
     /* End Temples Page Section */
@@ -182,7 +197,7 @@
     div.property .property-grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "room-count room-count" "garage garage" "property-services property-amenities";
+        grid-template-areas: "room-count room-count""garage garage""property-services property-amenities";
         margin-bottom: 2em;
     }
 
@@ -224,10 +239,10 @@
 
     div.property .property-services,
     div.property .property-amenities {
-                background: var(--jordy-blue);
-                padding: 1em;
-                border-radius: 5px;
-                box-shadow: 0 0 30px var(--jordy-blue);
+        background: var(--jordy-blue);
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: 0 0 30px var(--jordy-blue);
     }
 
 
