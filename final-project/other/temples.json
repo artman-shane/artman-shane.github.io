@@ -247,6 +247,7 @@
             "telephone": "+1(801)240-2640",
             "email": "slc-temple@churchofjesuschrist-fake.org",
             "reservationlink": "/final-project/locations/reserve.html?location=slc",
+            "ftmissionarylink": "/final-project/ftmissionary.html",
             "services": [
                 "Temple clothing available for patrons",
                 "Lunch room available for temple workers",
@@ -460,6 +461,7 @@
             "telephone": "+1(402)453-3406",
             "email": "oma-temple@churchofjesuschrist-fake.org",
             "reservationlink": "/final-project/locations/reserve.html?location=oma",
+            "ftmissionarylink": "/final-project/ftmissionary.html",
             "services": [
                 "Temple clothing available for patrons ONLY",
                 "Lunch room is not available",
@@ -673,6 +675,7 @@
             "telephone": "+1(435)673-3533",
             "email": "stg-temple@churchofjesuschrist-fake.org",
             "reservationlink": "/final-project/locations/reserve.html?location=stg",
+            "ftmissionarylink": "/final-project/ftmissionary.html",
             "services": [
                 "Temple clothing available",
                 "Lunch room is available",
@@ -845,5 +848,17 @@
                 "source": "ttps://i.pinimg.com/originals/c1/80/fb/c180fbb621bc8cdd8b37ab57798eaf00.jpg"
             }
         ]
+    },
+    "corpinfo": {
+        "address": {
+            "street": "4800 Montgomery Ln",
+            "street2": "#300",
+            "city": "Bethesda",
+            "state": "Maryland",
+            "stateabbr": "MD",
+            "zipcode": 20814
+        },
+        "telephone": "+1(888)555-1234",
+        "email": "support@templeinnandsuites-fake.com"
     }
 }

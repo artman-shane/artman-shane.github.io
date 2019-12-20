@@ -45,6 +45,7 @@ function drawMap(latitude, longitude, classToFind, nameOfLocation) {
             map: map
         },
         title: nameOfLocation,
+        label: nameOfLocation,
         visible: true
     });
     marker.setMap(map);

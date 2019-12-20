@@ -371,11 +371,31 @@
 
     /* Reception Section */
 
+    .reception-page {
+        max-width: 1200px;
+    }
+
     .reception-page .images {
         height: 425px;
         max-width: 500px;
     }
 
     /* End Reception Section */
+
+
+    /* Forms */
+
+    form input.submitbtn {
+        font-size: 1.25em;
+        height: 2.1em;
+        width: 55%;
+    }
+
+    /* End of Forms */
+
+
+    div.properties-container.ftmissionary-container p {
+        margin: 1em auto 2em auto;
+    }
 
 }

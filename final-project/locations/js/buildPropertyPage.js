@@ -162,7 +162,7 @@ function buildPropertyPage(jsonObj, classToFind, classToCreate, imagesToDisplay 
 
         propertyContainer.appendChild(propertyLocation);
         if (i == 0) {
-            propertyContainer.addEventListener("onload", initMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "property-map-active-" + _rscName, _propertyName + " property"), {
+            propertyContainer.addEventListener("onload", initMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "property-map-active-" + _rscName, _propertyName + " Inn & Suites"), {
                 once: true
             });
         }
