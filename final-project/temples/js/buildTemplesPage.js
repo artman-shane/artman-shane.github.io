@@ -22,6 +22,9 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
             templeDisplayButton.addEventListener("mousedown", returnInitMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "temple-map-active-" + _rscName, _templeName + " Temple"), {
                 once: true
             });
+            templeDisplayButton.addEventListener("mousedown", returnWxData(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), _rscName, i), {
+                once: true
+            });
         }
 
         templeDisplayButton.classList.add("display-button");
@@ -100,6 +103,23 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
 
         templeLocation.appendChild(templeContactContainer);
 
+
+        let wxcurr = document.createElement("div");
+        wxcurr.classList.add("wx-current-container");
+        wxcurr.classList.add("hidden");
+        templeLocation.appendChild(wxcurr);
+
+        wxcurr.appendChild(createElements("div", "wx-desc", _rscName));
+        wxcurr.appendChild(createElements("img", "wx-icon", _rscName));
+        wxcurr.appendChild(createElements("div", "current-temp",_rscName));
+        wxcurr.appendChild(createElements("div", "high-temp",_rscName));
+        wxcurr.appendChild(createElements("div", "low-temp",_rscName));
+        wxcurr.appendChild(createElements("div", "humidity",_rscName));
+        wxcurr.appendChild(createElements("div", "wind-speed",_rscName));
+        wxcurr.appendChild(createElements("div", "wind-chill",_rscName));
+
+
+
         // Temple Images
         if (imagesToDisplay > 0) {
             imagesToDisplay > _templeImages.length ? imagesToDisplay = _templeImages.length : null;
@@ -127,11 +147,11 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
         gridContainer.classList.add("temples-grid-container");
 
         // Temple Services
-        createList(_services, "services", gridContainer, "Services Available Here:", 0,"temple-services");
+        createList(_services, "services", gridContainer, "Services Available Here:", 0, "temple-services");
         // Temple History
-        createList(_histories, "histories", gridContainer, "History of the " + _templeName + " Temple:", 0,"temple-histories");
+        createList(_histories, "histories", gridContainer, "History of the " + _templeName + " Temple:", 0, "temple-histories");
         // Temple Closure Schedule
-        createList(_templeClosures, "closures", gridContainer, "Closure Schedule:",0,"temple-closures");
+        createList(_templeClosures, "closures", gridContainer, "Closure Schedule:", 0, "temple-closures");
         // Baptistry Schedule
         createList(_baptismSchedules, "baptistry-schedule", gridContainer, "Baptistry Schedule:", 1, "temple-baptistry-schedule");
         // Initatory Schedule
@@ -161,6 +181,9 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
             templeContainer.addEventListener("onload", initMap(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), "temple-map-active-" + _rscName, _templeName + " Temple"), {
                 once: true
             });
+            templeContainer.addEventListener("onload", wxdata(_street.split(' ').join('+'), _city.split(' ').join('+'), _state.split(' ').join('+'), _rscName, i), {
+                once: true
+            });
         }
     }
 
@@ -179,4 +202,11 @@ function buildTemplesPage(jsonObj, classToFind, classToCreate, imagesToDisplay =
             this.classList.add("active");
         });
     }
+}
+
+function createElements(_elementType, _class, _rscName) {
+    let _element = document.createElement(_elementType);
+    _element.classList.add(_class);
+    _element.classList.add(_class + "-" + _rscName);
+    return _element;
 }

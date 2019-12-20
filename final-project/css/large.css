@@ -156,6 +156,17 @@
         grid-area: temple-sealing-schedule;
     }
 
+    .wx-current-container {
+        width: 800px;
+        margin: 3em auto;
+        grid-template-columns: repeat(8, auto);
+        grid-template-rows: 1fr;
+        grid-template-areas: "wx-icon wx-desc current-temp high-temp low-temp humidity wind-speed wind-chill";
+        font-size: large;
+    }
+    
+
+
     /* End Temples Page Section */
 
 
