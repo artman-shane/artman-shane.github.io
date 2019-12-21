@@ -1,9 +1,3 @@
-// document.getElementsByClassName('wx-current')[0].innerHTML = wxCurrent;
-// document.getElementsByClassName('wx-high-temp')[0].innerHTML = wxHighTemp + "&#8457;";
-// document.getElementsByClassName('wx-humidity')[0].innerHTML = wxHumidity + "&#37;";
-// document.getElementsByClassName('wx-wind-speed')[0].innerHTML = wxWindSpeed + "MPH";
-
-
 function wxdata(_street, _city, _state, _rscName, _idx) {
 
     let wxForecastURLBase = 'https://api.openweathermap.org/data/2.5/forecast';
@@ -23,33 +17,7 @@ function wxdata(_street, _city, _state, _rscName, _idx) {
             .then(response => response.json())
             .then(jsonObj => {
                 if (jsonObj.status == "OK") {
-                    // let wxForecastURL = wxForecastURLBase + "?lat=" + coordinates.lat + "&lon=" + coordinates.lon + wxURLAPPID;
                     let wxCurrentURL = wxCurrentURLBase + "?lat=" + jsonObj.results[0].geometry.location.lat + "&lon=" + jsonObj.results[0].geometry.location.lng + wxURLAPPID;
-                    // fetch(wxForecastURL)
-                    //     .then(response => response.json())
-                    //     .then(jsonObj => {
-                    //         let town = jsonObj['list'];
-                    //         let forecastCounter = 0;
-                    //         for (let x = 0; x < town.length; x++) {
-                    //             let town_date = new Date(parseInt(town[x].dt) * 1000);
-                    //             if (town_date.getUTCHours() == 18) {
-                    //                 let town_dow = days[town_date.getDay()];
-                    //                 let town_wx_desc = town[x].weather[0].description;
-                    //                 town_wx_desc = town_wx_desc.replace(toProperCaseRegex, function (x) {
-                    //                     return x.toUpperCase();
-                    //                 });
-                    //                 let town_max_temp = parseFloat(town[x].main.temp_max).toFixed(0);
-                    //                 let town_wx_icon = 'https://openweathermap.org/img/w/' + town[x].weather[0].icon + '.png';
-
-                    //                 document.getElementsByClassName('daynames')[forecastCounter].innerHTML = town_dow;
-                    //                 document.getElementsByClassName('wx-icon')[forecastCounter].setAttribute('src', town_wx_icon);
-                    //                 document.getElementsByClassName('wx-icon')[forecastCounter].setAttribute('alt', town_wx_desc);
-                    //                 document.getElementsByClassName('wx-icon')[forecastCounter].setAttribute('title', town_wx_desc);
-                    //                 document.getElementsByClassName('text')[forecastCounter].innerHTML = town_max_temp + '&#0176;F';
-                    //                 forecastCounter++;
-                    //             }
-                    //         }
-                    //     });
 
                     fetch(wxCurrentURL)
                         .then(response => response.json())

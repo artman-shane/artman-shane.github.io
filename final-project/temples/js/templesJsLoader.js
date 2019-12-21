@@ -5,6 +5,7 @@ fetch("../other/temples.json")
     })
     .then(function (jsonObj) {
         buildTemplesPage(jsonObj, "div.temple-locations", "temples");
+        buildContactFooter(jsonObj, "");
     });
 
 

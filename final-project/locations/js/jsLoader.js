@@ -5,5 +5,6 @@ fetch("/final-project/other/temples.json")
     })
     .then(function (jsonObj) {
         createResForm(jsonObj, "div.properties-container")
+        buildContactFooter(jsonObj, "");
         });
 

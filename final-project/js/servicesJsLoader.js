@@ -5,4 +5,5 @@ fetch("/final-project/other/temples.json")
     })
     .then(function (jsonObj) {
         buildServicesPage(jsonObj, "div.properties-container", "property");
+        buildContactFooter(jsonObj, "");
     });

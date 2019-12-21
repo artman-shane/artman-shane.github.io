@@ -138,12 +138,12 @@
                     {
                         "filename": "atl_family_day",
                         "desc": "Family at Atlanta Temple",
-                        "source": "bio.html"
+                        "source": "#"
                     },
                     {
                         "filename": "atl_pathway_mtg",
                         "desc": "Colleagues at Atlanta Temple",
-                        "source": "bio.html"
+                        "source": "#"
                     },
                     {
                         "filename": "atl_temple_grounds",

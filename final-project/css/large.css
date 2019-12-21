@@ -256,34 +256,13 @@
         grid-area: property-amenities;
     }
 
-    /* End Temples Page Section */
-
-
-
-    /* Footer Section */
-
-
-    /* footer {
-        grid-template-areas: "contact map""summary map";
-        grid-template-columns: minmax(100px, 400px) minmax(100px, 400px);
+    footer {
+        font-size: 1.25em;
     }
 
-    footer a,
-    footer a:visited {
-        transition: all .2s ease-in-out;
+    footer .contact a {
+        margin: 0;
+        padding: 0;
     }
-
-    footer a:hover {
-        color: var(--footer-link-hover-text);
-    }
-
-    footer .map-active {
-        grid-area: map;
-        margin: auto;
-        height: 200px;
-        width: 95%;
-    } */
-
-    /* End Footer Section */
 
 }

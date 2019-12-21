@@ -6,4 +6,5 @@ fetch("/final-project/other/temples.json")
     .then(function (jsonObj) {
         buildReceptionPage(jsonObj, "div.properties-container", "property");
         document.querySelector(".image").addEventListener("load", slideShow());
+        buildContactFooter(jsonObj, "");
     });

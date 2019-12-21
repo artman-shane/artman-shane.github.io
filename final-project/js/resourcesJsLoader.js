@@ -4,6 +4,6 @@ fetch("/final-project/other/temples.json")
         return response.json();
     })
     .then(function (jsonObj) {
-        buildPropertyPage(jsonObj, "div.properties-container", "property");
+        buildResourcesPage(jsonObj, "div.properties-container", "property");
         buildContactFooter(jsonObj, "");
     });

@@ -402,4 +402,27 @@
         margin: 1em auto 2em auto;
     }
 
+
+    /* Footer Section */
+
+    footer .contact .tel-contact {
+        text-align: center;
+        padding-right: .5em;
+    }
+
+    footer .contact .email-contact {
+        text-align: center;
+        padding-left: .5em;
+    }
+
+    footer span.text {
+        display: grid;
+        font-size: .8em;
+    }
+
+
+
+    /* End of Footer Section */
+
+
 }

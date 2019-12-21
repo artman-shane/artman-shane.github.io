@@ -5,5 +5,6 @@ fetch("/final-project/other/temples.json")
     })
     .then(function (jsonObj) {
         buildFtMissionaryPage(jsonObj, "div.properties-container", "property");
+        buildContactFooter(jsonObj, "");
         document.querySelector(".image").addEventListener("load", slideShow());
     });

@@ -304,66 +304,6 @@ div.temples img.wx-icon {
 
 
 
-/* Footer Section */
-footer {
-    display: grid;
-    grid-template-areas: "contact""summary";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr;
-    background: var(--main-nav-bkg);
-    color: var(--main-nav-text);
-    padding: .5em 0;
-    text-align: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    justify-content: center;
-}
-
-footer a,
-footer a:visited {
-    color: var(--main-nav-link-text);
-    margin: .5em;
-}
-
-footer .contact {
-    grid-area: contact;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "contactlink contactlink""telcontact emailcontact";
-    align-items: center;
-}
-
-footer .contact .contact-link {
-    grid-area: contactlink;
-}
-
-footer .contact .tel-contact {
-    grid-area: telcontact;
-    text-align: right;
-    padding-right: .5em;
-    font-size: 20px;
-}
-
-footer .contact .email-contact {
-    grid-area: emailcontact;
-    text-align: left;
-    padding-left: .5em;
-    font-size: 30px;
-}
-
-footer .summary {
-    grid-area: summary;
-}
-
-#updated-on {
-    padding-top: .5em;
-    font-size: .5em;
-}
-
-/* End of Footer Section */
-
 
 /* Begin Activities & Temples Page Section */
 
@@ -820,3 +760,127 @@ form .cancel-link:hover {
 }
 
 /* End Thanks Section */
+
+
+
+/* Resources Page */
+
+.resources-container {
+    max-width: 800px;
+    margin:auto;
+    overflow-wrap: break-word;
+}
+
+.resources-container p {
+    margin: 0 0 0 1.25em;
+    padding: 0;
+}
+
+.resources-container h3 {
+    font-size: 2em;
+    margin: 1em auto;
+}
+
+.resources-container h4 {
+    font-size: 1.5em;
+    margin: .5em;
+}
+
+/* End Resources Page */
+
+
+
+/* Footer Section */
+footer {
+    display: grid;
+    grid-template-areas: "contact contact""summary summary""resources resources";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
+    background: var(--main-nav-bkg);
+    color: var(--main-nav-text);
+    padding: .5em 0;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: .5em;
+}
+
+footer a,
+footer a:visited {
+    color: var(--main-nav-link-text);
+    margin: .5em;
+}
+
+footer .contact {
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "contactlink contactlink"
+        "telcontacticon emailcontacticon"
+        "telcontact emailcontact";
+    align-items: center;
+}
+
+footer .contact .contact-link {
+    grid-area: contactlink;
+}
+
+footer .contact .tel-contact {
+    text-align: right;
+    padding-right: .5em;
+}
+
+footer .contact .email-contact {
+    text-align: left;
+    padding-left: .5em;
+}
+
+footer .contact .tel-contact span.text {
+    grid-area: telcontact;
+}
+
+footer .contact .tel-contact span.icon {
+    grid-area: telcontacticon;
+    font-size: 20px;
+}
+
+footer .contact .email-contact span.icon {
+    grid-area: emailcontacticon;
+    font-size: 30px;
+}
+
+footer .contact .email-contact span.text {
+    grid-area: emailcontact;
+}
+
+footer span.text {
+    display: none;
+}
+
+footer .contact .tel-contact span.text {
+    grid-area: telcontact;
+}
+
+footer .contact .email-contact span.text {
+    grid-area: emailcontact;
+}
+
+footer .summary {
+    grid-area: summary;
+}
+
+footer .resources {
+    grid-area: resources;
+    font-size: .5em;
+    font-weight: lighter;
+}
+
+#updated-on {
+    padding-top: .5em;
+    font-size: .5em;
+}
+
+/* End of Footer Section */
