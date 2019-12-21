@@ -132,10 +132,13 @@ div.activity-images {
 .activities-image {
     min-width: 250px;
     max-width: 95%;
+    display: block;
+}
+
+div.activity-images img {
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, .7);
-    border-radius: 2px;
-    display: block;
+    border-radius: 5px;
 }
 
 .activities {
@@ -518,15 +521,16 @@ div.property .image-div {
 div.property .image {
     grid-area: temples-image;
     margin: .5em auto auto auto;
-    width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
-    border-radius: 5px;
 
     /* Modified 12/19/19 6PM */
 }
 
-div.property img {
+div.property .image>a>img,
+div.property .images>div>a>img {
     width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    border-radius: 5px;
+
 }
 
 div.property .room-count {
@@ -767,7 +771,7 @@ form .cancel-link:hover {
 
 .resources-container {
     max-width: 800px;
-    margin:auto;
+    margin: auto;
     overflow-wrap: break-word;
 }
 
